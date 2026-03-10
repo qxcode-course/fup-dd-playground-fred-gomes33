@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_18-21-40",
+            "content": "@@ -103,17 +103,16 @@\n Println(\n-(\n num1 + n\n@@ -114,17 +114,16 @@\n 1 + num2\n-)\n  / 2)%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-22-38",
+            "content": "@@ -104,15 +104,11 @@\n rint\n-f(%22%25.1%22\n+ln(\n (num\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-23-40",
+            "content": "@@ -111,11 +111,8 @@\n %25.1%22\n- , \n (num\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-24-16",
+            "content": "@@ -107,17 +107,19 @@\n tf(%22%25.1%22\n-,\n+ , \n (num1 + \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-24-31",
+            "content": "@@ -103,16 +103,22 @@\n Printf(%22\n+%25.1%22,(\n num1 + n\n@@ -125,13 +125,12 @@\n um2) / 2\n-%22\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-25-12",
+            "content": "@@ -102,17 +102,17 @@\n .Printf(\n-(\n+%22\n num1 + n\n@@ -119,12 +119,13 @@\n um2) / 2\n+%22\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_18-25-34",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 float64\n    fmt.Scan(&num1, &num2)\n    fmt.Printf((num1 + num2) / 2)\n}\n",
+            "lines": "7"
+        }
+    ]
+}

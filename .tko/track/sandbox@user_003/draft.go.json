@@ -1,0 +1,129 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_17-14-58",
+            "content": "@@ -72,82 +72,6 @@\n e%22)%0A\n-    fmt.Println(%22Detroit: Become Human%22)%0A    fmt.Println(%22The Walkin Dead%22)%0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_17-16-25",
+            "content": "@@ -136,17 +136,16 @@\n e Walkin\n-g\n  Dead%22)%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-25-01",
+            "content": "@@ -37,38 +37,8 @@\n ) %7B%0A\n-    fmt.Println(%22Hello Word%22)%0A\n     \n@@ -147,10 +147,8 @@\n ead%22)%0A%7D%0A\n-%0A%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-31-14",
+            "content": "@@ -59,17 +59,16 @@\n ello Wor\n-l\n d%22)%0A    \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-32-05",
+            "content": "@@ -41,67 +41,145 @@\n     \n-var num1, num2 int%0A    fmt.Println(%22Ol%C3%A1 mundo%22 , num1, num2\n+fmt.Println(%22Hello World%22)%0A    fmt.Println(%22Life is Strange%22)%0A    fmt.Println(%22Detroit: Become Human%22)%0A    fmt.Println(%22The Walking Dead%22\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-40-13",
+            "content": "@@ -56,55 +56,11 @@\n um2 \n-float64%0A    fmt.Scan(&num1)%0A    fmt.Scan(&num2)\n+int\n %0A   \n@@ -102,10 +102,8 @@\n m2)%0A%7D%0A%0A%0A\n-%0A%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-10_17-43-55",
+            "content": "@@ -116,20 +116,40 @@\n Println(\n-num1\n+%22Ol%C3%A1 mundo%22 , num1, num2\n )%0A%7D%0A%0A%0A%0A%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_17-44-19",
+            "content": "@@ -126,30 +126,8 @@\n m1)%0A\n-    fmt.Println(num2)%0A\n %7D%0A%0A%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_17-44-50",
+            "content": "@@ -142,15 +142,8 @@\n tln(\n-num1 - \n num2\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-46-38",
+            "content": "@@ -124,15 +124,8 @@\n num1\n- + num2\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-47-00",
+            "content": "@@ -116,24 +116,31 @@\n Println(num1\n+ + num2\n )%0A    fmt.Pr\n@@ -145,16 +145,23 @@\n Println(\n+num1 - \n num2)%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-47-44",
+            "content": "@@ -124,15 +124,8 @@\n num1\n- + num2\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-48-20",
+            "content": "@@ -153,15 +153,8 @@\n num2\n- - num1\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-48-35",
+            "content": "@@ -152,16 +152,16 @@\n (num\n-1\n+2\n  - num\n-2\n+1\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-49-05",
+            "content": "@@ -116,24 +116,31 @@\n Println(num1\n+ + num2\n )%0A    fmt.Pr\n@@ -145,16 +145,23 @@\n Println(\n+num1 - \n num2)%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-49-31",
+            "content": "@@ -124,15 +124,8 @@\n num1\n- + num2\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-50-23",
+            "content": "@@ -149,15 +149,8 @@\n tln(\n-num1 - \n num2\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-50-36",
+            "content": "@@ -149,16 +149,23 @@\n tln(num1\n+ - num2\n )%0A%7D%0A%0A%0A%0A%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-51-07",
+            "content": "@@ -153,15 +153,8 @@\n num1\n- - num2\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-51-40",
+            "content": "@@ -149,16 +149,23 @@\n tln(num1\n+ - num2\n )%0A%7D%0A%0A%0A%0A%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-51-55",
+            "content": "@@ -63,17 +63,8 @@\n at64\n- //varial\n %0A   \n@@ -78,18 +78,31 @@\n an(&num1\n-, \n+)%0A    fmt.Scan(\n &num2)%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-55-51",
+            "content": "@@ -149,15 +149,8 @@\n num1\n- - num2\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_17-57-21",
+            "content": "@@ -145,16 +145,23 @@\n tln(num1\n+ - num2\n )%0A%7D%0A%0A%0A%0A%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_17-57-28",
+            "content": "@@ -149,15 +149,8 @@\n num1\n- - num2\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_17-57-55",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 float64 //varial\n    fmt.Scan(&num1, &num2)\n    fmt.Println(num1 + num2)\n    fmt.Println(num1 - num2)\n}\n\n\n\n\n",
+            "lines": "12"
+        }
+    ]
+}
