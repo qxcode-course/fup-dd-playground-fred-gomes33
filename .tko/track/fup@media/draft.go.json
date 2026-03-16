@@ -32,8 +32,48 @@
         },
         {
             "label": "2026-03-10_18-25-34",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 float64\n    fmt.Scan(&num1, &num2)\n    fmt.Printf((num1 + num2) / 2)\n}\n",
+            "content": "@@ -61,10 +61,10 @@\n loat\n-32\n+64\n %0A   \n@@ -104,10 +104,9 @@\n rint\n-ln\n+f\n ((nu\n@@ -119,9 +119,11 @@\n um2)\n-/\n+ / \n 2)%0A%7D\n",
             "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-09-34",
+            "content": "@@ -122,25 +122,8 @@\n 2)/2\n- (%25.num1, %25.num2)\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-11-46",
+            "content": "@@ -122,22 +122,25 @@\n 2)/2\n-,\n  \n+(%25.\n num1, %25\n- \n+.\n num2)\n+)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-12-54",
+            "content": "@@ -95,96 +95,49 @@\n     \n-var s float32 = ((num1 + num2)/2)%0A    fmt.Println( %22%25.\n+fmt.Println((num1 + num2)/2, \n num1\n- \n , %25\n-.\n+ \n num2\n-%22)%0A    fmt.Println(s)%0A\n+)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-15-59",
+            "content": "@@ -142,16 +142,17 @@\n rintln( \n+%22\n %25.num1 ,\n@@ -154,24 +154,25 @@\n um1 , %25.num2\n+%22\n )%0A    fmt.Pr\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-16-07",
+            "content": "@@ -125,16 +125,50 @@\n um2)/2)%0A\n+    fmt.Println( %25.num1 , %25.num2)%0A\n     fmt.\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-16-42",
+            "content": "@@ -142,20 +142,11 @@\n rint\n-f(%22%25.2f%5Cn%22, \n+ln(\n s)%0A%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_17-18-08",
+            "content": "@@ -143,17 +143,17 @@\n intf(%22%25.\n-1\n+2\n f%5Cn%22, s)\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_17-18-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 float32\n    fmt.Scan(&num1, &num2)\n    var s float32 = ((num1 + num2)/2)\n    fmt.Printf(\"%.1f\\n\", s)\n\n}\n",
+            "lines": "9"
         }
     ]
 }

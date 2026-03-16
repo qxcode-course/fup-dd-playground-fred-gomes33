@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-03-10_18-14-18",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -41,51 +41,11 @@\n     \n-var bombons, kids int %0A    %0A    fmt.Scan(&)\n+fmt\n %0A   \n",
             "lines": "6"
+        },
+        {
+            "label": "2026-03-16_16-53-51",
+            "content": "@@ -45,18 +45,21 @@\n var \n-num1, num2\n+bombons, kids\n  int\n@@ -83,19 +83,8 @@\n an(&\n-num1, &num2\n )%0A  \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_17-01-18",
+            "content": "@@ -109,19 +109,16 @@\n tln(\n-num1 / num2\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_17-01-52",
+            "content": "@@ -120,11 +120,8 @@\n num2\n-%2510\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_17-04-50",
+            "content": "@@ -120,21 +120,11 @@\n num2\n-, num1 %25 num2\n+%2510\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_17-07-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 int \n    \n    fmt.Scan(&num1, &num2)\n    fmt.Println(num1 / num2, num1 % num2)\n}\n",
+            "lines": "8"
         }
     ]
 }

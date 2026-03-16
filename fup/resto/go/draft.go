@@ -1,8 +1,8 @@
 package main
 import "fmt"
 func main() {
-    var bombons, kids int 
+    var num1, num2 int 
     
-    fmt.Scan(&)
-    fmt.Println("qxcode")
+    fmt.Scan(&num1, &num2)
+    fmt.Println(num1 / num2, num1 % num2)
 }

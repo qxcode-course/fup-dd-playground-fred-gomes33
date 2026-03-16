@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_17-23-47",
+            "content": "@@ -44,190 +44,34 @@\n var \n-pro1, pro2, pro3, val1, val2, val3, tot float64%0A   fmt.Scan(&pro1, &pro2, &pro3, &val1, &val2, &val3, &tot)%0A   var S float64 = (%0A    (pro1 * val1) + (pro2 * val2) + (pro3 * val3) ) %0A\n+num1, num2, num3 flo%0A   %0A \n    f\n@@ -85,9 +85,16 @@\n tln(\n-S\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-34-08",
+            "content": "@@ -223,11 +223,8 @@\n l3) \n-* 7\n ) %0A \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_17-34-55",
+            "content": "@@ -76,21 +76,19 @@\n , val3, \n-money\n+tot\n  float64\n@@ -143,21 +143,19 @@\n &val3, &\n-money\n+tot\n )%0A   var\n@@ -176,17 +176,8 @@\n %0A   \n- (money -\n  (pr\n@@ -218,17 +218,20 @@\n  * val3)\n-)\n+ * 7\n ) %0A   fm\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_17-37-16",
+            "content": "@@ -44,20 +44,23 @@\n var \n-qu1, qu2, qu\n+pro1, pro2, pro\n 3, v\n@@ -107,22 +107,25 @@\n an(&\n-qu\n+pro\n 1, &\n-qu\n+pro\n 2, &\n-qu\n+pro\n 3, &\n@@ -187,19 +187,19 @@\n oney - (\n-(qu\n+pro\n 1 * val1\n@@ -203,18 +203,19 @@\n al1) + (\n-qu\n+pro\n 2 * val2\n@@ -223,10 +223,11 @@\n  + (\n-qu\n+pro\n 3 * \n@@ -233,17 +233,16 @@\n  val3)))\n-)\n  %0A   fmt\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_17-39-04",
+            "content": "@@ -84,18 +84,18 @@\n ey float\n-32\n+64\n %0A   fmt.\n@@ -164,10 +164,10 @@\n loat\n-32\n+64\n  = (\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_17-39-49",
+            "content": "@@ -248,14 +248,8 @@\n ln(S\n-, %25.2f\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_17-40-28",
+            "content": "@@ -250,14 +250,12 @@\n (S, \n-%22\n %25.2f\n-%22\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_17-40-37",
+            "content": "@@ -244,21 +244,20 @@\n rint\n-f(%22%25.1f%5Cn%22, S\n+ln(S, %22%25.2f%22\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_17-41-32",
+            "content": "@@ -245,17 +245,17 @@\n intf(%22%25.\n-2\n+1\n f%5Cn%22, S)\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_17-41-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var qu1, qu2, qu3, val1, val2, val3, money float32\n   fmt.Scan(&qu1, &qu2, &qu3, &val1, &val2, &val3, &money)\n   var S float32 = (\n    (money - ((qu1 * val1) + (qu2 * val2) + (qu3 * val3)))) \n   fmt.Printf(\"%.2f\\n\", S)\n}\n",
+            "lines": "9"
+        }
+    ]
+}
