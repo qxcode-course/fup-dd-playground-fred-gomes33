@@ -10,39 +10,16 @@ sources:
   target: https://github.com/qxcodefup/arcade.git
   type: git
   writeable: false
-  cache_timestamp: '2026-03-17 16:50:08'
   quests: null
   tasks: null
 expanded:
-- fup@missão-operações
-- fup@missão-dicionários
-- fup@problemas-seleção
-- fup@jogos-em-modo-texto
 - fup@campanha-principal
-- fup@missão-vetores-1
-- fup@problemas-operações
-- fup@problemas-recursão
-- fup@problemas-vetores-2
-- fup@missão-structs
-- fup@missão-strings-1
-- fup@missão-recursão
-- fup@missão-matrizes
-- sandbox@sandbox:00_rascunhos
 - fup@projetos
-- fup@missão-seleção-2
-- fup@missão-seleção-1
-- fup@problemas-strings-1
-- fup@missão-repetição-1
-- fup@problemas-strings-2
-- fup@missão-repetição-2
 - sandbox@sandbox
+- fup@jogos-em-modo-texto
+- fup@missão-operações
+- sandbox@sandbox:00_rascunhos
 - fup@repositorio-de-problemas
-- fup@missão-vetores-2
-- fup@problemas-vetores-1
-- fup@problemas-matrizes
-- fup@problemas-repetição
-- fup@missão-vetores-3
-- fup@missão-strings-2
 tasks:
   sandbox@user_003: '{rate:100}'
   fup@tres: '{self:1, rate:100, study:13}'
@@ -50,7 +27,8 @@ tasks:
   fup@media: '{self:1, rate:100, study:17}'
   fup@sobrou: '{self:1, rate:100, study:14}'
   fup@celsius: '{rate:100}'
-  fup@pintando: '{rate:25}'
+  fup@pintando: '{rate:100}'
+  fup@bala: '{rate:100}'
 flags:
   painel: 0
   quests: 2
@@ -59,4 +37,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@pintando
+selected: fup@segundos

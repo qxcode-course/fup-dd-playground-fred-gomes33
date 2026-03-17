@@ -52,8 +52,33 @@
         },
         {
             "label": "2026-03-16_17-59-17",
-            "content": "package main\nimport \"fmt\"\nvar min, hor, totalmin float64\nfunc main() {\n   fmt.Scan(&min, &hor)\n   hor = min / 60\n   totalmin = min % 60\n   fmt.Printf(\"%.0f minutos\\n\", min)\n    fmt.Println(hor)\n}\n",
+            "content": "@@ -23,110 +23,174 @@\n mt%22%0A\n-%0Afunc main() %7B%0A    var min, hor float64%0A    fmt.Scan(&min, &hor)%0A    fmt.Println(min * 60 + hor * 3600\n+var min, hor, totalmin float64%0Afunc main() %7B%0A   fmt.Scan(&min, &hor)%0A   hor = min / 60%0A   totalmin = min %25 60%0A   fmt.Printf(%22%25.0f minutos%5Cn%22, min)%0A    fmt.Println(hor\n )%0A%7D%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-03-17_18-03-20",
+            "content": "@@ -104,18 +104,29 @@\n tln(\n-3641 /\n+min * 60 + hor *\n  360\n+0\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_18-05-13",
+            "content": "@@ -46,215 +46,76 @@\n var \n-temp, hor, min, seg, restt, rests float64%0A    fmt.Scan(&temp)%0A    hor = temp / 3600 %0A    restt = temp %253600%0A    min = restt / 60%0A    rests = restt %2560%0A    seg = rests / 60%0A    fmt.Println(hor,%22:%22,min,%22:%22,seg\n+min, hor float64%0A    fmt.Scan(&min, &hor)%0A    fmt.Println(3641 / 360\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_18-21-52",
+            "content": "@@ -76,18 +76,20 @@\n , rests \n-in\n+floa\n t64%0A    \n@@ -145,17 +145,16 @@\n = temp %25\n- \n 3600%0A   \n@@ -190,17 +190,16 @@\n  restt %25\n- \n 60%0A    s\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-17_18-22-52",
+            "content": "@@ -231,32 +231,27 @@\n rint\n-f(%22%25d:%25d:%25d%22, hor, min, \n+ln(hor,%22:%22,min,%22:%22,\n seg)\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-17_18-24-42",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var temp, hor, min, seg, restt, rests int64\n    fmt.Scan(&temp)\n    hor = temp / 3600 \n    restt = temp % 3600\n    min = restt / 60\n    rests = restt % 60\n    seg = rests / 60\n    fmt.Printf(\"%d:%d:%d\", hor, min, seg)\n}\n",
+            "lines": "13"
         }
     ]
 }

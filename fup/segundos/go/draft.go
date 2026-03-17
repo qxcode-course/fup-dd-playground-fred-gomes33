@@ -1,7 +1,13 @@
 package main
 import "fmt"
-var min int
+
 func main() {
-    fmt.Scan(&min, )
-    fmt.Println("qxcode")
+    var temp, hor, min, seg, restt, rests int64
+    fmt.Scan(&temp)
+    hor = temp / 3600 
+    restt = temp % 3600
+    min = restt / 60
+    rests = restt % 60
+    seg = rests / 60
+    fmt.Printf("%d:%d:%d", hor, min, seg)
 }

@@ -52,8 +52,113 @@
         },
         {
             "label": "2026-03-17_17-03-38",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var l1, l2, l3, tt float64\n    fmt.Scan(&l1, &l2, &l3, &tt)\n   tt = (l1 + l2 + l3) / 2\n\n    fmt.Printf(\"%.2f\\n\", tt)\n}\n",
+            "content": "@@ -124,16 +124,17 @@\n l3) / 2%0A\n+%0A\n     fmt.\n",
             "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-21-42",
+            "content": "@@ -122,17 +122,17 @@\n + l3) / \n-3\n+2\n %0A    fmt\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_17-22-25",
+            "content": "@@ -126,13 +126,9 @@\n ) / \n-2%0A   \n+3\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_17-22-34",
+            "content": "@@ -59,12 +59,8 @@\n , tt\n-, AT\n  flo\n@@ -99,13 +99,8 @@\n  &tt\n-, &AT\n )%0A  \n@@ -131,53 +131,8 @@\n %0A   \n-AT = (tt * (tt - l1) * (tt - l2) * (tt - l3))\n %0A   \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-26-11",
+            "content": "@@ -183,17 +183,16 @@\n - l3))%0A \n-%0A\n    fmt.P\n@@ -207,14 +207,14 @@\n .2f%5Cn%22, \n-AT\n+tt\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-29-25",
+            "content": "@@ -187,22 +187,8 @@\n ))%0A \n-   AT = AT / 6\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_17-30-01",
+            "content": "@@ -196,18 +196,17 @@\n  = AT / \n-tt\n+6\n %0A   fmt.\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_17-30-19",
+            "content": "@@ -184,16 +184,11 @@\n  l3)\n- / tt \n )%0A\n+ \n    A\n@@ -194,16 +194,20 @@\n AT = AT \n+/ tt\n %0A   fmt.\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_17-33-49",
+            "content": "@@ -185,15 +185,26 @@\n l3) \n-* 0.5 )\n+/ tt )%0A   AT = AT \n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_17-34-17",
+            "content": "@@ -185,17 +185,16 @@\n l3) * 0.\n-2\n 5 )%0A   f\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-34-31",
+            "content": "@@ -189,10 +189,11 @@\n * 0.\n-16\n+25 \n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-35-43",
+            "content": "@@ -189,10 +189,10 @@\n * 0.\n-20\n+16\n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-35-51",
+            "content": "@@ -189,10 +189,10 @@\n * 0.\n-18\n+20\n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-36-01",
+            "content": "@@ -190,9 +190,9 @@\n  0.1\n-7\n+8\n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-36-09",
+            "content": "@@ -186,17 +186,17 @@\n 3) * 0.1\n-6\n+7\n )%0A   fmt\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-36-20",
+            "content": "@@ -147,17 +147,16 @@\n = (tt * \n-(\n (tt - l1\n@@ -180,17 +180,16 @@\n tt - l3)\n-)\n  * 0.16)\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-39-11",
+            "content": "@@ -183,18 +183,21 @@\n  - l3)) \n-/ \n+* 0.1\n 6)%0A   fm\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-45-09",
+            "content": "@@ -185,18 +185,17 @@\n  l3)) / \n-tt\n+6\n )%0A   fmt\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-45-27",
+            "content": "@@ -23,15 +23,8 @@\n mt%22%0A\n-import%0A\n func\n@@ -63,14 +63,8 @@\n , AT\n-, raiz\n  flo\n@@ -108,15 +108,8 @@\n  &AT\n-, &raiz\n )%0A  \n@@ -186,32 +186,13 @@\n l3))\n-)%0A   raiz = math.Sqrt(AT\n+ / tt\n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_17-49-03",
+            "content": "@@ -29,15 +29,8 @@\n port\n- %22math%22\n %0Afun\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-49-10",
+            "content": "@@ -259,16 +259,14 @@\n .2f%5Cn%22, \n-raiz\n+AT\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-49-30",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var l1, l2, l3, tt, AT, raiz float64\n    fmt.Scan(&l1, &l2, &l3, &tt, &AT, &raiz)\n   tt = (l1 + l2 + l3) / 2\n   AT = (tt * ((tt - l1) * (tt - l2) * (tt - l3)))\n   raiz = math.Sqrt(AT)\n   fmt.Printf(\"%.2f\\n\", raiz)\n}\n",
+            "lines": "11"
         }
     ]
 }

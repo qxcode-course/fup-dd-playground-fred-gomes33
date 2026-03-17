@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_17-50-30",
+            "content": "@@ -23,22 +23,8 @@\n mt%22%0A\n-import %22math%22%0A\n func\n@@ -39,106 +39,8 @@\n %7B%0A  \n-var x1, y1, x2, y2, d float64%0A  fmt.Scan(&x1, &y1, &x2, &y2, &d)  %0A  d = math.Hypot(x2-x1, y2-y1)%0A\n   fm\n@@ -53,10 +53,16 @@\n tln(\n-d)%0A\n+%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_17-57-08",
+            "content": "@@ -151,35 +151,8 @@\n y1)%0A\n- d = math.Round(d*100)/100%0A\n   fm\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_17-58-37",
+            "content": "@@ -192,17 +192,8 @@\n tln(\n-%22%25.2f%5Cn%22,\n d)%0A%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-59-19",
+            "content": "@@ -185,16 +185,18 @@\n mt.Print\n+ln\n (%22%25.2f%5Cn\n@@ -197,15 +197,14 @@\n %25.2f%5Cn%22,\n- \n d)%0A%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-59-28",
+            "content": "@@ -185,17 +185,16 @@\n mt.Print\n-f\n (%22%25.2f%5Cn\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-59-42",
+            "content": "@@ -164,17 +164,25 @@\n .Round(d\n-)\n+*100)/100\n %0A  fmt.P\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_18-00-30",
+            "content": "@@ -168,17 +168,9 @@\n nd(d\n-*100)/100\n+)\n %0A  f\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_18-00-40",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n  var x1, y1, x2, y2, d float64\n  fmt.Scan(&x1, &y1, &x2, &y2, &d)  \n  d = math.Hypot(x2-x1, y2-y1)\n d = math.Round(d*100)/100\n  fmt.Printf(\"%.2f\\n\", d)\n\n}\n",
+            "lines": "11"
+        }
+    ]
+}
