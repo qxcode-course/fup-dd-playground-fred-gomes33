@@ -72,7 +72,32 @@
         },
         {
             "label": "2026-03-16_18-23-41",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var celsius, fahrenheit float64\n   fmt.Scan(&celsius, &fahrenheit)\n   fahrenheit = (celsius * 9/5) + 32\n    fmt.Println(fahrenheit, \"%.2f\\n\",)\n}\n",
+            "content": "@@ -158,30 +158,32 @@\n rint\n-f(%22%25.2f%5Cn%22, fahrenheit\n+ln(fahrenheit, %22%25.2f%5Cn%22,\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_16-50-46",
+            "content": "@@ -159,17 +159,17 @@\n intf(%22%25.\n-6\n+2\n f%5Cn%22, fa\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_16-51-01",
+            "content": "@@ -158,10 +158,9 @@\n rint\n-ln\n+f\n (%22%25.\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_16-52-08",
+            "content": "@@ -154,16 +154,18 @@\n mt.Print\n+ln\n (%22%25.6f%5Cn\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_16-52-52",
+            "content": "@@ -154,17 +154,16 @@\n mt.Print\n-f\n (%22%25.6f%5Cn\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_16-53-20",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var celsius, fahrenheit float64\n   fmt.Scan(&celsius, &fahrenheit)\n   fahrenheit = (celsius * 9/5) + 32\n    fmt.Printf(\"%.6f\\n\", fahrenheit)\n}\n",
             "lines": "8"
         }
     ]
