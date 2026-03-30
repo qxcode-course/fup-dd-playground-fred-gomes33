@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_18-17-10",
+            "content": "@@ -56,22 +56,8 @@\n quap\n-, valp1, valp2\n  int\n@@ -87,93 +87,9 @@\n quap\n-, &valp1, &valp2)%0Avalp1 = valtv * quap / 100%0Avalp2 = valtv - valp1%0Aif valp1 %3E valp2 %7B\n+)\n %0A   \n@@ -110,14 +110,16 @@\n tln(\n-valp2\n+%22qxcode%22\n )%0A%7D%0A\n-%7D\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-30_18-19-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valtv, quap, valp1, valp2 int\n    fmt.Scan(&valtv, &quap, &valp1, &valp2)\nvalp1 = valtv * quap / 100\nvalp2 = valtv - valp1\nif valp1 > valp2 {\n    \n    fmt.Println(valp2)\n}\n}",
+            "lines": "12"
+        }
+    ]
+}

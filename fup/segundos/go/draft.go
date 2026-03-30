@@ -8,6 +8,6 @@ func main() {
     restt = temp % 3600
     min = restt / 60
     rests = restt % 60
-    seg = rests / 60
-    fmt.Printf("%d:%d:%d", hor, min, seg)
+    seg = rests % 60
+    fmt.Printf("%d:%d:%d\n", hor, min, seg)
 }

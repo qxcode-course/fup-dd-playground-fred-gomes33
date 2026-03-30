@@ -13,28 +13,28 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@campanha-principal
-- fup@projetos
+- fup@operacoes-basic-base
 - sandbox@sandbox
-- fup@jogos-em-modo-texto
-- fup@missão-operações
 - sandbox@sandbox:00_rascunhos
-- fup@repositorio-de-problemas
+- '@fup@operacoes-basic-base_sem_quest'
 tasks:
   sandbox@user_003: '{rate:100}'
   fup@tres: '{self:1, rate:100, study:13}'
   fup@resto: '{self:1, rate:100, study:15}'
   fup@media: '{self:1, rate:100, study:17}'
   fup@sobrou: '{self:1, rate:100, study:14}'
-  fup@celsius: '{rate:100}'
-  fup@pintando: '{rate:100}'
-  fup@bala: '{rate:100}'
+  fup@segundos: '{self:1, rate:100, study:49, friend:Emilly}'
+  fup@celsius: '{self:1, rate:100, study:15}'
+  fup@pintando: '{self:1, rate:100, study:38}'
+  fup@bala: '{self:1, rate:100, study:10}'
+  fup@quebrada: '{self:1, rate:100, study:24}'
+  fup@operacoes: '{self:1, rate:100, study:41}'
 flags:
   painel: 0
-  quests: 2
+  quests: 0
   tracks: 0
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@segundos
+selected: fup@vetores-1-list1-list1-for1

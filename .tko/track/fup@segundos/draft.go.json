@@ -77,7 +77,42 @@
         },
         {
             "label": "2026-03-17_18-24-42",
-            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var temp, hor, min, seg, restt, rests int64\n    fmt.Scan(&temp)\n    hor = temp / 3600 \n    restt = temp % 3600\n    min = restt / 60\n    rests = restt % 60\n    seg = rests / 60\n    fmt.Printf(\"%d:%d:%d\", hor, min, seg)\n}\n",
+            "content": "@@ -251,17 +251,15 @@\n r, min, \n-rests\n+seg\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_16-54-34",
+            "content": "@@ -251,15 +251,17 @@\n r, min, \n-seg\n+rests\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_16-54-53",
+            "content": "@@ -213,18 +213,13 @@\n sts \n-%25\n+/\n  60%0A\n-    %0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_16-55-35",
+            "content": "@@ -210,24 +210,29 @@\n  rests %25 60%0A\n+    %0A\n     fmt.Prin\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_16-55-55",
+            "content": "@@ -231,10 +231,9 @@\n rint\n-ln\n+f\n (%22%25d\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_16-57-04",
+            "content": "@@ -227,17 +227,18 @@\n mt.Print\n-f\n+ln\n (%22%25d:%25d:\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_16-57-16",
+            "content": "@@ -242,10 +242,8 @@\n d:%25d\n-%5Cn\n %22, h\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_17-22-14",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var temp, hor, min, seg, restt, rests int64\n    fmt.Scan(&temp)\n    hor = temp / 3600 \n    restt = temp % 3600\n    min = restt / 60\n    rests = restt % 60\n    seg = rests % 60\n    fmt.Printf(\"%d:%d:%d\\n\", hor, min, seg)\n}\n",
             "lines": "13"
         }
     ]
