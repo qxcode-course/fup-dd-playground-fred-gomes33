@@ -7,8 +7,223 @@
         },
         {
             "label": "2026-03-30_18-19-23",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valtv, quap, valp1, valp2 int\n    fmt.Scan(&valtv, &quap, &valp1, &valp2)\nvalp1 = valtv * quap / 100\nvalp2 = valtv - valp1\nif valp1 > valp2 {\n    \n    fmt.Println(valp2)\n}\n}",
+            "content": "@@ -62,14 +62,16 @@\n valp\n+1\n , val\n-t\n+p2\n  int\n@@ -108,21 +108,24 @@\n valp\n+1\n , &val\n-t\n+p2\n )%0Avalp\n+1\n  = v\n@@ -135,22 +135,64 @@\n v * \n-1%0Avalt = valp%0A\n+quap / 100%0Avalp2 = valtv - valp1%0Aif valp1 %3E valp2 %7B%0A    \n %0A   \n@@ -211,11 +211,11 @@\n (val\n-t)%0A%0A%0A\n+p2)%0A%7D\n %0A%7D\n",
             "lines": "12"
+        },
+        {
+            "label": "2026-03-31_16-57-30",
+            "content": "@@ -161,16 +161,8 @@\n tln(\n-%22%25;2f%5Cn%22\n valt\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-57-47",
+            "content": "@@ -165,18 +165,16 @@\n %22%25;2f%5Cn%22\n-, \n valt)%0A%0A%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-57-53",
+            "content": "@@ -154,17 +154,18 @@\n mt.Print\n-f\n+ln\n (%22%25;2f%5Cn\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-57-58",
+            "content": "@@ -158,17 +158,17 @@\n rintf(%22%25\n-.\n+;\n 2f%5Cn%22, v\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-58-06",
+            "content": "@@ -158,10 +158,9 @@\n rint\n-ln\n+f\n (%22%25.\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-58-18",
+            "content": "@@ -154,16 +154,18 @@\n mt.Print\n+ln\n (%22%25.2f%5Cn\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-58-27",
+            "content": "@@ -158,10 +158,8 @@\n rint\n-ln\n (%22%25.\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-58-55",
+            "content": "@@ -69,15 +69,11 @@\n alt \n-float64\n+int\n %0A   \n@@ -154,17 +154,18 @@\n mt.Print\n-f\n+ln\n (%22%25.2f%5Cn\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-59-57",
+            "content": "@@ -180,38 +180,8 @@\n lt)%0A\n-    fmt.Printf(%22%25.2f%5Cn%22, valt)\n %0A%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-00-09",
+            "content": "@@ -180,12 +180,38 @@\n lt)%0A    \n+fmt.Printf(%22%25.2f%5Cn%22, valt)\n %0A%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-00-38",
+            "content": "@@ -184,34 +184,8 @@\n     \n-fmt.Printf(%22%25.2f%5Cn%22, valp)\n %0A%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-00-57",
+            "content": "@@ -126,17 +126,16 @@\n p = \n-(\n valtv * \n (5/1\n@@ -134,16 +134,9 @@\n v * \n-(5/100))\n+1\n %0Aval\n@@ -180,12 +180,38 @@\n lt)%0A    \n+fmt.Printf(%22%25.2f%5Cn%22, valp)\n %0A%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-02-22",
+            "content": "@@ -119,56 +119,81 @@\n lt)%0A\n-    \n valp = \n+(\n valt\n+v\n  * \n-0.2%0A    %0A%0A    %0A    %0Afmt.Print()\n+(5/100))%0Avalt = valp%0A%0A    fmt.Printf(%22%25.2f%5Cn%22, valt)%0A    %0A\n %0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-08-17",
+            "content": "@@ -137,16 +137,20 @@\n t * 0.2%0A\n+    \n %0A%0A    %0A \n@@ -163,16 +163,12 @@\n t.Print(\n-valp\n )%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-08-27",
+            "content": "@@ -130,31 +130,18 @@\n p = \n-(\n valt\n-v\n  * \n-(quap / 100)) \n+0.2\n %0A%0A%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-10-14",
+            "content": "@@ -126,24 +126,25 @@\n  valp = \n+(\n valtv * \n quap / v\n@@ -139,50 +139,22 @@\n v * \n+(\n quap / \n-valt%0A    valt = valtv * quap / valp\n+100)) \n %0A%0A%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-11-07",
+            "content": "@@ -179,16 +179,26 @@\n  valp%0A%0A%0A\n+    %0A    %0A\n fmt.Prin\n@@ -207,19 +207,8 @@\n valp\n-, %22 %22, valt\n )%0A%0A%7D\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-11-24",
+            "content": "@@ -177,20 +177,18 @@\n  / valp%0A\n-    \n+%0A%0A\n fmt.Prin\n@@ -192,48 +192,17 @@\n rint\n-f(%22%25.2f%5Cn%22, valp)%0A    fmt.Printf(%22%25.2f%5Cn\n+(valp, %22 \n %22, v\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-11-48",
+            "content": "@@ -123,98 +123,66 @@\n     \n-if\n+valp =\n  valtv \n-%3E 0 && quap %3E 0 && valp %3E 0 && valt %3E 0 %7B%0A        if\n+* quap / valt%0A    valt =\n  valtv \n-%3E\n+*\n  quap\n-*\n+ / \n valp\n- %7B\n %0A\n-        \n     \n@@ -206,44 +206,14 @@\n n%22, \n-quap*\n valp)%0A\n-        %7D else %7B%0A        \n     \n@@ -241,52 +241,8 @@\n valt\n-v)%0A        %7D%0A        fmt.Print(valt)%0A    %7D   \n+)\n %0A%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-12-52",
+            "content": "@@ -123,78 +123,163 @@\n     \n-valp =\n+if\n  valtv \n-* quap / valt%0A    valt =\n+%3E 0 && quap %3E 0 && valp %3E 0 && valt %3E 0 %7B%0A        if\n  valtv \n-*\n+%3E\n  quap\n- / valp%0A%0A%0A\n+*valp %7B%0A            fmt.Printf(%22%25.2f%5Cn%22, quap*valp)%0A        %7D else %7B%0A \n     \n-%0A\n     \n-%0A\n+   \n fmt.\n@@ -294,15 +294,61 @@\n %25.2f\n+%5Cn\n %22, val\n-p)\n+tv)%0A        %7D%0A        fmt.Print(valt)%0A    %7D   \n %0A%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-31_17-34-44",
+            "content": "@@ -157,25 +157,38 @@\n  val\n-p\n+t\n  =\n+ valtv *\n  quap \n-*\n+/\n  val\n-t%0A%0A\n+p%0A%0A%0A    \n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-35-39",
+            "content": "@@ -136,11 +136,44 @@\n ltv \n-+ 0\n+* quap / valt%0A    valp = quap * valt\n %0A%0A%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-38-56",
+            "content": "@@ -140,24 +140,8 @@\n + 0%0A\n-    valt = valp%0A\n %0A%0A  \n@@ -166,18 +166,12 @@\n f%22, valp\n-, valt\n )%0A%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-39-55",
+            "content": "@@ -179,10 +179,8 @@\n %25.2f\n-%5Cn\n %22, v\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-40-08",
+            "content": "@@ -177,22 +177,16 @@\n (%22%25.2f%5Cn\n-%25.2f%5Cn\n %22, valp,\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-40-17",
+            "content": "@@ -179,15 +179,29 @@\n %25.2f\n+%5Cn%25.2f%5Cn\n %22, valp\n+, valt\n )%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-40-36",
+            "content": "@@ -179,28 +179,15 @@\n %25.2f\n- %25.2f%5Cn\n %22, valp\n-, valt\n )%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-42-07",
+            "content": "@@ -175,18 +175,17 @@\n tf(%22%25.2f\n-%5Cn\n+ \n %25.2f%5Cn%22,\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-42-21",
+            "content": "@@ -175,16 +175,18 @@\n tf(%22%25.2f\n+%5Cn\n %25.2f%5Cn%22,\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-42-41",
+            "content": "@@ -175,18 +175,16 @@\n tf(%22%25.2f\n-%5Cn\n %25.2f%5Cn%22,\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-42-49",
+            "content": "@@ -179,39 +179,28 @@\n %25.2f\n-%22, valp)%0Afmt.Printf(%22%25.2f%22\n+%5Cn%25.2f%5Cn%22, valp\n , valt)%0A\n %7D\n@@ -198,9 +198,10 @@\n , valt)%0A\n+%0A\n %7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-43-20",
+            "content": "@@ -179,10 +179,8 @@\n %25.2f\n-%5Cn\n %22, v\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-43-28",
+            "content": "@@ -151,20 +151,16 @@\n t = valp\n- + 0\n %0A%0A%0A    %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-44-08",
+            "content": "@@ -138,11 +138,8 @@\n v + \n-1.2\n 0%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-44-36",
+            "content": "@@ -138,11 +138,12 @@\n v + \n+1.\n 20\n-%25\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-45-08",
+            "content": "@@ -126,17 +126,16 @@\n  valp = \n-(\n valtv + \n@@ -140,26 +140,9 @@\n + 20\n-*valtv/100) / quap\n+%25\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-45-42",
+            "content": "@@ -176,14 +176,12 @@\n alp \n-* quap\n++ 0%0A\n %0A%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-46-03",
+            "content": "@@ -132,16 +132,27 @@\n = (valtv\n+ + 20*valtv\n /100) / \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-46-26",
+            "content": "@@ -196,27 +196,40 @@\n 2f%5Cn\n-%25.2f%5Cn\n %22, valp\n+)%0Afmt.Printf(%22%25.2f%22\n , valt)%0A\n %0A%7D\n@@ -226,10 +226,9 @@\n , valt)%0A\n-%0A\n %7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-47-05",
+            "content": "@@ -130,15 +130,21 @@\n p = \n+(\n valtv\n- +\n+/100) /\n  qua\n@@ -167,12 +167,12 @@\n p * \n-0.15\n+quap\n %0A%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-48-45",
+            "content": "@@ -136,9 +136,9 @@\n ltv \n-*\n++\n  qua\n@@ -159,13 +159,14 @@\n alp \n-/ 100\n+* 0.15\n %0A%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-49-27",
+            "content": "@@ -159,21 +159,13 @@\n alp \n-* 0.15  %0A    \n+/ 100\n %0A%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-53-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valtv, quap, valp, valt float64\n    fmt.Scan(&valtv, &quap, &valp, &valt)\n    valp = valtv * quap\n    valt = valp * 0.15  \n    \n\n    \nfmt.Printf(\"%.2f\\n%.2f\\n\", valp, valt)\n\n}",
+            "lines": "13"
         }
     ]
 }

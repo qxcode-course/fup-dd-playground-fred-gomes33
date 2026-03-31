@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_16-49-36",
+            "content": "@@ -237,16 +237,8 @@\n tln(\n-%22%25.2f%22, \n dese\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_16-50-05",
+            "content": "@@ -230,17 +230,18 @@\n mt.Print\n-f\n+ln\n (%22%25.2f%22,\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_16-50-12",
+            "content": "@@ -230,16 +230,17 @@\n mt.Print\n+f\n (%22%25.2f%22,\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_16-50-15",
+            "content": "@@ -238,16 +238,17 @@\n (%22%25.2f%22,\n+ \n desem)%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_16-50-24",
+            "content": "@@ -237,17 +237,16 @@\n t(%22%25.2f%22\n- \n ,desem)%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_16-50-29",
+            "content": "@@ -237,18 +237,18 @@\n t(%22%25.2f%22\n-,\n  \n+,\n desem)%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_16-50-43",
+            "content": "@@ -234,17 +234,14 @@\n rint\n-f\n (%22%25.2f\n-%5Cn\n %22, d\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_16-51-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var vm, tempmin, cons, temph, dist, desem float64\n    fmt.Scan(&vm, &tempmin, &cons, &temph, &dist, &desem)\n    temph = tempmin / 60\n    dist = vm * temph\n    desem = dist / cons\n\n    fmt.Printf(\"%.2f\\n\", desem)\n}\n",
+            "lines": "11"
+        }
+    ]
+}

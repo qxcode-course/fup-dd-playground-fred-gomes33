@@ -13,10 +13,10 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@operacoes-basic-base
+- '@fup@operacoes-basic-base_sem_quest'
 - sandbox@sandbox
 - sandbox@sandbox:00_rascunhos
-- '@fup@operacoes-basic-base_sem_quest'
+- fup@operacoes-basic-base
 tasks:
   sandbox@user_003: '{rate:100}'
   fup@tres: '{self:1, rate:100, study:13}'
@@ -29,6 +29,8 @@ tasks:
   fup@bala: '{self:1, rate:100, study:10}'
   fup@quebrada: '{self:1, rate:100, study:24}'
   fup@operacoes: '{self:1, rate:100, study:41}'
+  fup@data: '{self:1, rate:100, study:22}'
+  fup@opala: '{self:1, rate:100, study:11}'
 flags:
   painel: 0
   quests: 0
@@ -37,4 +39,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@vetores-1-list1-list1-for1
+selected: fup@opala

@@ -1,0 +1,98 @@
+2026-03-31 16:41:13, MOVE, v:1, k:fup@data, mode:PICK
+2026-03-31 16:42:07, MOVE, v:1, k:fup@data, mode:BACK
+2026-03-31 16:42:17, MOVE, v:1, k:fup@opala, mode:PICK
+2026-03-31 16:49:36, EXEC, v:1, k:fup@opala, mode:FULL, rate:0, size:11
+2026-03-31 16:50:05, EXEC, v:1, k:fup@opala, mode:FULL, rate:0, size:11
+2026-03-31 16:50:12, EXEC, v:1, k:fup@opala, mode:FULL, rate:0, size:11
+2026-03-31 16:50:15, EXEC, v:1, k:fup@opala, mode:FULL, rate:0, size:11
+2026-03-31 16:50:24, EXEC, v:1, k:fup@opala, mode:FULL, rate:0, size:11
+2026-03-31 16:50:29, EXEC, v:1, k:fup@opala, mode:FULL, rate:0, size:11
+2026-03-31 16:50:43, EXEC, v:1, k:fup@opala, mode:FULL, rate:0, size:11
+2026-03-31 16:51:05, EXEC, v:1, k:fup@opala, mode:FULL, rate:100, size:11
+2026-03-31 16:51:10, MOVE, v:1, k:fup@opala, mode:BACK
+2026-03-31 16:51:13, MOVE, v:1, k:fup@tv, mode:PICK
+2026-03-31 16:57:30, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 16:57:47, EXEC, v:1, k:fup@tv, mode:FULL, size:13, fail:COMP
+2026-03-31 16:57:53, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 16:57:58, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 16:58:06, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 16:58:10, EXEC, v:1, k:fup@tv, mode:FULL, rate:0
+2026-03-31 16:58:18, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 16:58:27, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 16:58:55, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 16:59:08, MOVE, v:1, k:fup@tv, mode:BACK
+2026-03-31 16:59:11, MOVE, v:1, k:fup@opala, mode:PICK
+2026-03-31 16:59:28, MOVE, v:1, k:fup@opala, mode:BACK
+2026-03-31 16:59:29, MOVE, v:1, k:fup@tv, mode:PICK
+2026-03-31 16:59:57, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:00:09, EXEC, v:1, k:fup@tv, mode:FULL, rate:16, size:13
+2026-03-31 17:00:38, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:00:57, EXEC, v:1, k:fup@tv, mode:FULL, rate:16, size:13
+2026-03-31 17:02:22, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:08:17, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:08:27, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:10:14, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:11:07, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:14
+2026-03-31 17:11:24, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:12
+2026-03-31 17:11:48, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:11
+2026-03-31 17:12:52, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:15
+2026-03-31 17:13:15, MOVE, v:1, k:fup@data, mode:PICK
+2026-03-31 17:15:33, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:10
+2026-03-31 17:16:12, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:9
+2026-03-31 17:16:27, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:9
+2026-03-31 17:16:42, MOVE, v:1, k:fup@data, mode:BACK
+2026-03-31 17:16:47, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-31 17:17:09, EXEC, v:1, k:fup@segundos, mode:FULL, rate:100
+2026-03-31 17:17:11, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-03-31 17:17:15, MOVE, v:1, k:fup@data, mode:PICK
+2026-03-31 17:17:17, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:9
+2026-03-31 17:17:59, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:9
+2026-03-31 17:18:10, EXEC, v:1, k:fup@data, mode:FULL, rate:0
+2026-03-31 17:22:51, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:9
+2026-03-31 17:23:07, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:9
+2026-03-31 17:23:49, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:9
+2026-03-31 17:24:13, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:9
+2026-03-31 17:25:16, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:9
+2026-03-31 17:26:07, EXEC, v:1, k:fup@data, mode:FULL, size:9, fail:COMP
+2026-03-31 17:27:48, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:10
+2026-03-31 17:28:14, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:10
+2026-03-31 17:29:47, EXEC, v:1, k:fup@data, mode:FULL, rate:0, size:10
+2026-03-31 17:29:54, EXEC, v:1, k:fup@data, mode:FULL, rate:100, size:10
+2026-03-31 17:30:09, MOVE, v:1, k:fup@data, mode:BACK
+2026-03-31 17:30:12, MOVE, v:1, k:fup@tv, mode:PICK
+2026-03-31 17:34:44, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:14
+2026-03-31 17:35:39, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:38:56, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:12
+2026-03-31 17:39:55, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:40:08, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:40:17, EXEC, v:1, k:fup@tv, mode:FULL, rate:16, size:13
+2026-03-31 17:40:36, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:40:50, MOVE, v:1, k:fup@tv, mode:BACK
+2026-03-31 17:40:53, MOVE, v:1, k:fup@operacoes, mode:PICK
+2026-03-31 17:41:02, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:100
+2026-03-31 17:41:04, MOVE, v:1, k:fup@operacoes, mode:BACK
+2026-03-31 17:41:13, MOVE, v:1, k:fup@operacoes, mode:PICK
+2026-03-31 17:41:15, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:100
+2026-03-31 17:42:03, MOVE, v:1, k:fup@operacoes, mode:BACK
+2026-03-31 17:42:05, MOVE, v:1, k:fup@tv, mode:PICK
+2026-03-31 17:42:07, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:42:21, EXEC, v:1, k:fup@tv, mode:FULL, rate:16, size:13
+2026-03-31 17:42:41, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:42:49, EXEC, v:1, k:fup@tv, mode:FULL, rate:16, size:13
+2026-03-31 17:43:20, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:43:28, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:44:08, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:44:36, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:45:08, EXEC, v:1, k:fup@tv, mode:FULL, size:13, fail:COMP
+2026-03-31 17:45:42, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:46:03, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:12
+2026-03-31 17:46:26, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:12
+2026-03-31 17:47:05, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:12
+2026-03-31 17:48:45, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:12
+2026-03-31 17:49:27, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:12
+2026-03-31 17:53:44, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:13
+2026-03-31 17:56:19, MOVE, v:1, k:fup@tv, mode:BACK
+2026-03-31 17:56:34, SELF, v:1, k:fup@data, self:1, rate:100, study:22
+2026-03-31 17:56:35, MOVE, v:1, k:fup@data, mode:PICK
+2026-03-31 17:56:36, MOVE, v:1, k:fup@data, mode:BACK
+2026-03-31 17:56:43, SELF, v:1, k:fup@opala, self:1, rate:100, study:11

@@ -1,9 +1,13 @@
 package main
 import "fmt"
 func main() {
-    var valtv, quap, valp1, valp2 int
-    fmt.Scan(&valtv, &quap, &valp1, &valp2)
-valp1 = valtv * quap / 100
-valp2 = valtv - valp1
+    var valtv, quap, valp, valt float64
+    fmt.Scan(&valtv, &quap, &valp, &valt)
+    valp = valtv * quap
+    valt = valp * 0.15  
+    
+
+    
+fmt.Printf("%.2f\n%.2f\n", valp, valt)
 
 }

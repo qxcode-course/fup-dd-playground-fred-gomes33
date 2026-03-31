@@ -2,7 +2,9 @@ package main
 import "fmt"
 func main() {
    var hor, min, dia, mes, ano int
-   fmt.Scanln(&hor, &min, &dia, &mes, &ano)
+   fmt.Scan(&hor, &min, &dia, &mes, &ano)
+    ano = ano % 100
 
-    fmt.Println("qxcode")
+    fmt.Printf("%02d:%02d %02d/%02d/%02d\n", hor, min, dia, mes, ano)
+    
 }
