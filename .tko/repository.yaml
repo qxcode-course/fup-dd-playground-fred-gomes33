@@ -13,10 +13,10 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@operacoes-basic-base
 - '@fup@operacoes-basic-base_sem_quest'
 - sandbox@sandbox
 - sandbox@sandbox:00_rascunhos
-- fup@operacoes-basic-base
 tasks:
   sandbox@user_003: '{rate:100}'
   fup@tres: '{self:1, rate:100, study:13}'
@@ -39,4 +39,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@opala
+selected: fup@bala
