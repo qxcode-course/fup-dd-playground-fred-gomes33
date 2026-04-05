@@ -75,3 +75,8 @@
 2026-04-05 14:07:26, MOVE, v:1, k:fup@quantos, mode:BACK
 2026-04-05 14:07:31, MOVE, v:1, k:fup@impar, mode:DOWN
 2026-04-05 14:07:35, MOVE, v:1, k:fup@impar, mode:PICK
+2026-04-05 14:10:24, MOVE, v:1, k:fup@impar, mode:BACK
+2026-04-05 14:10:29, MOVE, v:1, k:fup@guarda, mode:PICK
+2026-04-05 14:10:55, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-04-05 15:30:53, SELF, v:1, k:fup@guarda, self:1, rate:100, study:9
+2026-04-05 15:31:01, SELF, v:1, k:fup@quantos, self:1, rate:100, study:19
