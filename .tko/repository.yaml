@@ -13,12 +13,12 @@ sources:
   quests: null
   tasks: null
 expanded:
+- sandbox@sandbox:00_rascunhos
 - '@fup@operacoes-basic-base_sem_quest'
 - fup@selecao-1-if_else-if1-base
-- sandbox@sandbox:00_rascunhos
-- sandbox@sandbox
-- '@fup@selecao-1-if_else-if1-base_sem_quest'
 - fup@operacoes-basic-base
+- '@fup@selecao-1-if_else-if1-base_sem_quest'
+- sandbox@sandbox
 tasks:
   sandbox@user_003: '{rate:100}'
   fup@tres: '{self:1, rate:100, study:13}'
@@ -40,6 +40,8 @@ tasks:
   fup@positivo: '{self:1, rate:100, study:1}'
   fup@multiplo: '{self:1, rate:100, study:3}'
   fup@calc: '{self:1, rate:100, study:10, problem:1}'
+  fup@guarda: '{rate:100}'
+  fup@quantos: '{rate:100}'
 flags:
   painel: 0
   quests: 0
@@ -48,4 +50,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: sandbox@sandbox
+selected: fup@impar

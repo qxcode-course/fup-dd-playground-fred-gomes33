@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-05_13-54-12",
+            "content": "@@ -124,24 +124,8 @@\n 2 ==\n- num1 %7C%7C num2 ==\n  num\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-05_13-55-01",
+            "content": "@@ -148,25 +148,8 @@\n 3 %7C%7C\n- num3 == num2 %7C%7C \n  num\n@@ -173,16 +173,17 @@\n  == num1\n+ \n %7B%0A%09%09fmt.\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-05_13-56-47",
+            "content": "@@ -222,40 +222,8 @@\n lse \n-if num1 == num2 && num2 == num3 \n %7B%0A%09%09\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-05_13-57-52",
+            "content": "@@ -224,24 +224,32 @@\n e if num1 ==\n+ num2 &&\n  num2 == num\n@@ -275,35 +275,8 @@\n )%0A%09%7D\n- else %7B%0A%09%09fmt.Println(0)%0A%09%7D\n %0A%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-05_13-58-38",
+            "content": "@@ -232,16 +232,8 @@\n 1 ==\n- num2 &&\n  num\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-05_13-59-26",
+            "content": "@@ -248,24 +248,8 @@\n 2 ==\n- num3 && num1 ==\n  num\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-05_13-59-47",
+            "content": "@@ -248,24 +248,8 @@\n 2 ==\n- num1 && num2 ==\n  num\n@@ -256,25 +256,25 @@\n 3 && num\n-3\n+1\n  == num\n-2\n+3\n  %7B%0A%09%09fmt\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-05_14-00-55",
+            "content": "@@ -286,40 +286,8 @@\n um2 \n-&& num1 == num3 && num3 == num1 \n %7B%0A%09%09\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-05_14-01-25",
+            "content": "@@ -100,24 +100,148 @@\n %0A%09if num1 ==\n+ num2 %7C%7C num2 == num1 %7C%7C num2 == num3 %7C%7C num3 == num2 %7C%7C  num1 == num3 %7C%7C num3 == num1%7B%0A%09%09fmt.Println(2)%0A%0A%09%7D else if num1 ==\n  num2 && num\n@@ -367,126 +367,7 @@\n %0A%09%7D%0A\n-%09if num1 == num2 %7C%7C num2 == num1 %7C%7C num2 == num3 %7C%7C num3 == num2 %7C%7C num1 == num3 %7C%7C num3 == num1 %7B%0A%09%09fmt.Println(2)%0A%0A%09%7D\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-05_14-02-23",
+            "content": "@@ -116,33 +116,97 @@\n 2 && num2 == num\n-3\n+1 && num2 == num3 && num3 == num2 && num1 == num3 && num3 == num1\n  %7B%0A%09%09fmt.Println\n@@ -210,20 +210,19 @@\n tln(\n-2\n+3\n )%0A\n-%0A\n %09%7D else \n if n\n@@ -217,16 +217,39 @@\n %09%7D else \n+%7B%0A%09%09fmt.Println(0)%0A%09%7D%0A%09\n if num1 \n@@ -262,25 +262,25 @@\n 2 %7C%7C num\n-1\n+2\n  == num\n-3\n+1\n  %7C%7C num2\n@@ -292,34 +292,55 @@\n um3 \n-%7B%0A%09%09fmt.Println(3)%0A%09%7D else\n+%7C%7C num3 == num2 %7C%7C num1 == num3 %7C%7C num3 == num1\n  %7B%0A%09\n@@ -356,13 +356,13 @@\n tln(\n-0)\n+2)%0A\n %0A%09%7D%0A\n-%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-05_14-04-07",
+            "content": "@@ -93,20 +93,17 @@\n &num3)%0A%0A\n-    \n+%09\n if num1 \n@@ -124,32 +124,26 @@\n 2 == num3 %7B%0A\n-        \n+%09%09\n fmt.Println(\n@@ -146,15 +146,13 @@\n tln(\n-3)%0A    \n+2)%0A%0A%09\n %7D el\n@@ -204,24 +204,18 @@\n  num3 %7B%0A\n-        \n+%09%09\n fmt.Prin\n@@ -222,15 +222,12 @@\n tln(\n-2)%0A    \n+3)%0A%09\n %7D el\n@@ -235,16 +235,10 @@\n e %7B%0A\n-        \n+%09%09\n fmt.\n@@ -252,14 +252,10 @@\n (0)%0A\n-    \n+%09\n %7D%0A\n-%7D\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-05_14-07-09",
+            "content": "@@ -282,8 +282,10 @@\n     %7D%0A%7D%0A\n+%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-05_14-07-22",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num1, num2, num3 int\n\tfmt.Scan(&num1, &num2, &num3)\n\n    if num1 == num2 && num2 == num3 {\n        fmt.Println(3)\n    } else if num1 == num2 || num1 == num3 || num2 == num3 {\n        fmt.Println(2)\n    } else {\n        fmt.Println(0)\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}
