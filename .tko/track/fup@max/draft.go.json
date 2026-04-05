@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-05_00-34-42",
+            "content": "@@ -176,10 +176,63 @@\n )%0A    %7D%0A\n+    %0A    %0A    %0A    %0A    fmt.Println(max(num1, num2))%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-05_00-34-55",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 int\n    fmt.Scan(&num1, &num2)\n\n    if num1 > num2 {\n        fmt.Println(num1)\n    } else {\n        fmt.Println(num2)\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}

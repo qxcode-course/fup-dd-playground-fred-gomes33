@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-05_00-44-42",
+            "content": "@@ -96,260 +96,12 @@\n op)%0A\n-%0A\n     \n-if op == %22+%22 %7B%0A        resultado = num1 + num2%0A    %7D else if op == %22-%22 %7B%0A        resultado = num1 - num2%0A    %7D else if op == %22*%22 %7B%0A        resultado = num1 * num2%0A    %7D else if op == %22/%22 %7B%0A        resultado = num1 / num2 // divis%C3%A3o inteira%0A    %7D%0A%7D\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-05_00-50-42",
+            "content": "@@ -55,48 +55,12 @@\n num2\n- int%0A    var op string%0A    var resultado\n+, op\n  int\n@@ -290,35 +290,8 @@\n %22 %7B%0A\n-        if num2 != 0 %7B%0A    \n     \n@@ -345,62 +345,31 @@\n     \n-    %7D else %7B%0A            resultado = 0%0A  \n+%7D%0A%7D%0A    %0A    %0A\n     \n-  %7D\n %0A    \n-%7D\n %0A   \n@@ -381,21 +381,20 @@\n Println(\n-resultado\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-05_00-53-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 int\n    var op string\n    var resultado int\n    fmt.Scan(&num1, &num2, &op)\n\n    if op == \"+\" {\n        resultado = num1 + num2\n    } else if op == \"-\" {\n        resultado = num1 - num2\n    } else if op == \"*\" {\n        resultado = num1 * num2\n    } else if op == \"/\" {\n        if num2 != 0 {\n            resultado = num1 / num2 // divis\u00e3o inteira\n        } else {\n            resultado = 0\n        }\n    }\n    fmt.Println(resultado)\n}\n",
+            "lines": "23"
+        }
+    ]
+}

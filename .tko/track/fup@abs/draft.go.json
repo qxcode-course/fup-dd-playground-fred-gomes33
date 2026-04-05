@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-05_00-06-20",
+            "content": "@@ -100,20 +100,8 @@\n m1 %3C\n- 0 && num1 %3E\n  0 %7B\n@@ -116,17 +116,17 @@\n  num1 = \n-+\n+-\n num1%0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-05_00-07-19",
+            "content": "@@ -96,16 +96,28 @@\n f num1 %3C\n+ 0 && num1 %3E\n  0 %7B%0A   \n@@ -132,17 +132,13 @@\n 1 = \n++\n num1\n- * -1\n %0A   \n@@ -177,17 +177,13 @@\n 2 = \n+-\n num2\n- * -1\n %0A   \n@@ -224,16 +224,16 @@\n (num\n-2 -\n+1 +\n  num\n-1\n+2\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-05_00-08-39",
+            "content": "@@ -224,17 +224,12 @@\n 2 - num1\n- * -1\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-05_00-09-30",
+            "content": "@@ -51,21 +51,16 @@\n m1, num2\n-, dif\n  int%0A   \n@@ -85,13 +85,8 @@\n num2\n-, dif\n )%0A  \n@@ -126,45 +126,10 @@\n m1 *\n--1%0A    %7Delse %7B%0A        num1 = num1 *\n  \n+-\n 1%0A  \n@@ -184,140 +184,57 @@\n    %7D\n-else %7B\n+%0A\n %0A    \n+%0A\n     \n-num2 = num2 * 1%0A    %7D%0Adif = num2 - num1%0A%0Aif dif %3C 0%7B%0Adif = dif *-1%0A%0A%7D else %7B%0Adif = dif * 1%0A%7D%0A    %0A    fmt.Println(dif\n+%0A    %0A    fmt.Println(num2 - num1 * -1\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-05_00-14-09",
+            "content": "@@ -61,15 +61,11 @@\n dif \n-float64\n+int\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-05_00-14-26",
+            "content": "@@ -57,19 +57,23 @@\n m2, dif \n-int\n+float64\n %0A    fmt\n@@ -185,16 +185,96 @@\n   %7D%0A    \n+if num2 %3C 0 %7B%0A        num2 = num2 * -1%0A    %7Delse %7B%0A        num2 = num2 * 1%0A    %7D\n %0Adif = n\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-05_00-16-08",
+            "content": "@@ -177,16 +177,20 @@\n 1%0A    %7D%0A\n+    \n %0Adif = n\n@@ -195,16 +195,16 @@\n  num\n-1\n+2\n  - num\n-2\n+1\n %0A%0Aif\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-05_00-17-05",
+            "content": "@@ -92,58 +92,13 @@\n m2, \n-&\n dif)%0A\n-   if num1 == - 5%7B%0A    num1 = num1 * 1%0A   %7D%0A\n     \n@@ -181,92 +181,8 @@\n   %7D%0A\n-    if num2 %3C 0 %7B%0A        num2 = num2 * -1%0A    %7Delse %7B%0A        num2 = num2 * 1%0A    %7D\n %0Adif\n@@ -191,16 +191,16 @@\n  num\n-2\n+1\n  - num\n-1\n+2\n %0A%0Aif\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-05_00-24-05",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,95 +37,377 @@\n ) %7B%0A\n-%09fmt.Println(meuAbs(-5))%0A%7D%0Afunc meuAbs(n int) int %7B%0A%09\n+    var num1, num2, dif int%0A    fmt.Scan(&num1, &num2, &dif)%0A   if num1 == - 5%7B%0A    num1 = num1 * 1%0A   %7D%0A    if num1 %3C 0 %7B%0A        num1 = num1 *-1%0A    %7Delse %7B%0A        num1 = num1 * 1%0A    %7D%0A    \n if n\n+um2\n  %3C 0 %7B%0A\n-%09%09return -n%0A%09%7D%0A%09return n\n+        num2 = num2 * -1%0A    %7Delse %7B%0A        num2 = num2 * 1%0A    %7D%0Adif = num2 - num1%0A%0Aif dif %3C 0%7B%0Adif = dif *-1%0A%0A%7D else %7B%0Adif = dif * 1%0A%7D%0A    %0A    fmt.Println(dif)\n %0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-05_00-28-53",
+            "content": "@@ -40,263 +40,94 @@\n  %7B%0A%09\n-var num1, num2, dif int%0A%09fmt.Scan(&num1, &num2, &dif)%0A%0A%09if num1 %3C 0 && num2 %3C 0 %7B%0A%09%09num1, num2 = num1*-1, num2*-1%0A%09%7D else %7B%0A%09%09num1, num2 = num1*1, num2*1%0A%09%7D%0A%0A%09dif = num2 - num1%0A%0A%09if dif %3C 0 %7B%0A%09%09dif = dif * -1%0A%09%7D else %7B%0A%09%09dif = dif * 1%0A%09%7D%0A%0A%09fmt.Println(dif)\n+fmt.Println(meuAbs(-5))%0A%7D%0Afunc meuAbs(n int) int %7B%0A%09if n %3C 0 %7B%0A%09%09return -n%0A%09%7D%0A%09return n\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-05_00-31-50",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num1, num2, dif int\n\tfmt.Scan(&num1, &num2, &dif)\n\n\tif num1 < 0 && num2 < 0 {\n\t\tnum1, num2 = num1*-1, num2*-1\n\t} else {\n\t\tnum1, num2 = num1*1, num2*1\n\t}\n\n\tdif = num2 - num1\n\n\tif dif < 0 {\n\t\tdif = dif * -1\n\t} else {\n\t\tdif = dif * 1\n\t}\n\n\tfmt.Println(dif)\n}\n",
+            "lines": "24"
+        }
+    ]
+}

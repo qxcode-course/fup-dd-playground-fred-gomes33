@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-05_00-42-01",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n fmt.Prin\n@@ -59,17 +59,16 @@\n xcode%22)%0A\n-%09\n var num1\n@@ -72,17 +72,16 @@\n um1 int%0A\n-%09\n fmt.Scan\n@@ -93,17 +93,18 @@\n 1)%0A%0A\n-%09\n if num1\n-%25\n+ %25 \n 7 ==\n@@ -108,18 +108,20 @@\n  == 0 %7B%0A\n-%09%09\n+    \n fmt.Prin\n@@ -131,17 +131,16 @@\n (%22SIM%22)%0A\n-%09\n %7D else %7B\n@@ -144,10 +144,12 @@\n e %7B%0A\n-%09%09\n+    \n fmt.\n@@ -167,10 +167,7 @@\n O%22)%0A\n-%09%7D%0A\n %7D%0A%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-05_00-42-18",
+            "content": "@@ -35,16 +35,39 @@\n ain() %7B%0A\n+%09fmt.Println(%22qxcode%22)%0A\n %09var num\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-05_00-42-27",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num1 int\n\tfmt.Scan(&num1)\n\n\tif num1%7 == 0 {\n\t\tfmt.Println(\"SIM\")\n\t} else {\n\t\tfmt.Println(\"NAO\")\n\t}\n}\n\n",
+            "lines": "15"
+        }
+    ]
+}
