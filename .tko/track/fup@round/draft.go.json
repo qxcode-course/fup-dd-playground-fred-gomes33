@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_00-47-23",
+            "content": "@@ -22,73 +22,362 @@\n (%0A%09%22\n-fmt%22%0A%09%22math%22%0A)%0A%0Afunc main() %7B%0A%09var op rune%0A%09var num float64%0A%0A%09if \n+bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc ceil(num float64) int %7B%0A%09if num == float64(int(num)) %7B%0A%09%09return int(num)%0A%09%7D%0A%09return int(num) + 1%0A%7D%0A%0Afunc floor(num float64) int %7B%0A%09return int(num)%0A%7D%0A%0Afunc round(num float64) int %7B%0A%09if num-float64(int(num)) %3E= 0.5 %7B%0A%09%09return int(num) + 1%0A%09%7D%0A%09return int(num)%0A%7D%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09var op byte%0A%09\n _, e\n@@ -390,35 +390,126 @@\n fmt.\n-S\n+Fs\n canf(\n+reader, \n %22 %25c\n- %25f\n %22, &op\n+)%0A%09if err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09var num float64%0A%09_, err = fmt.Fscanf(reader, %22%25f%22\n , &num)\n-;\n+%0A%09if\n  err\n@@ -573,18 +573,9 @@\n tln(\n-int(math.C\n+c\n eil(\n@@ -575,25 +575,24 @@\n n(ceil(num))\n-)\n %0A%09case 'f':%0A\n@@ -609,18 +609,9 @@\n tln(\n-int(math.F\n+f\n loor\n@@ -616,17 +616,16 @@\n or(num))\n-)\n %0A%09case '\n@@ -646,18 +646,9 @@\n tln(\n-int(math.R\n+r\n ound\n@@ -653,15 +653,14 @@\n nd(num))\n-)\n %0A%09%7D%0A%7D%0A\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-04-06_00-48-57",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar op rune\n\tvar num float64\n\n\tif _, err := fmt.Scanf(\" %c %f\", &op, &num); err != nil {\n\t\treturn\n\t}\n\n\tswitch op {\n\tcase 'c':\n\t\tfmt.Println(int(math.Ceil(num)))\n\tcase 'f':\n\t\tfmt.Println(int(math.Floor(num)))\n\tcase 'r':\n\t\tfmt.Println(int(math.Round(num)))\n\t}\n}\n",
+            "lines": "24"
+        }
+    ]
+}

@@ -12,8 +12,13 @@
         },
         {
             "label": "2026-04-05_00-53-09",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 int\n    var op string\n    var resultado int\n    fmt.Scan(&num1, &num2, &op)\n\n    if op == \"+\" {\n        resultado = num1 + num2\n    } else if op == \"-\" {\n        resultado = num1 - num2\n    } else if op == \"*\" {\n        resultado = num1 * num2\n    } else if op == \"/\" {\n        if num2 != 0 {\n            resultado = num1 / num2 // divis\u00e3o inteira\n        } else {\n            resultado = 0\n        }\n    }\n    fmt.Println(resultado)\n}\n",
+            "content": "@@ -137,29 +137,22 @@\n     \n-switch op %7B%0Acase\n+if op ==\n  %22+%22\n-:\n+ %7B\n %0A   \n@@ -188,17 +188,29 @@\n     \n-case\n+%7D else if op ==\n  %22-%22\n-:\n+ %7B\n %0A   \n@@ -246,17 +246,29 @@\n     \n-case\n+%7D else if op ==\n  %22*%22\n-:\n+ %7B\n %0A   \n@@ -304,17 +304,29 @@\n     \n-case\n+%7D else if op ==\n  %22/%22\n-:\n+ %7B\n %0A   \n",
             "lines": "23"
+        },
+        {
+            "label": "2026-04-06_01-03-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 int\n    var op string\n    var resultado int\n    fmt.Scan(&num1, &num2, &op)\n\n    switch op {\ncase \"+\":\n        resultado = num1 + num2\n    case \"-\":\n        resultado = num1 - num2\n    case \"*\":\n        resultado = num1 * num2\n    case \"/\":\n        if num2 != 0 {\n            resultado = num1 / num2 // divis\u00e3o inteira\n        } else {\n            resultado = 0\n        }\n    }\n    fmt.Println(resultado)\n}\n",
+            "lines": "24"
         }
     ]
 }

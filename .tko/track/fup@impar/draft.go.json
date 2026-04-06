@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_00-44-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var P, D1, D2 int\n    fmt.Scan(&P, &D1, &D2)\n\n    soma := D1 + D2\n    var vencedor int\n\n    if soma%2 == 0 {\n        // soma \u00e9 par \u2192 quem gritou \"par\" ganha\n        vencedor = P\n    } else {\n        // soma \u00e9 \u00edmpar \u2192 quem gritou \"\u00edmpar\" ganha\n        vencedor = 1 - P\n    }\n   \n   \n    fmt.Println(vencedor)\n}\n",
+            "lines": "20"
+        }
+    ]
+}
