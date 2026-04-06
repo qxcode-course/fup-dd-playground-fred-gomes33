@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_17-12-02",
+            "content": "@@ -230,10 +230,63 @@\n nte%22)%0A%7D%0A\n+   %0A   %0A   %0A   %0A   %0A    fmt.Println(%22Hello, World!%22)%0A\n %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-06_17-12-16",
+            "content": "@@ -217,16 +217,23 @@\n vado\n-%22)%0A%7Delse%0A\n+ diretamente%22)%0A%7D\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_17-13-42",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,19 @@\n ain() %7B%0A\n-%09\n+   \n var n1, \n@@ -63,18 +63,21 @@\n  float64\n-%0A%09\n+ %0A   \n fmt.Scan\n@@ -99,17 +99,19 @@\n  &med)%0A%0A\n-%09\n+   \n med = (n\n@@ -121,18 +121,21 @@\n  n2) / 2\n-%0A%09\n+ %0A   \n if med %3E\n@@ -140,18 +140,20 @@\n  %3E= 7 %7B%0A\n-%09%09\n+    \n fmt.Prin\n@@ -164,27 +164,25 @@\n %22aprovado%22)%0A\n-%09%7D \n+%7D\n else if med \n@@ -187,18 +187,20 @@\n d %3C 4 %7B%0A\n-%09%09\n+    \n fmt.Prin\n@@ -220,51 +220,13 @@\n o%22)%0A\n-%09%7D \n+%7D\n else\n- %7B%0A%09%09fmt.Println(%22em recupera%C3%A7%C3%A3o%22)%0A%09%7D\n+%0A\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-06_17-14-02",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n1, n2, nf, med float64\n\tfmt.Scan(&n1, &n2, &nf, &med)\n\n\tmed = (n1 + n2) / 2\n\tif med >= 7 {\n\t\tfmt.Println(\"aprovado\")\n\t} else if med < 4 {\n\t\tfmt.Println(\"reprovado\")\n\t} else {\n\t\tfmt.Println(\"em recupera\u00e7\u00e3o\")\n\t}\n}\n",
+            "lines": "17"
+        }
+    ]
+}

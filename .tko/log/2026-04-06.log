@@ -32,3 +32,32 @@
 2026-04-06 01:06:30, SELF, v:1, k:fup@jokenpo, self:1, rate:100, study:5
 2026-04-06 01:06:49, MOVE, v:1, k:fup@tres, mode:PICK
 2026-04-06 01:06:51, MOVE, v:1, k:fup@tres, mode:BACK
+2026-04-06 16:44:25, MOVE, v:1, k:fup@round, mode:PICK
+2026-04-06 16:44:30, EXEC, v:1, k:fup@round, mode:FREE, size:8
+2026-04-06 16:45:00, EXEC, v:1, k:fup@round, mode:FREE
+2026-04-06 16:49:50, EXEC, v:1, k:fup@round, mode:FULL, rate:0, size:22
+2026-04-06 16:50:06, EXEC, v:1, k:fup@round, mode:FULL, rate:0, size:22
+2026-04-06 16:55:39, EXEC, v:1, k:fup@round, mode:FULL, rate:100, size:61
+2026-04-06 16:56:20, MOVE, v:1, k:fup@round, mode:BACK
+2026-04-06 16:56:43, SELF, v:1, k:fup@round, self:1, rate:100, study:15
+2026-04-06 16:57:09, SELF, v:1, k:fup@tres, self:1, rate:100, study:13
+2026-04-06 16:57:18, SELF, v:1, k:fup@jokenpo, self:1, rate:100, study:5
+2026-04-06 16:57:18, MOVE, v:1, k:fup@jokenpo, mode:PICK
+2026-04-06 16:57:19, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-04-06 16:57:19, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-04-06 16:57:19, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-04-06 16:57:20, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-04-06 16:57:20, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-04-06 16:57:21, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-04-06 16:57:21, MOVE, v:1, k:fup@jokenpo, mode:BACK
+2026-04-06 16:59:14, SELF, v:1, k:fup@tv, self:1, rate:100, study:55, problem:1
+2026-04-06 17:00:13, MOVE, v:1, k:fup@tv, mode:PICK
+2026-04-06 17:00:19, EXEC, v:1, k:fup@tv, mode:FREE
+2026-04-06 17:01:02, EXEC, v:1, k:fup@tv, mode:FREE
+2026-04-06 17:02:29, MOVE, v:1, k:fup@tv, mode:BACK
+2026-04-06 17:02:38, MOVE, v:1, k:fup@final, mode:DOWN
+2026-04-06 17:02:43, MOVE, v:1, k:fup@final, mode:PICK
+2026-04-06 17:12:02, EXEC, v:1, k:fup@final, mode:FULL, rate:0, size:19
+2026-04-06 17:12:16, EXEC, v:1, k:fup@final, mode:FULL, rate:20, size:13
+2026-04-06 17:13:42, EXEC, v:1, k:fup@final, mode:FULL, size:14, fail:COMP
+2026-04-06 17:14:02, EXEC, v:1, k:fup@final, mode:FULL, rate:40, size:17

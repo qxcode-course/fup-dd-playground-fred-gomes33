@@ -7,8 +7,28 @@
         },
         {
             "label": "2026-04-06_00-48-57",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar op rune\n\tvar num float64\n\n\tif _, err := fmt.Scanf(\" %c %f\", &op, &num); err != nil {\n\t\treturn\n\t}\n\n\tswitch op {\n\tcase 'c':\n\t\tfmt.Println(int(math.Ceil(num)))\n\tcase 'f':\n\t\tfmt.Println(int(math.Floor(num)))\n\tcase 'r':\n\t\tfmt.Println(int(math.Round(num)))\n\t}\n}\n",
+            "content": "@@ -10,21 +10,36 @@\n ain%0A\n+%0A\n import \n+(%0A%09\n %22fmt%22%0A\n+%09%22math%22%0A)%0A%0A\n func\n@@ -52,44 +52,265 @@\n ) %7B%0A\n-   %0A   %0A   %0A    fmt.Println(%22qxcode%22)\n+%09var op rune%0A%09var num float64%0A%0A%09if _, err := fmt.Scanf(%22 %25c %25f%22, &op, &num); err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09switch op %7B%0A%09case 'c':%0A%09%09fmt.Println(int(math.Ceil(num)))%0A%09case 'f':%0A%09%09fmt.Println(int(math.Floor(num)))%0A%09case 'r':%0A%09%09fmt.Println(int(math.Round(num)))%0A%09%7D\n %0A%7D%0A\n",
             "lines": "24"
+        },
+        {
+            "label": "2026-04-06_16-44-30",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,301 +37,24 @@\n ) %7B%0A\n-%09var r int%0A%09var num float64%0A%09fmt.Scan(&r, &num)%0A%0A%09round := func(num float64, r int) float64 %7B%0A%09%09var multiplier float64 = 1%0A%09%09for i := 0; i %3C r; i++ %7B%0A%09%09%09multiplier *= 10%0A%09%09%7D%0A%09%09return float64(int(num*multiplier+0.5)) / multiplier%0A%09%7D%0A%0A%09result := round(num, r)%0A%09fmt.Printf(%22%25.*f%5Cn%22, r, result)%0A%0A%09\n+   %0A   %0A   %0A    \n fmt.\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-06_16-49-50",
+            "content": "@@ -341,14 +341,19 @@\n rintln(%22\n-r\n+qxcode\n %22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-06_16-50-06",
+            "content": "@@ -30,115 +30,44 @@\n unc \n-floor(num float64) int %7B%0A%09inteiro := int(num)%0A%09if num %3E= 0 %7B%0A%09%09return inteiro%0A%09%7D else %7B%0A%09%09if\n+main() %7B%0A%09var r int%0A%09var\n  num\n- ==\n  float64\n (int\n@@ -66,722 +66,289 @@\n at64\n-(inteiro) %7B%0A%09%09%09return inteiro%0A%09%09%7D else %7B%0A%09%09%09return inteiro - 1%0A%09%09%7D%0A%09%7D%0A%7D%0A%0Afunc ceil(num float64) int %7B%0A%09inteiro := int(num)%0A%09if num %3E= 0 %7B%0A%09%09if num == float64(inteiro) %7B%0A%09%09%09return inteiro%0A%09%09%7D else %7B%0A%09%09%09return inteiro + 1%0A%09%09%7D%0A%09%7D else %7B%0A%09%09return inteiro%0A%09%7D%0A%7D%0A%0Afunc round(num float64) int %7B%0A%09inteiro := int(num)%0A%09frac := num - float64(inteiro)%0A%09if num %3E= 0 %7B%0A%09%09if frac %3E= 0.5 %7B%0A%09%09%09return inteiro +\n+%0A%09fmt.Scan(&r, &num)%0A%0A%09round := func(num float64, r int) float64 %7B%0A%09%09var multiplier float64 = 1%0A%09%09for i := 0; i %3C r; i++ %7B%0A%09%09%09multiplier *=\n  1\n+0\n %0A%09%09%7D\n- else %7B%0A%09%09%09return inteiro%0A%09%09%7D%0A%09%7D else %7B%0A%09%09if frac %3C= -0.5 %7B%0A%09%09%09return inteiro - 1%0A%09%09%7D else %7B%0A%09%09%09return inteiro%0A%09%09%7D%0A%09%7D%0A%7D%0A%0Afunc main() %7B%0A%09var op string%0A%09var num float64%0A%09fmt.Scan(&op, &num)%0A%09switch op%5B0%5D %7B%0A%09case 'f':%0A%09%09fmt.Println(floor(num))%0A%09case 'c':%0A%09%09fmt.Println(ceil(num))%0A%09case 'r':%0A%09%09fmt.Println(round(num))%0A%09%7D\n+%0A%09%09return float64(int(num*multiplier+0.5)) / multiplier%0A%09%7D%0A%0A%09result := round(num, r)%0A%09fmt.Printf(%22%25.*f%5Cn%22, r, result)%0A%0A%09fmt.Println(%22r%22)\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-06_16-55-39",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc floor(num float64) int {\n\tinteiro := int(num)\n\tif num >= 0 {\n\t\treturn inteiro\n\t} else {\n\t\tif num == float64(inteiro) {\n\t\t\treturn inteiro\n\t\t} else {\n\t\t\treturn inteiro - 1\n\t\t}\n\t}\n}\n\nfunc ceil(num float64) int {\n\tinteiro := int(num)\n\tif num >= 0 {\n\t\tif num == float64(inteiro) {\n\t\t\treturn inteiro\n\t\t} else {\n\t\t\treturn inteiro + 1\n\t\t}\n\t} else {\n\t\treturn inteiro\n\t}\n}\n\nfunc round(num float64) int {\n\tinteiro := int(num)\n\tfrac := num - float64(inteiro)\n\tif num >= 0 {\n\t\tif frac >= 0.5 {\n\t\t\treturn inteiro + 1\n\t\t} else {\n\t\t\treturn inteiro\n\t\t}\n\t} else {\n\t\tif frac <= -0.5 {\n\t\t\treturn inteiro - 1\n\t\t} else {\n\t\t\treturn inteiro\n\t\t}\n\t}\n}\n\nfunc main() {\n\tvar op string\n\tvar num float64\n\tfmt.Scan(&op, &num)\n\tswitch op[0] {\n\tcase 'f':\n\t\tfmt.Println(floor(num))\n\tcase 'c':\n\t\tfmt.Println(ceil(num))\n\tcase 'r':\n\t\tfmt.Println(round(num))\n\t}\n}\n",
+            "lines": "61"
         }
     ]
 }
