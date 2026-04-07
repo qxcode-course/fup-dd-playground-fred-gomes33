@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_18-14-50",
+            "content": "@@ -58,16 +58,21 @@\n if2, if3\n+, som\n  int %0A  \n@@ -107,27 +107,32 @@\n  &im\n+, &som\n )%0A%0A    \n-if3\n+som\n  = im \n-- (\n++ \n if1 \n@@ -136,17 +136,36 @@\n f1 + if2\n-)\n+ + if3%0A    if3 = som\n %0A    fmt\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_18-17-22",
+            "content": "@@ -111,16 +111,22 @@\n   if3 = \n+im - (\n if1 + if\n@@ -130,13 +130,9 @@\n  if2\n- - im\n+)\n %0A   \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-07_18-18-16",
+            "content": "@@ -130,26 +130,8 @@\n  im%0A\n-    if3 = if3 * 2%0A\n     \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-07_18-18-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var im, if1, if2, if3 int \n    fmt.Scan(&if1, &if2, &if3, &im)\n\n    if3 = if1 + if2 - im\n    if3 = if3 * 2\n    fmt.Println(if3)\n}\n",
+            "lines": "10"
+        }
+    ]
+}

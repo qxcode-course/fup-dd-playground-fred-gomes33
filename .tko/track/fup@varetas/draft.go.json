@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-21-58",
+            "content": "@@ -159,34 +159,34 @@\n lse if l1 == l2 \n-&&\n+%7C%7C\n  l2 == l3 && l1 \n@@ -179,18 +179,18 @@\n 2 == l3 \n-&&\n+%7C%7C\n  l1 == l\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-22-41",
+            "content": "@@ -99,49 +99,25 @@\n  l1 \n-%3E\n+==\n  l2 \n-+ l3 \n && l2 \n-%3E l1 + l3 && l3 %3E l1 + l2\n+== l3\n  %7B%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-24-45",
+            "content": "@@ -152,35 +152,36 @@\n    fmt.Println(%22\n-Tru\n+Fals\n e%22)%0A    %7D else i\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-24-57",
+            "content": "@@ -99,34 +99,30 @@\n  l1 \n-==\n+%3E\n  l2 \n++ l3 \n && l2 \n-== l3 &&\n+%3E\n  l1 \n-==\n++\n  l3 \n@@ -131,14 +131,18 @@\n  l3 \n-==\n+%3E\n  l1 \n++ l2 \n %7B%0A  \n@@ -184,17 +184,17 @@\n e if l1 \n-!\n+=\n = l2 && \n@@ -196,17 +196,17 @@\n 2 && l2 \n-!\n+=\n = l3 && \n@@ -212,26 +212,14 @@\n  l1 \n-!\n+=\n = l3 \n-&& l3 != l1 \n %7B%0A  \n@@ -229,36 +229,35 @@\n    fmt.Println(%22\n-Fals\n+Tru\n e%22)%0A    %7Delse %7B%0A\n@@ -249,16 +249,17 @@\n %22)%0A    %7D\n+ \n else %7B%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-27-08",
+            "content": "@@ -99,30 +99,34 @@\n  l1 \n-%3C\n+==\n  l2 \n-+ l3 && l2 %3C l1 +\n+&& l2 == l3 && l1 ==\n  l3 \n@@ -135,18 +135,14 @@\n  l3 \n-%3C\n+==\n  l1 \n-+ l2 \n %7B%0A  \n@@ -171,18 +171,18 @@\n e%22)%0A    \n- \n %7D\n+ \n else if \n@@ -188,32 +188,34 @@\n  l1 \n-%3E\n+!\n = l2 \n-+ l3 \n && l2 \n-%3E=\n+!= l3 &&\n  l1 \n-+\n+!=\n  l3 \n@@ -224,19 +224,54 @@\n  l3 \n-%3E\n+!\n = l1 \n-+ l2 \n+%7B%0A        fmt.Println(%22False%22)%0A    %7Delse\n  %7B%0A \n@@ -302,17 +302,12 @@\n e%22)%0A\n-%0A   \n     \n- \n %7D%0A\n- \n %7D\n+%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-32-31",
+            "content": "@@ -265,50 +265,12 @@\n e%22)%0A\n+%0A\n    \n-  %7Delse %7B%0A        fmt.Println(%22False%22)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_17-32-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var l1, l2, l3 int\n    fmt.Scan(&l1, &l2, &l3)\n\n    if l1 < l2 + l3 && l2 < l1 + l3 && l3 < l1 + l2 {\n        fmt.Println(\"True\")\n     }else if l1 >= l2 + l3 && l2 >= l1 + l3 && l3 >= l1 + l2  {\n        fmt.Println(\"False\")\n     }else {\n        fmt.Println(\"False\")\n     }\n }",
+            "lines": "14"
+        }
+    ]
+}

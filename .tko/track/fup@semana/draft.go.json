@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-18-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var dia, hora int\n    fmt.Scan(&dia, &hora)\n\n    if dia >= 2 && dia <= 6 {\n        if (hora >= 8 && hora <= 11) || (hora >= 14 && hora <= 17) {\n            fmt.Println(\"SIM\")\n        } else {\n            fmt.Println(\"NAO\")\n        }\n    } else if dia == 7 { \n        if hora >= 8 && hora <= 11 {\n            fmt.Println(\"SIM\")\n        } else {\n            fmt.Println(\"NAO\")\n        }\n    } else { \n        fmt.Println(\"NAO\")\n    }\n}\n",
+            "lines": "22"
+        }
+    ]
+}

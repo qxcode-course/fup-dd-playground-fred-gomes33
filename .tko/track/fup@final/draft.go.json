@@ -17,8 +17,53 @@
         },
         {
             "label": "2026-04-06_17-14-02",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n1, n2, nf, med float64\n\tfmt.Scan(&n1, &n2, &nf, &med)\n\n\tmed = (n1 + n2) / 2\n\tif med >= 7 {\n\t\tfmt.Println(\"aprovado\")\n\t} else if med < 4 {\n\t\tfmt.Println(\"reprovado\")\n\t} else {\n\t\tfmt.Println(\"em recupera\u00e7\u00e3o\")\n\t}\n}\n",
+            "content": "@@ -56,19 +56,23 @@\n nf, med \n-int\n+float64\n %0A%09fmt.Sc\n@@ -218,31 +218,8 @@\n lse \n-if med %3E= 4 && med %3C 7 \n %7B%0A%09%09\n@@ -252,11 +252,8 @@\n o%22)%0A\n-%09%09%0A\n %09%7D%0A%7D\n",
             "lines": "17"
+        },
+        {
+            "label": "2026-04-07_17-02-04",
+            "content": "@@ -254,28 +254,27 @@\n ln(%22\n-aprovado no final\n+em recupera%C3%A7%C3%A3o\n %22)%0A\n+%09%09\n %0A%09%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_17-02-44",
+            "content": "@@ -260,17 +260,17 @@\n rovado n\n-a\n+o\n  final%22)\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_17-02-52",
+            "content": "@@ -274,125 +274,10 @@\n l%22)%0A\n+%0A\n %09%7D\n-else if med %3E= 4 && med %3C 7 && nf %3E= 5 %7B%0A%09%09fmt.Println(%22aprovado na final%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22reprovado%22)%0A%09%7D%0A\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_17-03-49",
+            "content": "@@ -378,30 +378,21 @@\n n(%22reprovado\n- na final\n %22)%0A%09%7D%0A%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_17-04-08",
+            "content": "@@ -324,26 +324,25 @@\n mt.Println(%22\n-re\n+a\n provado na f\n@@ -365,33 +365,34 @@\n %0A%09%09fmt.Println(%22\n-a\n+re\n provado na final\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_17-06-25",
+            "content": "@@ -230,17 +230,16 @@\n && med %3C\n-=\n  7 %7B%0A%09%09f\n@@ -320,33 +320,34 @@\n %0A%09%09fmt.Println(%22\n-a\n+re\n provado na final\n@@ -366,34 +366,33 @@\n %0A%09%09fmt.Println(%22\n-re\n+a\n provado na final\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_17-07-02",
+            "content": "@@ -234,36 +234,14 @@\n ed %3C\n+=\n  7 %7B%0A\n-%09%09med = (med + nf) / 2%0A\n %09%09fm\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_17-07-54",
+            "content": "@@ -59,15 +59,8 @@\n  med\n-, medfd\n  int\n@@ -93,16 +93,8 @@\n &med\n-, &medfd\n )%0A%0A%09\n@@ -240,18 +240,16 @@\n  %7B%0A%09%09med\n-fd\n  = (med \n@@ -262,27 +262,8 @@\n / 2%0A\n-%09%09if medfd %3E= 5 %7B%0A%09\n %09%09fm\n@@ -298,21 +298,52 @@\n %22)%0A%09\n-%09%7D \n+%7D\n else \n+if med %3E= 4 && med %3C 7 && nf %3E= 5 \n %7B%0A%09%09\n-%09\n fmt.\n@@ -343,34 +343,33 @@\n %0A%09%09fmt.Println(%22\n-re\n+a\n provado na final\n@@ -375,12 +375,8 @@\n l%22)%0A\n-%09%09%7D%0A\n %09%7D e\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_17-10-53",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n1, n2, nf, med, medfd int\n\tfmt.Scan(&n1, &n2, &nf, &med, &medfd)\n\n\tmed = (n1 + n2) / 2\n\tif med >= 7 {\n\t\tfmt.Println(\"aprovado\")\n\t} else if med < 4 {\n\t\tfmt.Println(\"reprovado\")\n\t} else if med >= 4 && med < 7 {\n\t\tmedfd = (med + nf) / 2\n\t\tif medfd >= 5 {\n\t\t\tfmt.Println(\"aprovado na final\")\n\t\t} else {\n\t\t\tfmt.Println(\"reprovado na final\")\n\t\t}\n\t} else {\n\t\tfmt.Println(\"reprovado na final\")\n\t}\n\n}\n",
+            "lines": "25"
         }
     ]
 }
