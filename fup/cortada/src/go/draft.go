@@ -1,13 +1,32 @@
 package main
 import "fmt"
 func main() {
-    var dbe int//dist. do inicio do corte base p/ esquerda 
-    var dte int//dist. do inicio do corte base p/ direita
-    var Fel, Marz   int
-    fmt.Scan(&dbe, &dte, &Fel, &Marz)
+var B, T int
+    fmt.Scan(&B, &T)
 
     
+    larg := 160
+    alt := 70
 
+    
+    aT := larg * alt
 
-    fmt.Println("Hello, World!")
+    // Área do pedaço do Felix (trapézio da esquerda)
+    aFelix := (B + T) * alt / 2
+
+    // Área do pedaço da Marzia
+    aMarzia := aT - aFelix
+
+    // Metade da área total
+    met := aT / 2
+
+    // Decisão
+    if aFelix > met {
+        fmt.Println(1) // Felix ficou com o pedaço que vale 100 reais
+    } else if aMarzia > met {
+        fmt.Println(2) // Marzia ficou com o pedaço que vale 100 reais
+    } else {
+        fmt.Println(0) // O valor da nota se perdeu
+    }
+
 }

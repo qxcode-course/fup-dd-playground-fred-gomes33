@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-10_00-23-45",
+            "content": "@@ -457,14 +457,8 @@\n     \n- %7D   %0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-10_00-26-13",
+            "content": "@@ -497,8 +497,9 @@\n N%22)%0A%7D  %0A\n+%7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-10_00-26-19",
+            "content": "package main\nimport \"fmt\"\nimport \"sort\"\nfunc main() {\n   \n    var A, B, C, H, L int\n    fmt.Scan(&A, &B, &C, &H, &L)\n\n    janela := []int{H, L}\n    sort.Ints(janela)\n\n    caixa := []int{A, B, C}\n    for i := 0; i < 3; i++ {\n        for j := i + 1; j < 3; j++ {\n            face := []int{caixa[i], caixa[j]}\n            sort.Ints(face)\n            if face[0] <= janela[0] && face[1] <= janela[1] {\n                fmt.Println(\"S\")\n                return\n        }   \n     }\n    }\n    fmt.Println(\"N\")\n}  \n",
+            "lines": "24"
+        }
+    ]
+}

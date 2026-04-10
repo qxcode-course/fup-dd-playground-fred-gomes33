@@ -17,8 +17,18 @@
         },
         {
             "label": "2026-04-07_18-18-33",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var im, if1, if2, if3 int \n    fmt.Scan(&if1, &if2, &if3, &im)\n\n    if3 = if1 + if2 - im\n    if3 = if3 * 2\n    fmt.Println(if3)\n}\n",
+            "content": "@@ -62,19 +62,13 @@\n  if3\n-, maior\n  int\n+ \n %0A   \n@@ -81,13 +81,8 @@\n can(\n-&im, \n &if1\n@@ -96,21 +96,18 @@\n  &if3, &\n+i\n m\n-aior\n )%0A%0A    i\n@@ -115,22 +115,16 @@\n 3 = \n-im - (\n if1 + if\n 3)%0A \n@@ -123,123 +123,32 @@\n + if\n-3)%0A    maior = if1%0A%0A    if if2 %3E maior %7B%0A        maior = if2%0A    %7D%0A%0A    if if3 %3E maior %7B%0A        maior = if3%0A    %7D%0A\n+2 - im%0A    if3 = if3 * 2\n %0A   \n@@ -164,13 +164,11 @@\n tln(\n-maior\n+if3\n )%0A%7D%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-04-10_00-15-55",
+            "content": "@@ -139,17 +139,17 @@\n if1 + if\n-2\n+3\n )%0A    ma\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-10_00-16-02",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var im, if1, if2, if3, maior int\n    fmt.Scan(&im, &if1, &if2, &if3, &maior)\n\n    if3 = im - (if1 + if2)\n    maior = if1\n\n    if if2 > maior {\n        maior = if2\n    }\n\n    if if3 > maior {\n        maior = if3\n    }\n\n    fmt.Println(maior)\n}\n",
+            "lines": "19"
         }
     ]
 }

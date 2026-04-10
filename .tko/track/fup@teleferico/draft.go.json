@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-10_00-36-58",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n    var C, A int\n    fmt.Scan(&C, &A)\n\n    capacidadeAlunos := C - 1\n    viagens := int(math.Ceil(float64(A) / float64(capacidadeAlunos)))\n\n    fmt.Println(viagens)\n}\n",
+            "lines": "13"
+        }
+    ]
+}

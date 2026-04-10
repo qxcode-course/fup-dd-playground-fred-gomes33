@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-10_00-40-21",
+            "content": "@@ -23,23 +23,8 @@\n mt%22%0A\n-import %22math%22%0A%0A\n func\n@@ -40,193 +40,36 @@\n %0A   \n-var C, ban, goi, man, tot, via int%0A    fmt.Scan(&C, &ban, &goi, &man, &tot, &via)  %0A%0A    tot = ban + goi + man%0A    via = int(math.Ceil(float64(tot) / float64(tot)))%0A%0A    fmt.Println(via\n+ fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-10_00-44-49",
+            "content": "@@ -209,17 +209,19 @@\n float64(\n-C\n+tot\n )))%0A%0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-10_00-45-06",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n   var C, ban, goi, man, tot, via int\n    fmt.Scan(&C, &ban, &goi, &man, &tot, &via)  \n\n    tot = ban + goi + man\n    via = int(math.Ceil(float64(tot) / float64(C)))\n\n    fmt.Println(via)\n}\n",
+            "lines": "13"
+        }
+    ]
+}

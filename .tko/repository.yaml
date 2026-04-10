@@ -17,13 +17,13 @@ sources:
 expanded:
 - fup@games
 - fup@if1
-- fup@base
 - fup@if2
+- fup@base
 flags:
   inbox: all
-  panel: help
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@bhaskara
+selected: fup@quantos

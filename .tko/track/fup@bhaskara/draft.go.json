@@ -57,8 +57,18 @@
         },
         {
             "label": "2026-04-07_17-54-34",
-            "content": "package main\n\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n\tvar a, b, c, del, x1, x2 float64\n\tfmt.Scan(&a, &b, &c, &del, &x1, &x2)\n\n\tdel = b*b - 4*a*c\n\n\tx1 = (-b + math.Sqrt(del)) / (2 * a)\n\tx2 = (-b - math.Sqrt(del)) / (2 * a)\n\n\tif del > 0 {\n\t\tfmt.Printf(\"%.2f\\n\", x1)\n\t\tfmt.Printf(\"%.2f\\n\", x2)\n\t} else if del == 0 {\n\t\tfmt.Printf(\"%.2f\\n\", x1)\n\t} else if del < 0 {\n\t\tfmt.Println(\"nao ha raiz real\")\n\t}\n}\n",
+            "content": "@@ -34,17 +34,16 @@\n  %22math%22%0A\n-%0A\n func mai\n",
             "lines": "22"
+        },
+        {
+            "label": "2026-04-10_00-04-58",
+            "content": "@@ -1,9 +1,8 @@\n-%0A\n package \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-10_00-05-04",
+            "content": "\npackage main\n\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n\tvar a, b, c, del, x1, x2 float64\n\tfmt.Scan(&a, &b, &c, &del, &x1, &x2)\n\n\tdel = b*b - 4*a*c\n\n\tx1 = (-b + math.Sqrt(del)) / (2 * a)\n\tx2 = (-b - math.Sqrt(del)) / (2 * a)\n\n\tif del > 0 {\n\t\tfmt.Printf(\"%.2f\\n\", x1)\n\t\tfmt.Printf(\"%.2f\\n\", x2)\n\t} else if del == 0 {\n\t\tfmt.Printf(\"%.2f\\n\", x1)\n\t} else if del < 0 {\n\t\tfmt.Println(\"nao ha raiz real\")\n\t}\n}\n",
+            "lines": "24"
         }
     ]
 }

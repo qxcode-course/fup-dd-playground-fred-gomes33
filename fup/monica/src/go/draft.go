@@ -1,10 +1,19 @@
 package main
 import "fmt"
 func main() {
-    var im, if1, if2, if3 int 
-    fmt.Scan(&if1, &if2, &if3, &im)
+    var im, if1, if2, if3, maior int
+    fmt.Scan(&im, &if1, &if2, &if3, &maior)
 
-    if3 = if1 + if2 - im
-    if3 = if3 * 2
-    fmt.Println(if3)
+    if3 = im - (if1 + if2)
+    maior = if1
+
+    if if2 > maior {
+        maior = if2
+    }
+
+    if if3 > maior {
+        maior = if3
+    }
+
+    fmt.Println(maior)
 }

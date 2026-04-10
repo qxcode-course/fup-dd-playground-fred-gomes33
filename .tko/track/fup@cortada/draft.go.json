@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-10_00-10-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\nvar B, T int\n    fmt.Scan(&B, &T)\n\n    \n    larg := 160\n    alt := 70\n\n    \n    aT := larg * alt\n\n    // \u00c1rea do peda\u00e7o do Felix (trap\u00e9zio da esquerda)\n    aFelix := (B + T) * alt / 2\n\n    // \u00c1rea do peda\u00e7o da Marzia\n    aMarzia := aT - aFelix\n\n    // Metade da \u00e1rea total\n    met := aT / 2\n\n    // Decis\u00e3o\n    if aFelix > met {\n        fmt.Println(1) // Felix ficou com o peda\u00e7o que vale 100 reais\n    } else if aMarzia > met {\n        fmt.Println(2) // Marzia ficou com o peda\u00e7o que vale 100 reais\n    } else {\n        fmt.Println(0) // O valor da nota se perdeu\n    }\n\n}\n",
+            "lines": "32"
+        }
+    ]
+}
