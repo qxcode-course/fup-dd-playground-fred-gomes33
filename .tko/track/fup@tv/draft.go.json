@@ -227,7 +227,12 @@
         },
         {
             "label": "2026-04-05_00-01-55",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valor float64\n    var parcelas int\n\n    fmt.Scanln(&valor)\n    fmt.Scanln(&parcelas)\n\n    var taxa float64\n    switch parcelas {\n    case 1:\n        taxa = 0.0\n    case 2:\n        taxa = 0.05\n    case 3:\n        taxa = 0.10\n    case 4:\n        taxa = 0.15\n    case 5:\n        taxa = 0.20\n    case 6:\n        taxa = 0.25\n    case 7:\n        taxa = 0.30\n    case 8:\n        taxa = 0.35\n    case 9:\n        taxa = 0.40\n    case 10:\n        taxa = 0.45\n\n    }\nvalorTotal := valor * (1 + taxa)\n    valorParcela := valorTotal / float64(parcelas)\n\n    fmt.Printf(\"%.2f\\n\", valorParcela)\n    fmt.Printf(\"%.2f\\n\", valorTotal)\n}",
+            "content": "@@ -659,9 +659,8 @@\n Total)%0A%7D\n-%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-04-12_23-10-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valor float64\n    var parcelas int\n\n    fmt.Scanln(&valor)\n    fmt.Scanln(&parcelas)\n\n    var taxa float64\n    switch parcelas {\n    case 1:\n        taxa = 0.0\n    case 2:\n        taxa = 0.05\n    case 3:\n        taxa = 0.10\n    case 4:\n        taxa = 0.15\n    case 5:\n        taxa = 0.20\n    case 6:\n        taxa = 0.25\n    case 7:\n        taxa = 0.30\n    case 8:\n        taxa = 0.35\n    case 9:\n        taxa = 0.40\n    case 10:\n        taxa = 0.45\n\n    }\nvalorTotal := valor * (1 + taxa)\n    valorParcela := valorTotal / float64(parcelas)\n\n    fmt.Printf(\"%.2f\\n\", valorParcela)\n    fmt.Printf(\"%.2f\\n\", valorTotal)\n}\n",
             "lines": "39"
         }
     ]

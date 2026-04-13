@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-18-13",
+            "content": "@@ -196,52 +196,16 @@\n     \n-if i%252 == 0 %7B%0A            som += i%0A        %7D\n+som += i\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-19-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    if a > b {\n        fmt.Println(\"invalido\")\n        return\n    }\n\n    som := 0\n    for i := a; i <= b; i++ {\n        if i%2 == 0 {\n            som += i\n        }\n    }\n      fmt.Println(som)\n}\n",
+            "lines": "19"
+        }
+    ]
+}

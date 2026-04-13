@@ -1,4 +1,4 @@
-package main
+aapackage main
 import "fmt"
 import "sort"
 func main() {

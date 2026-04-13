@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-10-05",
+            "content": "@@ -10,36 +10,35 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09\n+import \n %22math%22%0A\n-)%0A%0A\n func\n@@ -47,17 +47,20 @@\n ain() %7B%0A\n-%09\n+    \n var x1, \n@@ -73,29 +73,20 @@\n , y2\n+, d\n  int%0A\n-%09var d float64%0A%09\n+    \n fmt.\n@@ -112,12 +112,19 @@\n  &y2\n-)%0A%0A%09\n+, &d)%0A%0A    \n d = \n@@ -138,74 +138,74 @@\n pot(\n-float64(\n x2-x1\n-)\n , \n-float64(y2-y1))%0A%09fmt.Printf(%22%25.2f/%25d%5Cn%22, d, int\n+y2-y1)%0A    d = int(math.Round(d*100)/100)%0A    fmt.Println\n (d)\n-)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-13_17-10-54",
+            "content": "@@ -192,12 +192,20 @@\n %25d%5Cn%22, d\n+, int(d)\n )%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_17-11-08",
+            "content": "@@ -196,16 +196,8 @@\n %22, d\n-, int(d)\n )%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_17-11-21",
+            "content": "@@ -183,16 +183,19 @@\n tf(%22%25.2f\n+/%25d\n %5Cn%22, d, \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_17-11-47",
+            "content": "@@ -189,12 +189,20 @@\n 2f%5Cn%22, d\n+, int(d)\n )%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_17-12-02",
+            "content": "@@ -67,17 +67,25 @@\n , x2, y2\n-,\n+ int%0A%09var\n  d float\n@@ -132,51 +132,43 @@\n ath.\n-Sqrt(math.Pow(x2-x1, 2) + math.Pow\n+Hypot(float64(x2-x1), float64\n (y2-y1\n-, 2\n ))%0A%09\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_17-24-08",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar x1, y1, x2, y2, d float64\n\tfmt.Scan(&x1, &y1, &x2, &y2)\n\n\td = math.Sqrt(math.Pow(x2-x1, 2) + math.Pow(y2-y1, 2))\n\tfmt.Printf(\"%.2f\\n\", d)\n}\n",
+            "lines": "14"
+        }
+    ]
+}

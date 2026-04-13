@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-41-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var M, f1, f2 int\n    fmt.Scan(&M, &f1, &f2)\n\n    f3 := M - (f1 + f2)\n\n    maior := f1\n    if f2 > maior {\n        maior = f2\n    }\n    if f3 > maior {\n        maior = f3\n    }\n        fmt.Println(maior)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

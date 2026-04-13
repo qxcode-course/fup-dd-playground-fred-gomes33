@@ -12,7 +12,12 @@
         },
         {
             "label": "2026-04-10_00-26-19",
-            "content": "package main\nimport \"fmt\"\nimport \"sort\"\nfunc main() {\n   \n    var A, B, C, H, L int\n    fmt.Scan(&A, &B, &C, &H, &L)\n\n    janela := []int{H, L}\n    sort.Ints(janela)\n\n    caixa := []int{A, B, C}\n    for i := 0; i < 3; i++ {\n        for j := i + 1; j < 3; j++ {\n            face := []int{caixa[i], caixa[j]}\n            sort.Ints(face)\n            if face[0] <= janela[0] && face[1] <= janela[1] {\n                fmt.Println(\"S\")\n                return\n        }   \n     }\n    }\n    fmt.Println(\"N\")\n}  \n",
+            "content": "@@ -47,17 +47,24 @@\n ain() %7B%0A\n-%0A\n+   %0A    \n var A, B\n@@ -77,16 +77,20 @@\n , L int%0A\n+    \n fmt.Scan\n@@ -111,16 +111,20 @@\n H, &L)%0A%0A\n+    \n janela :\n@@ -137,16 +137,20 @@\n t%7BH, L%7D%0A\n+    \n sort.Int\n@@ -160,16 +160,20 @@\n anela)%0A%0A\n+    \n caixa :=\n@@ -188,16 +188,20 @@\n , B, C%7D%0A\n+    \n for i :=\n@@ -213,24 +213,28 @@\n  %3C 3; i++ %7B%0A\n+    \n     for j :=\n@@ -262,16 +262,20 @@\n         \n+    \n face := \n@@ -300,16 +300,20 @@\n ixa%5Bj%5D%7D%0A\n+    \n         \n@@ -336,16 +336,20 @@\n         \n+    \n if face%5B\n@@ -390,16 +390,20 @@\n la%5B1%5D %7B%0A\n+    \n         \n@@ -439,15 +439,23 @@\n     \n+    \n return%0A\n+    \n     \n@@ -463,16 +463,25 @@\n    %0A\n+     %7D%0A\n     %7D%0A\n-%7D%0A\n+    \n fmt.\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-12_23-04-10",
+            "content": "package main\nimport \"fmt\"\nimport \"sort\"\nfunc main() {\n\nvar A, B, C, H, L int\nfmt.Scan(&A, &B, &C, &H, &L)\n\njanela := []int{H, L}\nsort.Ints(janela)\n\ncaixa := []int{A, B, C}\nfor i := 0; i < 3; i++ {\n    for j := i + 1; j < 3; j++ {\n        face := []int{caixa[i], caixa[j]}\n        sort.Ints(face)\n        if face[0] <= janela[0] && face[1] <= janela[1] {\n            fmt.Println(\"S\")\n            return\n    }   \n    }\n}\nfmt.Println(\"N\")\n}  \n",
             "lines": "24"
         }
     ]
