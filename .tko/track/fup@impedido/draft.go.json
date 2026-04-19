@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-19_02-53-54",
+            "content": "@@ -298,19 +298,18 @@\n  50 \n-&&\n+%7C%7C\n  L\n- \n %3C R \n-&&\n+%7C%7C\n  R %3E\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-19_02-55-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   /*\n   L -> atacante que lan\u00e7a a bola\n   R -> jogador atacante que recebe a bola\n   D -> jogador defensor\n   regra -> seu campo de ataque  || linha divis\u00f3ria do meio do campo\n   Campo -> 100 m\n   */\n   var L, R, D int\n   fmt.Scan(&L,&R, &D)\n   \n    if R > 50 && L < R && R > D{\n        fmt.Println(\"S\")\n    }else{\n        fmt.Println(\"N\")\n     }\n}\n",
+            "lines": "19"
+        }
+    ]
+}

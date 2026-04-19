@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-04-10_00-45-28",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -40,391 +40,36 @@\n %0A   \n-%0A   var N, X, Y, S int%0A   var C string%0A   fmt.Scan(&N, &X, &Y, &S, &C)%0A%0A   switch C %7B%0A    case %22R%22:%0A        X = (X + S) %25 N%0A    case %22L%22:%0A        X = (X - S) %25 N%0A        if X %3C 0 %7B%0A            X += N%0A        %0A        %7D%0A    case %22D%22:%0A        Y = (Y + S) %25 N%0A    case %22U%22:%0A        Y = (Y - S) %25 N%0A        if Y %3C 0 %7B%0A            Y += N%0A        %7D%0A   %7D  %0A   %0A    fmt.Printf(%22%25d %25d%5Cn%22, X, \n+ fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-04-19_02-11-07",
+            "content": "@@ -419,13 +419,12 @@\n %5Cn%22, X, \n-Y\n )%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-19_02-11-19",
+            "content": "@@ -232,24 +232,33 @@\n      X += N%0A\n+        %0A\n         %7D%0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-19_02-15-22",
+            "content": "@@ -104,13 +104,13 @@\n Y, &\n-C, &S\n+S, &C\n )%0A%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-19_02-16-55",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   \n   var N, X, Y, S int\n   var C string\n   fmt.Scan(&N, &X, &Y, &C, &S)\n\n   switch C {\n    case \"R\":\n        X = (X + S) % N\n    case \"L\":\n        X = (X - S) % N\n        if X < 0 {\n            X += N\n        }\n    case \"D\":\n        Y = (Y + S) % N\n    case \"U\":\n        Y = (Y - S) % N\n        if Y < 0 {\n            Y += N\n        }\n   }  \n   \n    fmt.Printf(\"%d %d\\n\", X, Y)\n}\n",
+            "lines": "27"
         }
     ]
 }

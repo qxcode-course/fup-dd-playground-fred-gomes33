@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-19_03-08-53",
+            "content": "@@ -278,23 +278,22 @@\n dist\n-sec\n+prim\n  %3C dist\n-prim \n+sec\n %7B%0A  \n@@ -327,22 +327,20 @@\n %22)%0A    %7D\n- \n else\n- \n %7B%0A      \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-19_03-09-11",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n   var val, pc, sc int\n   fmt.Scan(&val, &pc, &sc)\n\n   distprim := int(math.Abs(float64(val - pc)))\n   distsec := int(math.Abs(float64(val - sc)))\n\n    if distprim < distsec {\n         fmt.Println(\"primeiro\")\n    } else if distsec < distprim {\n         fmt.Println(\"segundo\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}

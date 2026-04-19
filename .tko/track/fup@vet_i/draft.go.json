@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_17-47-48",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc mostrar_vetor(arr []int, sep string) {\n\tfmt.Print(\"[\")\n\tfor i, valor := range arr {\n\t\tif i != 0 {\n\t\t\tfmt.Print(sep)\n\t\t}\n\t\tfmt.Printf(\"%v\", valor)\n\t}\n\tfmt.Print(\"]\\n\")\n}\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tvar arr []int = make([]int, qtd)\n\tfor i := range arr {\n\t\tfmt.Scan(&arr[i])\n\t}\n\tmostrar_vetor(arr, \" \")\n}\n",
+            "lines": "24"
+        }
+    ]
+}

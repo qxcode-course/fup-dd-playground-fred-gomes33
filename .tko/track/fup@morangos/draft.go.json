@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-19_03-23-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n  //ter a melhor \u00e1rea\n    var c, l, c2, l2 int\n    fmt.Scan(&c, &l, &c2, &l2)\n\n    area1 := c * l\n    area2 := c2 * l2\n\n    if area1 > area2 {\n        fmt.Println(area1)\n    } else {\n        fmt.Println(area2)\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

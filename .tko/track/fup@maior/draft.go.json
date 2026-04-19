@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-19_03-18-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var c1 float64\n   var esc string\n   var valr float64 \n   fmt.Scan(&c1, &esc, &valr)\n\n    if c1 == valr{\n        fmt.Println(\"primeiro\")\n    } else if esc == \"m\"{\n        if valr < c1{\n            fmt.Println(\"segundo\")\n        } else {\n            fmt.Println(\"primeiro\")\n        }\n    } else if esc == \"M\"{\n        if valr > c1{\n            fmt.Println(\"segundo\")\n        } else {\n            fmt.Println(\"primeiro\")\n        }\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}
