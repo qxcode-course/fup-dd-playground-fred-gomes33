@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-21_01-16-27",
+            "content": "@@ -255,11 +255,8 @@\n f(%22%5D\n-%5Cn\n %22)\n-%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-21_01-16-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var A, B int\n   fmt.Scan(&A, &B)\n\n   fmt.Printf(\"[ \")\n   i := A\n\n   for {\n    if i == B{\n        break\n    }\n    if i%2 == 0{\n        i++\n        continue\n    }\n    fmt.Printf(\"%d \", i)\n    i++\n   }\n   fmt.Printf(\"]\\n\")\n}\n",
+            "lines": "22"
+        }
+    ]
+}

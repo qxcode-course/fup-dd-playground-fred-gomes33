@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-21_01-05-36",
+            "content": "@@ -178,14 +178,14 @@\n  := \n-A\n+B\n ; i \n-%3E\n+%3C\n  A; \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-21_01-07-43",
+            "content": "@@ -174,17 +174,17 @@\n or i := \n-B\n+A\n ; i %3E A;\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-21_01-07-56",
+            "content": "@@ -104,28 +104,8 @@\n %7B%0A%09%09\n-//crescente%0A        \n for \n@@ -167,24 +167,8 @@\n e %7B%0A\n-%09%09//decrescente%0A\n %09%09fo\n@@ -178,16 +178,16 @@\n  := \n-A\n+B\n ; i %3E \n-B\n+A\n ; i-\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-21_01-09-35",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar A, B int\n\tfmt.Scan(&A, &B)\n\n\tfmt.Printf(\"[ \")\n\tif A < B {\n\t\t//crescente\n        for i := A; i < B; i++ {\n\t\t\tfmt.Printf(\"%d \", i)\n\t\t}\n\t} else {\n\t\t//decrescente\n\t\tfor i := A; i > B; i-- {\n\t\t\tfmt.Printf(\"%d \", i)\n\t\t}\n\t}\n\tfmt.Printf(\"]\\n\")\n}\n",
+            "lines": "22"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-21_01-22-26",
+            "content": "@@ -164,17 +164,16 @@\n = A; i %3C\n-=\n  B; i++%7B\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-21_01-23-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var A, B int\n   fmt.Scan(&A, &B) \n\n   if A > B {\n    fmt.Println(\"invalido\")\n    return\n   }\n   \n   soma := 0\n   for i := A; i <= B; i++{\n    if i%2 == 0{\n        soma += i\n    }\n   }\n    fmt.Println(soma)\n}\n",
+            "lines": "19"
+        }
+    ]
+}
