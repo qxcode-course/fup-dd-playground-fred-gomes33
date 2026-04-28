@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_17-40-42",
+            "content": "@@ -37,30 +37,8 @@\n ) %7B%0A\n-   var j1, j2 int%0A   %0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-27_17-54-12",
+            "content": "@@ -58,245 +58,39 @@\n %0A   \n-fmt.Scan(&j1, &j2)%0A%0A   fmt.Print(%22%5B %22)%0A   for i := 0; i %3C= 10; i++ %7B%0A      if i == j1 %7C%7C i == j2 %7B%0A         continue%0A      %7D%0A      if i %3E= 10 %7B%0A         fmt.Print(i)%0A      %7D else %7B%0A         fmt.Print(i, %22 %22)%0A      %7D%0A   %7D%0A   fmt.Print(%22 %5D\n+%0A    fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-28_17-20-01",
+            "content": "@@ -190,17 +190,17 @@\n    if i \n-=\n+%3E\n = 10 %7B%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-20-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var j1, j2 int\n   fmt.Scan(&j1, &j2)\n\n   fmt.Print(\"[ \")\n   for i := 0; i <= 10; i++ {\n      if i == j1 || i == j2 {\n         continue\n      }\n      if i == 10 {\n         fmt.Print(i)\n      } else {\n         fmt.Print(i, \" \")\n      }\n   }\n   fmt.Print(\" ]\")\n}\n",
+            "lines": "19"
+        }
+    ]
+}

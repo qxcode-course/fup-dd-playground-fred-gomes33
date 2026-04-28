@@ -107,7 +107,12 @@
         },
         {
             "label": "2026-04-14_17-16-30",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\t    /*var lista []int = []int{1, 2, 3, 4, 5} // lista est\u00e1tica\n\t\tvar nomes []string = []string{\"Alice\", \"Bob\", \"Charlie\"}\n\t\tnomes = []string{\"Emily\", \"Clara\", \"Biel\"}\n\t\tfmt.Println(nomes)\n\t    fmt.Println(nomes[0]) // imprime \"Emily\" que est\u00e1 no \u00edndice/posi\u00e7\u00e3o 0\n\t\tfmt.Println(lista[2]) // imprime \"3\" que est\u00e1 no \u00edndice/posi\u00e7\u00e3o 2*/\n\n        arr := []int{9, 8, 4, 5, 6, 2, 3} // de tr\u00e1s para frente\n        fmt.Print(\"[ \")\n        for i := len(arr) - 1; i >= 0; i-- {\n        fmt.Printf(\"%d \", arr[i])\n        }\n        fmt.Print(\" ]\\n\")\n\n\n        arra := []int{9, 8, 4, 5, 6, 2, 3} // de tr\u00e1s para frente\n        fmt.Print(\"[ \")\n        for i := len(arra) - 1; i >= 0; i-- {\n        fmt.Printf(\"%d \", arra[i])\n        }\n        fmt.Print(\" ]\\n\")\n\n        array := []int{9, 8, 4, 5, 6, 2, 3} // de tr\u00e1s para frente\n        fmt.Print(\"[ \")\n        for _, valor := range array{\n            fmt.Printf(\"%d \", valor)\n        }\n        fmt.Print(\" ]\\n\")\n    }\n",
+            "content": "@@ -828,16 +828,38 @@\n , 2, 3%7D \n+// de tr%C3%A1s para frente\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-04-27_16-57-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\t    /*var lista []int = []int{1, 2, 3, 4, 5} // lista est\u00e1tica\n\t\tvar nomes []string = []string{\"Alice\", \"Bob\", \"Charlie\"}\n\t\tnomes = []string{\"Emily\", \"Clara\", \"Biel\"}\n\t\tfmt.Println(nomes)\n\t    fmt.Println(nomes[0]) // imprime \"Emily\" que est\u00e1 no \u00edndice/posi\u00e7\u00e3o 0\n\t\tfmt.Println(lista[2]) // imprime \"3\" que est\u00e1 no \u00edndice/posi\u00e7\u00e3o 2*/\n\n        arr := []int{9, 8, 4, 5, 6, 2, 3} // de tr\u00e1s para frente\n        fmt.Print(\"[ \")\n        for i := len(arr) - 1; i >= 0; i-- {\n        fmt.Printf(\"%d \", arr[i])\n        }\n        fmt.Print(\" ]\\n\")\n\n\n        arra := []int{9, 8, 4, 5, 6, 2, 3} // de tr\u00e1s para frente\n        fmt.Print(\"[ \")\n        for i := len(arra) - 1; i >= 0; i-- {\n        fmt.Printf(\"%d \", arra[i])\n        }\n        fmt.Print(\" ]\\n\")\n\n        array := []int{9, 8, 4, 5, 6, 2, 3} \n        fmt.Print(\"[ \")\n        for _, valor := range array{\n            fmt.Printf(\"%d \", valor)\n        }\n        fmt.Print(\" ]\\n\")\n    }\n",
             "lines": "34"
         }
     ]

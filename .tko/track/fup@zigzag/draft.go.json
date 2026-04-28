@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-21_20-57-52",
+            "content": "@@ -84,30 +84,8 @@\n  for\n- i := ni; i %3C= nf; i++\n  %7B%0A \n@@ -97,17 +97,17 @@\n   n1 := \n-i\n+0\n %0A       \n@@ -171,17 +171,17 @@\n lse if n\n-1\n+i\n  %255 == 0\n@@ -227,25 +227,25 @@\n   %7Delse if n\n-1\n+i\n  %253 == 0 && \n@@ -245,17 +245,17 @@\n = 0 && n\n-1\n+i\n  %255 == 0\n@@ -330,17 +330,17 @@\n rintln(n\n-1\n+i\n )%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-21_20-59-56",
+            "content": "@@ -117,88 +117,29 @@\n     \n-if i %253 == 0 && i %255 == 0%7B%0A            fmt.Println(%22zigzag%22)%0A        %7D else\n+n1 := i%0A       \n  if \n-i\n+n1\n  %253 \n@@ -192,17 +192,18 @@\n else if \n-i\n+n1\n  %255 == 0\n@@ -252,35 +252,113 @@\n else\n-%7B%0A            fmt.Println(i\n+ if n1 %253 == 0 && n1 %255 == 0%7B%0A            fmt.Println(%22zigzag%22)%0A        %7Delse%7B%0A            fmt.Println(n1\n )%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-21_21-02-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var ni, nf int\n   fmt.Scan(&ni, &nf)\n\n   for i := ni; i <= nf; i++ {\n        if i %3 == 0 && i %5 == 0{\n            fmt.Println(\"zigzag\")\n        } else if i %3 == 0{\n            fmt.Println(\"zig\")\n        }else if i %5 == 0{\n            fmt.Println(\"zag\")\n        }else{\n            fmt.Println(i)\n        }\n   }\n}\n",
+            "lines": "18"
+        }
+    ]
+}

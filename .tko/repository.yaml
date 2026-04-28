@@ -22,20 +22,21 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if_extra
-- sandbox@sandbox
+- fup@for2
 - fup@list
-- fup@for1
+- sandbox@sandbox
 - fup@if2
 - fup@games
+- fup@if_extra
 - fup@base
 - fup@if1
+- fup@for1
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@for_extra
-selected_index: 79
+selected: sandbox@sandbox
+selected_index: 0

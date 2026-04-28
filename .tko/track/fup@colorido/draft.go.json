@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-21_21-11-54",
+            "content": "@@ -244,17 +244,16 @@\n f i == 1\n-0\n %7B%0A      \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-21_21-12-35",
+            "content": "@@ -161,17 +161,16 @@\n = 0; i %3C\n-=\n  10; i++\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-21_21-12-59",
+            "content": "@@ -457,10 +457,8 @@\n t(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-21_21-13-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var pedra int\n    var inicio string\n    fmt.Scan(&pedra, &inicio)\n\n    pe := inicio\n\n    fmt.Print(\"[ \")\n    for i := 0; i <= 10; i++ {\n        if i == pedra{\n            continue \n        }\n        if i == 10{\n            fmt.Print(\"ceu \")\n            break\n        }    \n        fmt.Printf(\"%d%s \", i, pe)\n        if pe == \"d\"{\n            pe = \"e\"\n        } else{\n            pe = \"d\"\n        }\n  }\n  fmt.Print(\"]\\n\")\n}\n",
+            "lines": "27"
+        }
+    ]
+}

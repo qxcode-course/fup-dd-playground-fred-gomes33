@@ -1,0 +1,70 @@
+2026-04-27 16:55:48, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-04-27 16:57:59, EXEC, v:1, k:sandbox@user_001, mode:LOCK, rate:0, size:34
+2026-04-27 16:57:59, MOVE, v:1, k:sandbox@user_001, mode:EDIT
+2026-04-27 17:29:44, MOVE, v:1, k:fup@semana, mode:PICK
+2026-04-27 17:29:46, EXEC, v:1, k:fup@semana, mode:FULL, rate:100
+2026-04-27 17:29:46, MOVE, v:1, k:fup@semana, mode:EDIT
+2026-04-27 17:35:06, MOVE, v:1, k:fup@semana, mode:BACK
+2026-04-27 17:35:40, MOVE, v:1, k:fup@impedido, mode:PICK
+2026-04-27 17:35:41, EXEC, v:1, k:fup@impedido, mode:FULL, rate:100
+2026-04-27 17:35:42, MOVE, v:1, k:fup@impedido, mode:BACK
+2026-04-27 17:35:45, MOVE, v:1, k:fup@chaves, mode:PICK
+2026-04-27 17:35:46, EXEC, v:1, k:fup@chaves, mode:FULL, rate:100
+2026-04-27 17:35:47, MOVE, v:1, k:fup@chaves, mode:BACK
+2026-04-27 17:35:48, MOVE, v:1, k:fup@morangos, mode:PICK
+2026-04-27 17:35:49, EXEC, v:1, k:fup@morangos, mode:FULL, rate:100
+2026-04-27 17:35:49, MOVE, v:1, k:fup@morangos, mode:BACK
+2026-04-27 17:35:51, MOVE, v:1, k:fup@morangos, mode:PICK
+2026-04-27 17:35:52, MOVE, v:1, k:fup@morangos, mode:BACK
+2026-04-27 17:35:52, MOVE, v:1, k:fup@taxi, mode:PICK
+2026-04-27 17:35:53, EXEC, v:1, k:fup@taxi, mode:FULL, rate:100
+2026-04-27 17:35:53, MOVE, v:1, k:fup@taxi, mode:BACK
+2026-04-27 17:35:55, MOVE, v:1, k:fup@par, mode:PICK
+2026-04-27 17:35:55, EXEC, v:1, k:fup@par, mode:FULL, rate:100
+2026-04-27 17:35:56, MOVE, v:1, k:fup@par, mode:BACK
+2026-04-27 17:35:56, MOVE, v:1, k:fup@divisiveis, mode:PICK
+2026-04-27 17:35:57, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:100
+2026-04-27 17:35:58, MOVE, v:1, k:fup@divisiveis, mode:BACK
+2026-04-27 17:36:02, MOVE, v:1, k:fup@americano, mode:DOWN
+2026-04-27 17:36:03, MOVE, v:1, k:fup@americano, mode:PICK
+2026-04-27 17:35:41, MOVE, v:1, k:fup@impedido, mode:EDIT
+2026-04-27 17:35:46, MOVE, v:1, k:fup@chaves, mode:EDIT
+2026-04-27 17:35:48, MOVE, v:1, k:fup@morangos, mode:EDIT
+2026-04-27 17:35:53, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-04-27 17:35:55, MOVE, v:1, k:fup@par, mode:EDIT
+2026-04-27 17:35:57, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-04-27 17:36:02, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-04-27 17:36:02, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-04-27 17:39:01, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-04-27 17:39:41, MOVE, v:1, k:fup@americano, mode:BACK
+2026-04-27 17:39:52, MOVE, v:1, k:fup@bundona, mode:DOWN
+2026-04-27 17:39:52, MOVE, v:1, k:fup@bundona, mode:PICK
+2026-04-27 17:40:30, MOVE, v:1, k:fup@bundona, mode:BACK
+2026-04-27 17:40:36, MOVE, v:1, k:fup@filhos, mode:PICK
+2026-04-27 17:40:36, EXEC, v:1, k:fup@filhos, mode:FULL, rate:100
+2026-04-27 17:40:37, MOVE, v:1, k:fup@filhos, mode:BACK
+2026-04-27 17:40:42, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-04-27 17:40:42, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:5
+2026-04-27 17:40:43, MOVE, v:1, k:fup@concentra, mode:BACK
+2026-04-27 17:40:45, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-04-27 17:40:45, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0
+2026-04-27 17:40:49, MOVE, v:1, k:fup@concentra, mode:BACK
+2026-04-27 17:40:51, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-04-27 17:39:52, MOVE, v:1, k:fup@bundona, mode:EDIT
+2026-04-27 17:39:52, MOVE, v:1, k:fup@bundona, mode:EDIT
+2026-04-27 17:40:36, MOVE, v:1, k:fup@filhos, mode:EDIT
+2026-04-27 17:40:45, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-04-27 17:44:30, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-04-27 17:54:12, EXEC, v:1, k:fup@concentra, mode:FULL, size:7, fail:COMP
+2026-04-27 17:54:17, MOVE, v:1, k:fup@concentra, mode:BACK
+2026-04-27 17:54:52, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-04-27 17:54:55, MOVE, v:1, k:sandbox@user_001, mode:BACK
+2026-04-27 17:55:12, MOVE, v:1, k:sandbox@user_002, mode:PICK
+2026-04-27 18:17:57, EXEC, v:1, k:sandbox@user_002, mode:LOCK, rate:0, size:75
+2026-04-27 18:18:47, MOVE, v:1, k:sandbox@user_002, mode:BACK
+2026-04-27 18:19:11, MOVE, v:1, k:sandbox@user_003, mode:PICK
+2026-04-27 18:19:54, EXEC, v:1, k:sandbox@user_003, mode:LOCK, rate:0, size:77
+2026-04-27 18:20:23, EXEC, v:1, k:sandbox@user_003, mode:LOCK, rate:0
+2026-04-27 18:20:29, MOVE, v:1, k:sandbox@user_003, mode:BACK
+2026-04-27 18:20:31, MOVE, v:1, k:sandbox@user_002, mode:PICK
+2026-04-27 18:20:39, EXEC, v:1, k:sandbox@user_002, mode:LOCK, rate:0

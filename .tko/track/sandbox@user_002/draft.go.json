@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_18-17-57",
+            "content": "package main\nimport \"fmt\"\nimport \"slices\"\nimport \"strconv\"\n\nfunc filtrar_impares(nums []int) []int {\n    impares := make([]int, 0, len(nums))\n    for _, elem := range nums{\n        if elem%2 == 1{\n            impares = append(impares, elem)\n        }\n    }\n    return impares\n}\n\nfunc index(nums []int, valor int)int{\n    for i, elem := range nums{\n        if elem == valor{\n            return i\n        }\n    }\n    return -1\n}\n\nfunc contains(nums []int, valor int) bool{\n    for _, elem := range nums{\n        if elem == valor{\n            return true\n        }\n    }\n    return false\n}\n\nfunc count(nums []int, valor int)int {\n    contador := 0 \n    for _, elem := range nums{\n        if elem == valor{\n            contador += 1\n        }\n    }\n    return contador\n}\n\nfunc separar_figurinhas(montage []int)([]int, []int){\n    album := make([]int, 0, len(montage))\n    repet := make([]int, 0, len(montage))\n    for _, fig := range montage{\n        if !contains(album, fig){\n            album = append(album, fig)\n            }else{\n                    repet = append(repet, fig)\n                }\n            }\n            return album, repet\n        }\n\nfunc main(){\n    var montante []int = make([]int, 0, 1)\n    fmt.Println(montante, len(montante), cap(montante))\n    montante = append(montante, 7, 3, 2, 1, 9, 1, 2, 3, 4, 5, 4, 3, 2, 1, 2, 5, 7)\n    //album -> 1,2,3,4,5,7\n    //trocar -> 4,3,2,1,2,5\n    num, err := strconv.Atoi(\"32432\")\n    if err == nil{\n        fmt.Println(num)\n    }else {\n        fmt.Println(err)\n    }\n    album, repet := separar_figurinhas(montante)\n\n    slices.Sort(repet)\n    fmt.Println(album)\n    fmt.Println(repet)\n}\n\n",
+            "lines": "75"
+        }
+    ]
+}
