@@ -1,19 +1,26 @@
 package main
 import "fmt"
 func main() {
-   var j1, j2 int
-   fmt.Scan(&j1, &j2)
+    var A, B int
+    fmt.Scan(&A, &B)
 
-   fmt.Print("[ ")
-   for i := 0; i <= 10; i++ {
-      if i == j1 || i == j2 {
-         continue
-      }
-      if i == 10 {
-         fmt.Print(i)
-      } else {
-         fmt.Print(i, " ")
-      }
-   }
-   fmt.Print(" ]")
+    fmt.Print("[ ")
+    for i := A; i <= B; i++ {
+        j := A + B - i
+        fmt.Print(i, " ", j, " ")
+        if i == j {
+            break
+        }
+    }
+
+   
+    for i := B; i >= A; i-- {
+        j := A + B - i
+        fmt.Print(i, " ", j, " ")
+        if i == j {
+            break
+        }
+    }
+
+    fmt.Println("]")
 }

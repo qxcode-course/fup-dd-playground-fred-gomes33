@@ -17,8 +17,38 @@
         },
         {
             "label": "2026-04-28_17-20-08",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var j1, j2 int\n   fmt.Scan(&j1, &j2)\n\n   fmt.Print(\"[ \")\n   for i := 0; i <= 10; i++ {\n      if i == j1 || i == j2 {\n         continue\n      }\n      if i == 10 {\n         fmt.Print(i)\n      } else {\n         fmt.Print(i, \" \")\n      }\n   }\n   fmt.Print(\" ]\")\n}\n",
+            "content": "@@ -105,107 +105,57 @@\n or i\n-, j\n  := \n-j1, j2\n+0\n ; i %3C= \n-j2 && j %3E= j1; i, j = i+1, j-1%7B%0A      fmt.Print(i, %22 %22, j, %22 %22)%0A      if\n+10; i++ %7B%0A      if i == j1 %7C%7C\n  i == j\n+2\n  %7B%0A \n@@ -154,37 +154,40 @@\n = j2 %7B%0A         \n-break\n+continue\n %0A      %7D%0A   %7D%0A%0A \n@@ -186,136 +186,87 @@\n %0A   \n-%7D%0A%0A   for i, j := j2, j1; i %3E= j1 && j %3C= j2; i, j2 = i-1, j+1%7B%0A      fmt.Print(i, %22 %22, j, %22 %22)%0A      if i == j %7B%0A         break\n+   if i == 10 %7B%0A         fmt.Print(i)%0A      %7D else %7B%0A         fmt.Print(i, %22 %22)\n %0A   \n@@ -275,17 +275,16 @@\n  %7D%0A   %7D%0A\n-%0A\n    fmt.P\n",
             "lines": "19"
+        },
+        {
+            "label": "2026-05-05_16-52-41",
+            "content": "@@ -275,24 +275,25 @@\n  %3C= j2; i, j\n+2\n  = i-1, j+1%7B\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_16-52-50",
+            "content": "@@ -40,25 +40,26 @@\n %0A   \n- \n var \n-A, B\n+j1, j2\n  int%0A   \n  fmt\n@@ -50,25 +50,24 @@\n , j2 int%0A   \n- \n fmt.Scan(&A,\n@@ -68,20 +68,21 @@\n an(&\n-A, &B\n+j1, &j2\n )%0A%0A   \n- \n fmt.\n@@ -93,21 +93,19 @@\n t(%22%5B %22)%0A\n-%0A\n    \n- \n for i, j\n@@ -112,20 +112,23 @@\n  := \n-A, B\n+j1, j2\n ; i %3C= \n-B\n+j2\n  && \n@@ -132,17 +132,18 @@\n && j %3E= \n-A\n+j1\n ; i, j =\n@@ -151,21 +151,18 @@\n i+1, j-1\n- \n %7B%0A\n-  \n       fm\n@@ -183,34 +183,32 @@\n , j, %22 %22)%0A      \n-  \n if i == j %7B%0A    \n@@ -208,35 +208,30 @@\n  %7B%0A         \n-   \n break%0A\n-  \n       %7D%0A    \n@@ -233,55 +233,11 @@\n %0A   \n- \n %7D%0A%0A\n-    // segunda parte: continua invertendo%0A \n    f\n@@ -251,20 +251,23 @@\n  := \n-B, A\n+j2, j1\n ; i %3E= \n-A\n+j1\n  && \n@@ -275,9 +275,10 @@\n  %3C= \n-B\n+j2\n ; i,\n@@ -290,25 +290,24 @@\n i-1, j+1\n- \n %7B%0A      \n   fmt.Pr\n@@ -294,26 +294,24 @@\n  j+1%7B%0A      \n-  \n fmt.Print(i,\n@@ -326,26 +326,24 @@\n  %22 %22)%0A      \n-  \n if i == j %7B%0A\n@@ -347,27 +347,24 @@\n  %7B%0A         \n-   \n break%0A      \n@@ -367,20 +367,16 @@\n     \n-  \n %7D%0A\n- \n    %7D%0A%0A\n- \n    f\n@@ -387,12 +387,11 @@\n rint\n-ln\n (%22\n+ \n %5D%22)%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_16-55-43",
+            "content": "@@ -97,41 +97,8 @@\n %22)%0A%0A\n-    // ida: A cresce, B decresce%0A\n     \n@@ -106,21 +106,27 @@\n or i\n+, j\n  := A\n+, B\n ; i %3C= B\n ; i+\n@@ -125,38 +125,37 @@\n %3C= B\n-; i++ %7B%0A       \n+ && j %3E= A; i,\n  j \n-:\n = \n-A + B - i\n+i+1, j-1 %7B\n %0A   \n@@ -251,13 +251,21 @@\n  // \n-volta\n+segunda parte\n : co\n@@ -295,21 +295,27 @@\n or i\n+, j\n  := B\n+, A\n ; i %3E= A\n ; i-\n@@ -314,38 +314,37 @@\n %3E= A\n-; i-- %7B%0A       \n+ && j %3C= B; i,\n  j \n-:\n = \n-A + B - i\n+i-1, j+1 %7B\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-05_16-57-29",
+            "content": "@@ -23,44 +23,8 @@\n mt%22%0A\n-package main%0A%0Aimport (%0A    %22fmt%22%0A)%0A%0A\n func\n@@ -91,16 +91,50 @@\n nt(%22%5B %22)\n+%0A%0A    // ida: A cresce, B decresce\n %0A    for\n@@ -264,24 +264,58 @@\n    %7D%0A    %7D%0A%0A\n+    // volta: continua invertendo%0A\n     for i :=\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-05_16-58-38",
+            "content": "@@ -19,16 +19,52 @@\n t %22fmt%22%0A\n+package main%0A%0Aimport (%0A    %22fmt%22%0A)%0A%0A\n func mai\n@@ -274,12 +274,8 @@\n  %7D%0A%0A\n-   %0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-05_16-59-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, B int\n    fmt.Scan(&A, &B)\n\n    fmt.Print(\"[ \")\n    for i := A; i <= B; i++ {\n        j := A + B - i\n        fmt.Print(i, \" \", j, \" \")\n        if i == j {\n            break\n        }\n    }\n\n   \n    for i := B; i >= A; i-- {\n        j := A + B - i\n        fmt.Print(i, \" \", j, \" \")\n        if i == j {\n            break\n        }\n    }\n\n    fmt.Println(\"]\")\n}\n",
+            "lines": "26"
         }
     ]
 }

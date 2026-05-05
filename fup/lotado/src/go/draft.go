@@ -1,15 +1,29 @@
 package main
 import "fmt"
 func main() {
-    var C, M, E int
-    fmt.Scan(&C, &M, &E)
-    // C -> capacidade do ônibus prevista pela legislação
-    // M -> qnt de pessoas que entram ou saem
-    // E -> estado atual do ônibus
+    var C int
+    fmt.Scan(&C)
     
-    
-    for
+    pass := 0
+    for{
+        var M int
+        _, err := fmt.Scan(&M)
+        if err != nil{
+            break
+        }
+        pass += M
 
-
-    fmt.Println("Hello, World!")
+       if pass >= 2*C {
+            fmt.Println("hora de partir")
+            break
+        } else if pass == 0 {
+            fmt.Println("vazio")
+        } else if pass < C {
+            fmt.Println("ainda cabe")
+        } else if pass == C {
+            fmt.Println("lotado")
+        } else if pass > C {
+            fmt.Println("lotado")
+        }
+    }
 }

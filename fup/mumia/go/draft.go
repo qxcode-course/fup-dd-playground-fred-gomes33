@@ -1,7 +1,6 @@
+
 package main
-
 import "fmt"
-
 func main() {
 	var nome string
 	var idad int

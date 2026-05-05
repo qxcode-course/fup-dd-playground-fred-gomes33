@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-10-12",
+            "content": "@@ -192,20 +192,16 @@\n       %7D%0A\n-    \n     pass\n@@ -211,20 +211,16 @@\n  M%0A%0A    \n- \n-   \n if pass \n@@ -225,36 +225,32 @@\n s == 0%7B%0A        \n-  \n-  \n fmt.Println(%22vaz\n@@ -250,36 +250,32 @@\n ln(%22vazio%22)%0A    \n-   \n- \n %7Delse if pass %3C \n@@ -273,28 +273,24 @@\n f pass %3C C%7B%0A\n-    \n         fmt.\n@@ -311,20 +311,16 @@\n  cabe%22)%0A\n-    \n     %7Dels\n@@ -331,28 +331,24 @@\n  pass == C%7B%0A\n-    \n         fmt.\n@@ -369,20 +369,16 @@\n o%22)%0A    \n-  \n-  \n %7Delse if\n@@ -391,20 +391,16 @@\n %3E= 2*C%7B%0A\n-    \n         \n@@ -429,20 +429,16 @@\n artir%22)%0A\n-    \n         \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-05_17-11-38",
+            "content": "@@ -222,99 +222,8 @@\n     \n-if pass %3E= 2*C %7B%0A            fmt.Println(%22hora de partir%22)%0A            break%0A        %7D else\n  if \n@@ -231,17 +231,16 @@\n ass == 0\n- \n %7B%0A      \n@@ -267,33 +267,32 @@\n azio%22)%0A        %7D\n- \n else if pass %3C C\n@@ -291,17 +291,16 @@\n pass %3C C\n- \n %7B%0A      \n@@ -332,33 +332,32 @@\n cabe%22)%0A        %7D\n- \n else if pass == \n@@ -357,17 +357,16 @@\n ass == C\n- \n %7B%0A      \n@@ -402,17 +402,16 @@\n        %7D\n- \n else if \n@@ -416,19 +416,21 @@\n f pass %3E\n- C \n+= 2*C\n %7B%0A      \n@@ -439,87 +439,56 @@\n     \n-// entre C e 2*C (sem chegar a 2*C ainda)%0A            fmt.Println(%22lotado%22)%0A   \n+fmt.Println(%22hora de partir%22)%0A            break%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-05_17-13-08",
+            "content": "@@ -514,24 +514,78 @@\n  pass %3E C %7B%0A\n+            // entre C e 2*C (sem chegar a 2*C ainda)%0A\n             \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-05_17-13-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var C int\n    fmt.Scan(&C)\n    \n    pass := 0\n    for{\n        var M int\n        _, err := fmt.Scan(&M)\n        if err != nil{\n            break\n        }\n        pass += M\n\n       if pass >= 2*C {\n            fmt.Println(\"hora de partir\")\n            break\n        } else if pass == 0 {\n            fmt.Println(\"vazio\")\n        } else if pass < C {\n            fmt.Println(\"ainda cabe\")\n        } else if pass == C {\n            fmt.Println(\"lotado\")\n        } else if pass > C {\n            fmt.Println(\"lotado\")\n        }\n    }\n}\n",
+            "lines": "29"
+        }
+    ]
+}
