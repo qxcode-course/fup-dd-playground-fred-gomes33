@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-05-04_17-44-02",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var j1, j2, j3, j4 int\n    fmt.Scan(&j1, &j2, &j3, &j4)\n\n    \n    \n    \n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -102,255 +102,50 @@\n     \n-soma := j1 + j2 + j3 + j4%0A%0A    if soma == 0%7B%0A        fmt.Println(%22nenhum%22)%0A        return%0A    %7D%0A    %0A    switch soma %25 4%7B%0A    case 1: %0A        fmt.Println(%22jog1%22)%0A    case 2:%0A        fmt.Println(%22jog2%22)%0A    case 3:%0A        fmt.Println(%22jog3%22)%0A    %7D\n+%0A    %0A    %0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-05-05_18-19-12",
+            "content": "@@ -345,48 +345,8 @@\n 3%22)%0A\n-    case 0:%0A        fmt.Println(%22jog4%22)%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_18-19-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var j1, j2, j3, j4 int\n    fmt.Scan(&j1, &j2, &j3, &j4)\n\n    soma := j1 + j2 + j3 + j4\n\n    if soma == 0{\n        fmt.Println(\"nenhum\")\n        return\n    }\n    \n    switch soma % 4{\n    case 1: \n        fmt.Println(\"jog1\")\n    case 2:\n        fmt.Println(\"jog2\")\n    case 3:\n        fmt.Println(\"jog3\")\n    case 0:\n        fmt.Println(\"jog4\")\n    }\n}\n",
+            "lines": "24"
         }
     ]
 }

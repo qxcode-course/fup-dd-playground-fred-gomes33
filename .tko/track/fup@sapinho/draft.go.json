@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-29-28",
+            "content": "@@ -41,384 +41,35 @@\n     \n-var P, S, E int%0A    fmt.Scan(&P, &S, &E)%0A    //P -%3E Profundidade do po%C3%A7o %0A    //S -%3E Altura do salto%0A    //E -%3E Queda%0A    // Sendo sempre S%3EE%0A%0A    posicao := 0%0A%0A    for %7B%0A        salto := posicao + S%0A        if salto %3E= P%7B%0A            fmt.Printf(%22%25d saiu%5Cn%22, posicao)%0A            break%0A        %7D%0A        fmt.Printf(%22%25d %25d%5Cn%22, posicao, salto)%0A%0A        posicao = salto - E%0A%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-37-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P, S, E int\n    fmt.Scan(&P, &S, &E)\n    //P -> Profundidade do po\u00e7o \n    //S -> Altura do salto\n    //E -> Queda\n    // Sendo sempre S>E\n\n    posicao := 0\n\n    for {\n        salto := posicao + S\n        if salto >= P{\n            fmt.Printf(\"%d saiu\\n\", posicao)\n            break\n        }\n        fmt.Printf(\"%d %d\\n\", posicao, salto)\n\n        posicao = salto - E\n\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}

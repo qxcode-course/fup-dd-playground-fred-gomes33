@@ -31,9 +31,10 @@ expanded:
 - fup@for1
 - fup@games
 - fup@if_extra
+- fup@for_extra
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'

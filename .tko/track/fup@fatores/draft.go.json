@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-46-00",
+            "content": "@@ -42,544 +42,34 @@\n    f\n-unc FatorarPrimos(n int)%7B%0A        fator := 2%0A        contagem := 0%0A%0A        for n != 1%7B%0A            if n%25fator == 0%7B%0A                n /= fator%0A                contagem++%0A            %7Delse%7B%0A                if contagem %3E 0%7B%0A                    fmt.Printf(%22%25d %25d%5Cn%22, fator, contagem)%0A                %7D%0A                fator++%0A                contagem := 0%0A            %7D%0A        %7D%0A        if contagem %3E 0%7B%0A            fmt.PRintf(%22%25d %25d%5Cn%22, fator, contagem)%0A        %7D%0A    %7D%0A%0Afunc main()%7B%0A    var n int%0A    fmt.Scan(&n)%0A    FatorarPrimos(n)%0A%7D\n+mt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-51-06",
+            "content": "@@ -19,17 +19,34 @@\n t %22fmt%22%0A\n-%0A\n+func main() %7B%0A    \n func Fat\n@@ -64,16 +64,20 @@\n n int)%7B%0A\n+    \n     fato\n@@ -83,24 +83,28 @@\n or := 2%0A    \n+   \n+ \n contagem := \n@@ -106,16 +106,20 @@\n m := 0%0A%0A\n+    \n     for \n@@ -134,16 +134,20 @@\n         \n+ \n+   \n if n%25fat\n@@ -167,16 +167,20 @@\n         \n+   \n+ \n n /= fat\n@@ -182,16 +182,20 @@\n = fator%0A\n+    \n         \n@@ -217,16 +217,20 @@\n         \n+    \n %7Delse%7B%0A \n@@ -236,24 +236,28 @@\n             \n+  \n+  \n if contagem \n@@ -253,32 +253,36 @@\n f contagem %3E 0%7B%0A\n+    \n                 \n@@ -328,26 +328,32 @@\n             \n-%7D%0A\n+    %7D%0A  \n             \n@@ -356,16 +356,18 @@\n     \n+  \n fator++%0A\n     \n@@ -362,16 +362,20 @@\n fator++%0A\n+    \n         \n@@ -404,16 +404,28 @@\n     \n+    \n %7D%0A    \n+ \n-%7D%0A\n+   %7D%0A    \n     \n@@ -441,38 +441,42 @@\n em %3E 0%7B%0A        \n+    \n fmt.P\n-r\n+R\n intf(%22%25d %25d%5Cn%22, \n@@ -496,15 +496,23 @@\n em)%0A\n+        %7D%0A\n     %7D\n-%0A%7D\n %0A%0Afu\n@@ -576,8 +576,10 @@\n os(n)%0A%7D%0A\n+%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-05_17-51-32",
+            "content": "@@ -322,16 +322,17 @@\n ontagem \n+:\n = 0%0A    \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-05_17-52-23",
+            "content": "package main\nimport \"fmt\"\n\nfunc FatorarPrimos(n int){\n    fator := 2\n    contagem := 0\n\n    for n != 1{\n        if n%fator == 0{\n            n /= fator\n            contagem++\n        }else{\n            if contagem > 0{\n                fmt.Printf(\"%d %d\\n\", fator, contagem)\n            }\n            fator++\n            contagem = 0\n        }\n    }\n    if contagem > 0{\n        fmt.Printf(\"%d %d\\n\", fator, contagem)\n    }\n}\n\nfunc main(){\n    var n int\n    fmt.Scan(&n)\n    FatorarPrimos(n)\n}\n",
+            "lines": "29"
+        }
+    ]
+}

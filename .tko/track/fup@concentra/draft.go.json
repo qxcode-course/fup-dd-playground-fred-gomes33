@@ -47,8 +47,13 @@
         },
         {
             "label": "2026-05-05_16-59-31",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, B int\n    fmt.Scan(&A, &B)\n\n    fmt.Print(\"[ \")\n    for i := A; i <= B; i++ {\n        j := A + B - i\n        fmt.Print(i, \" \", j, \" \")\n        if i == j {\n            break\n        }\n    }\n\n   \n    for i := B; i >= A; i-- {\n        j := A + B - i\n        fmt.Print(i, \" \", j, \" \")\n        if i == j {\n            break\n        }\n    }\n\n    fmt.Println(\"]\")\n}\n",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,32 +37,28 @@\n ) %7B%0A\n-%09\n+    \n var \n-a, b\n+A, B\n  int%0A\n-%09_, err :=\n+   \n  fmt\n@@ -68,94 +68,243 @@\n an(&\n-a, &b)%0A%09if err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09fmt.Print(%22%5B %22)%0A%09i := a%0A%09j := b%0A%09\n+A, &B)%0A%0A    fmt.Print(%22%5B %22)%0A    for i := A; i %3C= B; i++ %7B%0A        j := A + B - i%0A        fmt.Print(i, %22 %22, j, %22 %22)%0A        if i == j %7B%0A            break%0A        %7D%0A    %7D%0A%0A   %0A    \n for i \n-%3C= b %7B%0A%09%09\n+:= B; i %3E= A; i-- %7B%0A        j := A + B - i%0A        \n fmt.\n@@ -312,43 +312,84 @@\n rint\n-f(%22%25d %25d\n+(i, %22\n  %22, \n-i, j)%0A%09%09i++%0A%09%09j--%0A%09%7D%0A%0A%09\n+j, %22 %22)%0A        if i == j %7B%0A            break%0A        %7D%0A    %7D%0A%0A    \n fmt.\n",
             "lines": "26"
+        },
+        {
+            "label": "2026-05-05_18-03-30",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int\n\t_, err := fmt.Scan(&a, &b)\n\tif err != nil {\n\t\treturn\n\t}\n\n\tfmt.Print(\"[ \")\n\ti := a\n\tj := b\n\tfor i <= b {\n\t\tfmt.Printf(\"%d %d \", i, j)\n\t\ti++\n\t\tj--\n\t}\n\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "21"
         }
     ]
 }

@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-21-18",
+            "content": "@@ -37,173 +37,8 @@\n ) %7B%0A\n-   func Pali(n int) int%7B%0A    ori := n%0A    inv := 0%0A%0A    for n %3E 0%7B%0A        digi := n %25 10%0A        inv = inv*10 + digi%0A        n = n/10%0A    %7D%0A    return inv%0A   %7D%0A   %0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-26-39",
+            "content": "@@ -19,17 +19,33 @@\n t %22fmt%22%0A\n-%0A\n+func main() %7B%0A   \n func Pal\n@@ -56,17 +56,16 @@\n int) int\n- \n %7B%0A    or\n@@ -98,17 +98,16 @@\n or n %3E 0\n- \n %7B%0A      \n@@ -168,11 +168,9 @@\n  = n\n- / \n+/\n 10%0A \n@@ -193,24 +193,16 @@\n inv%0A\n-%7D%0A%0Afunc main() %7B\n+   %7D%0A   \n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-27-02",
+            "content": "@@ -166,16 +166,26 @@\n   %7D%0A    \n+return inv\n %0A%7D%0A%0Afunc\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-27-37",
+            "content": "@@ -171,137 +171,56 @@\n    %0A\n-    if inv == ori%7B%0A        return 1%0A    %7D%0A    return 0%0A%7D%0A%0Afunc main() %7B%0A    var id int%0A    fmt.Scan(&id)%0A    fmt.Println(Pali(id)\n+%7D%0A%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-29-04",
+            "content": "package main\nimport \"fmt\"\n\nfunc Pali(n int) int {\n    ori := n\n    inv := 0\n\n    for n > 0 {\n        digi := n % 10\n        inv = inv*10 + digi\n        n = n / 10\n    }\n    \n    if inv == ori{\n        return 1\n    }\n    return 0\n}\n\nfunc main() {\n    var id int\n    fmt.Scan(&id)\n    fmt.Println(Pali(id))\n}\n",
+            "lines": "24"
+        }
+    ]
+}

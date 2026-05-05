@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-04-14_17-47-48",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc mostrar_vetor(arr []int, sep string) {\n\tfmt.Print(\"[\")\n\tfor i, valor := range arr {\n\t\tif i != 0 {\n\t\t\tfmt.Print(sep)\n\t\t}\n\t\tfmt.Printf(\"%v\", valor)\n\t}\n\tfmt.Print(\"]\\n\")\n}\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tvar arr []int = make([]int, qtd)\n\tfor i := range arr {\n\t\tfmt.Scan(&arr[i])\n\t}\n\tmostrar_vetor(arr, \" \")\n}\n",
+            "content": "@@ -140,10 +140,8 @@\n rint\n-ln\n (sep\n",
             "lines": "24"
+        },
+        {
+            "label": "2026-05-05_17-53-33",
+            "content": "@@ -65,16 +65,32 @@\n ring) %7B%0A\n+%09fmt.Print(%22%5B%22)%0A\n %09for i, \n@@ -178,16 +178,32 @@\n or)%0A%09%7D%0A%09\n+fmt.Print(%22%5D%5Cn%22)\n %0A%7D%0A%0Afunc\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_17-53-47",
+            "content": "@@ -130,13 +130,8 @@\n (sep\n-,%22%5Cn%22\n )%0A%09%09\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_17-55-28",
+            "content": "@@ -126,16 +126,21 @@\n ntln(sep\n+,%22%5Cn%22\n )%0A%09%09%7D%0A%09%09\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_17-55-42",
+            "content": "@@ -286,13 +286,8 @@\n rr%5Bi\n-,%22%5Cn%22\n %5D)%0A%09\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_17-56-00",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc mostrar_vetor(arr []int, sep string) {\n\tfor i, valor := range arr {\n\t\tif i != 0 {\n\t\t\tfmt.Println(sep)\n\t\t}\n\t\tfmt.Printf(\"%v\", valor)\n\t}\n\t\n}\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tvar arr []int = make([]int, qtd)\n\tfor i := range arr {\n\t\tfmt.Scan(&arr[i,\"\\n\"])\n\t}\n\tmostrar_vetor(arr, \" \")\n}\n",
+            "lines": "23"
         }
     ]
 }

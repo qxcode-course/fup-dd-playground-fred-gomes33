@@ -1,26 +1,21 @@
 package main
 import "fmt"
+
 func main() {
-    var A, B int
-    fmt.Scan(&A, &B)
+	var a, b int
+	_, err := fmt.Scan(&a, &b)
+	if err != nil {
+		return
+	}
 
-    fmt.Print("[ ")
-    for i := A; i <= B; i++ {
-        j := A + B - i
-        fmt.Print(i, " ", j, " ")
-        if i == j {
-            break
-        }
-    }
+	fmt.Print("[ ")
+	i := a
+	j := b
+	for i <= b {
+		fmt.Printf("%d %d ", i, j)
+		i++
+		j--
+	}
 
-   
-    for i := B; i >= A; i-- {
-        j := A + B - i
-        fmt.Print(i, " ", j, " ")
-        if i == j {
-            break
-        }
-    }
-
-    fmt.Println("]")
+	fmt.Println("]")
 }
