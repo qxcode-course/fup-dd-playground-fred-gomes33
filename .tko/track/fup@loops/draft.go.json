@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-07_01-20-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var angulo int\n   fmt.Scan(&angulo)\n\n   angulo = ((angulo % 360) + 360) % 360\n   fmt.Println(angulo)\n}\n",
+            "lines": "9"
+        }
+    ]
+}

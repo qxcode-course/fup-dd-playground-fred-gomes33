@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-07_01-21-50",
+            "content": "@@ -41,83 +41,35 @@\n     \n-var N int%0A    fmt.Scan(&N)%0A%0A    N = (N + 1) * (N + 2) / 2%0A    fmt.Println(N\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-07_01-25-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    N = (N + 1) * (N + 2) / 2\n    fmt.Println(N)\n}\n",
+            "lines": "9"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-07_02-00-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var H, M, S int\n    fmt.Scan(&H, &M, &S)\n    \n    S++\n    if S == 60{\n        S = 0\n        M++\n    }\n    if M == 60{\n        M= 0\n        H++\n    }\n    if H == 24{\n        H = 0\n    }\n\n    fmt.Printf(\"%02d %02d %02d\\n\", H, M, S)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-07_02-07-22",
+            "content": "@@ -312,59 +312,8 @@\n o%22)%0A\n-   %7Delse if P %3C 210%7B%0A    fmt.Println(%22Satisfeito%22)%0A\n    %7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-07_02-08-51",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var tipo string\n   var F int\n   fmt.Scan(&tipo, &F)\n\n   var T int\n   if tipo == \"b\"{\n    T = 20\n   }else if tipo == \"c\"{\n    T = 18\n   }\n   \n   P := ((F * T ) - 80) / 10\n\n   if P < 150{\n    fmt.Println(\"Fraco, nem passou\")\n   }else if P < 180{\n    fmt.Println(\"Perfeito\")\n   }else if P < 210{\n    fmt.Println(\"Satisfeito\")\n   }else{ \n    fmt.Println(\"Muito forte, bola fora\")\n }\n}\n",
+            "lines": "26"
+        }
+    ]
+}
