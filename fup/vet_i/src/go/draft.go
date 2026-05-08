@@ -1,7 +1,5 @@
 package main
-
 import "fmt"
-
 func mostrar_vetor(arr []int, sep string) {
 	for i, valor := range arr {
 		if i != 0 {

@@ -57,8 +57,28 @@
         },
         {
             "label": "2026-05-07_01-53-23",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n  var H, M int\n    var S string\n    var D int\n\n    // Entrada\n    fmt.Scan(&H)\n    fmt.Scan(&M)\n    fmt.Scan(&S)\n    fmt.Scan(&D)\n\n    index := H*6 + M/10\n\n    passos := D\n\n    if S == \"H\" {\n        index = (index + passos) % 72\n    } else {\n        index = (index - passos + 72) % 72\n    }\n\n    hora := index / 6\n    minuto := (index % 6) * 10\n\n    fmt.Printf(\"%02d %02d\\n\", hora, minuto)\n}\n",
+            "content": "@@ -37,39 +37,40 @@\n ) %7B%0A\n+ \n  var \n-h, m, d\n+H, M\n  int%0A\n+   \n  var \n-s\n+S\n  string%0A\n %0A if\n@@ -69,213 +69,206 @@\n ing%0A\n-%0A if _, err := fmt.Scanf(%22%25d %25d %25s %25d%22, &h, &m, &S, &d); err != nil%7B%0A    return%0A %7D%0A posicaoinicial := (h * 6) + (m / 10)%0A var posicaofinal int%0A %0A\n+    var D int%0A%0A    // Entrada%0A    fmt.Scan(&H)%0A    fmt.Scan(&M)%0A    fmt.Scan(&S)%0A    fmt.Scan(&D)%0A%0A    index := H*6 + M/10%0A%0A    passos := D%0A%0A   \n  if \n-s\n+S\n  == %22H%22\n+ \n %7B%0A    \n-posicaofinal = (posicaoinicial + d\n+    index = (index + passos\n ) %25 72%0A \n %7Dels\n@@ -263,17 +263,21 @@\n ) %25 72%0A \n-%7D\n+   %7D \n else %7B%0A \n@@ -283,116 +283,96 @@\n     \n-posicaofinal = (posicaoinicial - d\n+    index = (index - passos + 72\n ) %25 72%0A\n+  \n   %7D%0A%0A\n+  \n   hora\n-final := posicaofinal\n+ := index\n  / 6%0A  \n+  \n minuto\n-final := (posicaofinal\n+ := (index\n  %25 6\n@@ -381,16 +381,18 @@\n * 10%0A%0A  \n+  \n fmt.Prin\n@@ -402,12 +402,14 @@\n %22%2502\n+d\n  %2502\n+d\n %5Cn%22,\n@@ -417,21 +417,16 @@\n hora\n-final\n , minuto\n fina\n@@ -425,15 +425,8 @@\n nuto\n-final\n )%0A%7D%0A\n-%0A%0A\n",
             "lines": "28"
+        },
+        {
+            "label": "2026-05-08_00-50-39",
+            "content": "@@ -113,17 +113,17 @@\n h, &m, &\n-s\n+S\n , &d); e\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-08_00-50-52",
+            "content": "@@ -422,14 +422,12 @@\n %22%2502\n-d\n  %2502\n-d\n %5Cn%22,\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-08_00-51-14",
+            "content": "@@ -70,19 +70,46 @@\n g%0A%0A \n-  fmt.Scan(\n+if _, err := fmt.Scanf(%22%25d %25d %25s %25d%22, \n &h, \n@@ -117,115 +117,104 @@\n m, &\n-d, &s)%0A%0A   %0A    minutosI\n+s, &d); err != nil%7B%0A    return%0A %7D%0A posicaoi\n nicia\n-is\n+l\n  := \n-h*60 + m%0A%0A    minutosCaminhados := d * 10%0A%0A   \n+(h * 6) + (m / 10)%0A\n  var \n-minutosFinais\n+posicaofinal\n  int%0A \n-  \n+%0A\n  if \n@@ -225,77 +225,57 @@\n  %22H%22\n- \n %7B%0A    \n-    minutosFinais = minutosI\n+posicaofinal = (posicaoi\n nicia\n-is + minutosCaminhados%0A   \n+l + d) %25 72%0A\n  %7D\n- \n else\n@@ -285,197 +285,130 @@\n     \n-    minutosFinais = minutosIniciais - minutosCaminhados%0A    %7D%0A%0A    minutosFinais = ((minutosFinais %25 720) + 720) %25 720%0A%0A    hora := minutosFinais / 60%0A    minuto := minutosFinais %25 6\n+posicaofinal = (posicaoinicial - d) %25 72%0A  %7D%0A%0A  horafinal := posicaofinal / 6%0A  minutofinal := (posicaofinal %25 6) * 1\n 0%0A%0A  \n-  \n fmt.\n@@ -437,16 +437,21 @@\n hora\n+final\n , minuto\n )%0A%7D%0A\n@@ -446,14 +446,19 @@\n , minuto\n+final\n )%0A%7D%0A%0A%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-08_00-54-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n var h, m, d int\n var s string\n\n   fmt.Scan(&h, &m, &d, &s)\n\n   \n    minutosIniciais := h*60 + m\n\n    minutosCaminhados := d * 10\n\n    var minutosFinais int\n    if s == \"H\" {\n        minutosFinais = minutosIniciais + minutosCaminhados\n    } else {\n        minutosFinais = minutosIniciais - minutosCaminhados\n    }\n\n    minutosFinais = ((minutosFinais % 720) + 720) % 720\n\n    hora := minutosFinais / 60\n    minuto := minutosFinais % 60\n\n    fmt.Printf(\"%02d %02d\\n\", hora, minuto)\n}\n\n\n",
+            "lines": "29"
         }
     ]
 }

@@ -1,28 +1,29 @@
 package main
 import "fmt"
 func main() {
-  var H, M int
-    var S string
-    var D int
+ var h, m, d int
+ var s string
 
-    // Entrada
-    fmt.Scan(&H)
-    fmt.Scan(&M)
-    fmt.Scan(&S)
-    fmt.Scan(&D)
+   fmt.Scan(&h, &m, &d, &s)
 
-    index := H*6 + M/10
+   
+    minutosIniciais := h*60 + m
 
-    passos := D
+    minutosCaminhados := d * 10
 
-    if S == "H" {
-        index = (index + passos) % 72
+    var minutosFinais int
+    if s == "H" {
+        minutosFinais = minutosIniciais + minutosCaminhados
     } else {
-        index = (index - passos + 72) % 72
+        minutosFinais = minutosIniciais - minutosCaminhados
     }
 
-    hora := index / 6
-    minuto := (index % 6) * 10
+    minutosFinais = ((minutosFinais % 720) + 720) % 720
+
+    hora := minutosFinais / 60
+    minuto := minutosFinais % 60
 
     fmt.Printf("%02d %02d\n", hora, minuto)
 }
+
+

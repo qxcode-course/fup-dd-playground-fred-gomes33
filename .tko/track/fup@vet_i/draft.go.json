@@ -27,8 +27,38 @@
         },
         {
             "label": "2026-05-05_17-56-00",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc mostrar_vetor(arr []int, sep string) {\n\tfor i, valor := range arr {\n\t\tif i != 0 {\n\t\t\tfmt.Println(sep)\n\t\t}\n\t\tfmt.Printf(\"%v\", valor)\n\t}\n\t\n}\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tvar arr []int = make([]int, qtd)\n\tfor i := range arr {\n\t\tfmt.Scan(&arr[i,\"\\n\"])\n\t}\n\tmostrar_vetor(arr, \" \")\n}\n",
+            "content": "@@ -282,16 +282,21 @@\n n(&arr%5Bi\n+,%22%5Cn%22\n %5D)%0A%09%7D%0A%09m\n",
             "lines": "23"
+        },
+        {
+            "label": "2026-05-08_00-32-43",
+            "content": "@@ -130,13 +130,8 @@\n (sep\n-,%22%5Cn%22\n )%0A%09%09\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-08_00-33-04",
+            "content": "@@ -127,16 +127,16 @@\n tln(\n+sep,\n %22%5Cn%22\n-,sep\n )%0A%09%09\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-08_00-33-34",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -20,16 +20,167 @@\n t %22fmt%22%0A\n+%0Afunc mostrar_vetor(arr %5B%5Dint, sep string) %7B%0A%09for i, valor := range arr %7B%0A%09%09if i != 0 %7B%0A%09%09%09fmt.Println(%22%5Cn%22,sep)%0A%09%09%7D%0A%09%09fmt.Printf(%22%25v%22, valor)%0A%09%7D%0A%09%0A%7D%0A%0A\n func mai\n@@ -219,18 +219,22 @@\n d)%0A%09\n-%0A%09valores:\n+var arr %5B%5Dint \n = ma\n@@ -248,17 +248,16 @@\n t, qtd)%0A\n-%0A\n %09for i :\n@@ -262,96 +262,66 @@\n  := \n-0; i %3C qtd; i++%7B%0A%09%09fmt.Scan(&valores)%0A%09%7D%0A%09for _, v := range valores%7B%0A%09%09fmt.Println(v)%0A%09%7D%0A\n+range arr %7B%0A%09%09fmt.Scan(&arr%5Bi%5D)%0A%09%7D%0A%09mostrar_vetor(arr, %22 %22)\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-08_00-38-14",
+            "content": "@@ -23,153 +23,8 @@\n mt%22%0A\n-func mostrar_vetor(arr %5B%5Dint, sep string) %7B%0A%09for i, valor := range arr %7B%0A%09%09if i != 0 %7B%0A%09%09%09fmt.Println(sep)%0A%09%09%7D%0A%09%09fmt.Printf(%22%25v%22, valor)%0A%09%7D%0A%09%0A%7D%0A%0A\n func\n@@ -67,22 +67,18 @@\n d)%0A%09\n-var arr %5B%5Dint \n+%0A%09valores:\n = ma\n@@ -92,16 +92,17 @@\n t, qtd)%0A\n+%0A\n %09for i :\n@@ -107,66 +107,96 @@\n  := \n-range arr %7B%0A%09%09fmt.Scan(&arr%5Bi%5D)%0A%09%7D%0A%09mostrar_vetor(arr, %22 %22)\n+0; i %3C qtd; i++%7B%0A%09%09fmt.Scan(&valores)%0A%09%7D%0A%09for _, v := range valores%7B%0A%09%09fmt.Println(v)%0A%09%7D%0A\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-08_00-39-32",
+            "content": "@@ -118,16 +118,18 @@\n mt.Print\n+ln\n (sep)%0A%09%09\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-08_00-41-46",
+            "content": "package main\nimport \"fmt\"\nfunc mostrar_vetor(arr []int, sep string) {\n\tfor i, valor := range arr {\n\t\tif i != 0 {\n\t\t\tfmt.Print(sep)\n\t\t}\n\t\tfmt.Printf(\"%v\", valor)\n\t}\n\t\n}\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tvar arr []int = make([]int, qtd)\n\tfor i := range arr {\n\t\tfmt.Scan(&arr[i])\n\t}\n\tmostrar_vetor(arr, \" \")\n}\n",
+            "lines": "21"
         }
     ]
 }
