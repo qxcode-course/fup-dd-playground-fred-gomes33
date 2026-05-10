@@ -77,8 +77,48 @@
         },
         {
             "label": "2026-05-08_00-54-12",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n var h, m, d int\n var s string\n\n   fmt.Scan(&h, &m, &d, &s)\n\n   \n    minutosIniciais := h*60 + m\n\n    minutosCaminhados := d * 10\n\n    var minutosFinais int\n    if s == \"H\" {\n        minutosFinais = minutosIniciais + minutosCaminhados\n    } else {\n        minutosFinais = minutosIniciais - minutosCaminhados\n    }\n\n    minutosFinais = ((minutosFinais % 720) + 720) % 720\n\n    hora := minutosFinais / 60\n    minuto := minutosFinais % 60\n\n    fmt.Printf(\"%02d %02d\\n\", hora, minuto)\n}\n\n\n",
+            "content": "@@ -42,16 +42,19 @@\n var h, m\n+, d\n  int%0A va\n@@ -67,19 +67,8 @@\n ring\n-%0A var d int\n %0A%0A  \n@@ -90,13 +90,13 @@\n m, &\n-s, &d\n+d, &s\n )%0A%0A \n",
             "lines": "29"
+        },
+        {
+            "label": "2026-05-10_22-46-00",
+            "content": "@@ -136,13 +136,44 @@\n  h*6\n+0\n  + m\n-/\n+%0A%0A    minutosCaminhados := d * \n 10%0A%0A\n@@ -213,16 +213,17 @@\n s == %22H%22\n+ \n %7B%0A      \n@@ -232,33 +232,32 @@\n minutosFinais = \n-(\n minutosIniciais \n@@ -262,21 +262,32 @@\n s + \n-d) %25 72\n+minutosCaminhados\n %0A    %7D\n+ \n else\n@@ -313,17 +313,16 @@\n inais = \n-(\n minutosI\n@@ -335,26 +335,36 @@\n s - \n-d) %25 72\n+minutosCaminhados\n %0A    \n- \n+%7D%0A%0A\n    \n-if\n  min\n@@ -378,26 +378,12 @@\n ais \n-%3C 0 %7B%0A            \n+= ((\n minu\n@@ -396,29 +396,28 @@\n ais \n-+= 72%0A        %7D%0A    %7D\n+%25 720) + 720) %25 720%0A\n %0A   \n@@ -421,21 +421,16 @@\n     hora\n-Final\n  := minu\n@@ -442,16 +442,17 @@\n nais / 6\n+0\n %0A    min\n@@ -458,18 +458,12 @@\n nuto\n-Final\n  := \n-(\n minu\n@@ -479,13 +479,8 @@\n  %25 6\n-) * 1\n 0%0A%0A \n@@ -499,11 +499,15 @@\n f(%22%25\n+02\n d %25\n+02\n d%5Cn%22\n@@ -516,21 +516,16 @@\n hora\n-Final\n , minuto\n Fina\n@@ -524,13 +524,8 @@\n nuto\n-Final\n )%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-10_22-49-37",
+            "content": "@@ -478,15 +478,11 @@\n f(%22%25\n-02\n d %25\n-02\n d%5Cn%22\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-10_22-49-46",
+            "content": "@@ -33,19 +33,16 @@\n ain() %7B%0A\n-   \n  var h, \n@@ -47,19 +47,16 @@\n , m int%0A\n-   \n  var s s\n@@ -61,19 +61,16 @@\n  string%0A\n-   \n  var d i\n@@ -73,22 +73,16 @@\n  d int%0A%0A\n-    %0A \n    fmt.S\n@@ -105,17 +105,17 @@\n &d)%0A\n- \n+%0A\n    %0A    \n posI\n@@ -110,25 +110,29 @@\n    %0A    \n-p\n+minut\n osInicia\n l := h*6\n@@ -123,17 +123,18 @@\n osInicia\n-l\n+is\n  := h*6 \n@@ -149,24 +149,29 @@\n     var \n-p\n+minut\n osFina\n-l\n+is\n  int%0A   \n@@ -182,17 +182,16 @@\n s == %22H%22\n- \n %7B%0A      \n@@ -192,37 +192,46 @@\n         \n-p\n+minut\n osFina\n-l\n+is\n  = (\n-p\n+minut\n osInicia\n l + d) %25\n@@ -222,17 +222,18 @@\n osInicia\n-l\n+is\n  + d) %25 \n@@ -240,17 +240,16 @@\n 72%0A    %7D\n- \n else %7B%0A \n@@ -259,29 +259,38 @@\n     \n-p\n+minut\n osFina\n-l\n+is\n  = (\n-p\n+minut\n osInicia\n l - \n@@ -285,17 +285,18 @@\n osInicia\n-l\n+is\n  - d) %25 \n@@ -309,24 +309,29 @@\n      if \n-p\n+minut\n osFina\n-l\n+is\n  %3C 0 %7B%0A \n@@ -341,24 +341,29 @@\n         \n-p\n+minut\n osFina\n-l\n+is\n  += 72%0A \n@@ -377,17 +377,16 @@\n %7D%0A    %7D%0A\n-%0A\n     hora\n@@ -394,24 +394,29 @@\n inal := \n-p\n+minut\n osFina\n-l\n+is\n  / 6%0A   \n@@ -436,16 +436,21 @@\n := (\n-p\n+minut\n osFina\n-l\n+is\n  %25 6\n@@ -513,8 +513,10 @@\n inal)%0A%7D%0A\n+%0A%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-10_22-50-44",
+            "content": "@@ -103,25 +103,9 @@\n Scan\n-f(%22%25d %25d %25s %25d%22, \n+(\n &h, \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-10_22-55-50",
+            "content": "@@ -103,11 +103,25 @@\n Scan\n-ln(\n+f(%22%25d %25d %25s %25d%22, \n &h, \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-10_22-56-06",
+            "content": "@@ -99,16 +99,18 @@\n fmt.Scan\n+ln\n (&h, &m,\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-10_22-56-19",
+            "content": "@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var h, m\n@@ -50,17 +50,20 @@\n , m int%0A\n-%09\n+    \n var s st\n@@ -67,17 +67,20 @@\n  string%0A\n-%09\n+    \n var d in\n@@ -86,116 +86,51 @@\n nt%0A%0A\n-%09%0A%09_, err := fmt.Scanf(%22%25d%5Cn%25d%5Cn%25s%5Cn%25d%5Cn%22, &h, &m, &s, &d)%0A%09if err != nil %7B%0A%09%09fmt.Scan(&h, &m, &s, &d)%0A%09%7D%0A%0A%09\n+    %0A    fmt.Scan(&h, &m, &s, &d)%0A    %0A    \n posI\n@@ -151,17 +151,20 @@\n + m/10%0A%0A\n-%09\n+    \n var posF\n@@ -172,17 +172,20 @@\n nal int%0A\n-%09\n+    \n if s == \n@@ -190,18 +190,24 @@\n = %22H%22 %7B%0A\n-%09%09\n+        \n posFinal\n@@ -231,17 +231,20 @@\n d) %25 72%0A\n-%09\n+    \n %7D else %7B\n@@ -244,18 +244,24 @@\n  else %7B%0A\n-%09%09\n+        \n posFinal\n@@ -285,18 +285,24 @@\n d) %25 72%0A\n-%09%09\n+        \n if posFi\n@@ -315,11 +315,20 @@\n 0 %7B%0A\n-%09%09%09\n+            \n posF\n@@ -342,17 +342,29 @@\n  72%0A\n-%09%09%7D%0A%09%7D%0A%0A%09\n+        %7D%0A    %7D%0A%0A    \n hora\n@@ -385,17 +385,20 @@\n nal / 6%0A\n-%09\n+    \n minutoFi\n@@ -429,9 +429,12 @@\n 10%0A%0A\n-%09\n+    \n fmt.\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-10_22-57-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar h, m int\n\tvar s string\n\tvar d int\n\n\t\n\t_, err := fmt.Scanf(\"%d\\n%d\\n%s\\n%d\\n\", &h, &m, &s, &d)\n\tif err != nil {\n\t\tfmt.Scan(&h, &m, &s, &d)\n\t}\n\n\tposInicial := h*6 + m/10\n\n\tvar posFinal int\n\tif s == \"H\" {\n\t\tposFinal = (posInicial + d) % 72\n\t} else {\n\t\tposFinal = (posInicial - d) % 72\n\t\tif posFinal < 0 {\n\t\t\tposFinal += 72\n\t\t}\n\t}\n\n\thoraFinal := posFinal / 6\n\tminutoFinal := (posFinal % 6) * 10\n\n\tfmt.Printf(\"%02d %02d\\n\", horaFinal, minutoFinal)\n}\n",
+            "lines": "30"
         }
     ]
 }

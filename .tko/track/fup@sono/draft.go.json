@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_21-30-47",
+            "content": "@@ -117,365 +117,46 @@\n ar%0A%0A\n+%0A\n     \n-fmt.Scanf(%22%25d %25d %25d%22, &h1, &m1, &s1)%0A    fmt.Scanf(%22%25d %25d %25d%22, &h2, &m2, &s2)%0A%0A    dorminS := h1*3600 + m1*60 + s1%0A    acordarS := h2*3600 + m2*60 + s2%0A%0A    if acordarS %3C dorminS %7B%0A        acordarS += 24 * 3600%0A    %7D%0A%0A    duracaoS := acordarS - dorminS%0A%0A    duracaoH := duracaoS / 3600%0A    duracaoM := (duracaoS %25 3600) / 60%0A    duracaoS = duracaoS %25 60\n+%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-10_22-40-46",
+            "content": "@@ -371,16 +371,87 @@\n orminS%0A%0A\n+    duracaoH := duracaoS / 3600%0A    duracaoM := (duracaoS %25 3600) / 60%0A\n     dura\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-10_22-41-19",
+            "content": "@@ -378,13 +378,8 @@\n %0A   \n- h :=\n  dur\n@@ -388,25 +388,10 @@\n aoS \n-/ 3600%0A    m :\n = \n-(\n dura\n@@ -401,85 +401,10 @@\n S %25 \n-3\n 60\n-0) / 60%0A    s := duracaoS %25 60%0A    fmt.Printf(%22%2502d %2502d %2502d%5Cn%22, h, m, s)\n %0A%7D%0A%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-10_22-44-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var h1, m1, s1 int // hora atual\n    var h2, m2, s2 int // hora de acordar\n\n    fmt.Scanf(\"%d %d %d\", &h1, &m1, &s1)\n    fmt.Scanf(\"%d %d %d\", &h2, &m2, &s2)\n\n    dorminS := h1*3600 + m1*60 + s1\n    acordarS := h2*3600 + m2*60 + s2\n\n    if acordarS < dorminS {\n        acordarS += 24 * 3600\n    }\n\n    duracaoS := acordarS - dorminS\n\n    h := duracaoS / 3600\n    m := (duracaoS % 3600) / 60\n    s := duracaoS % 60\n    fmt.Printf(\"%02d %02d %02d\\n\", h, m, s)\n}\n\n",
+            "lines": "24"
+        }
+    ]
+}

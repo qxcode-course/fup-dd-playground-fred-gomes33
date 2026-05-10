@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_21-04-15",
+            "content": "@@ -163,11 +163,8 @@\n loat\n-64s\n (pro\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-10_21-04-31",
+            "content": "@@ -23,23 +23,8 @@\n mt%22%0A\n-import %22sort%22%0A%0A\n func\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-10_21-05-11",
+            "content": "@@ -363,13 +363,17 @@\n tf(%22\n-Final\n+Reprovado\n  com\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-10_21-05-29",
+            "content": "package main\nimport \"fmt\"\nimport \"sort\"\n\nfunc main() {\n    var np1, np2, np3, ntr float64\n    fmt.Scan(&np1, &np2, &np3, &ntr)\n\n    provas := []float64{np1, np2, np3}\n    sort.Float64s(provas)\n\n    somar := provas[1] + provas[2]\n    media := (somar + ntr) / 3.0\n\n    if media >= 7.0{\n        fmt.Printf(\"Aprovado com %.1f\\n\", media)\n    } else {\n        fmt.Printf(\"Final com %.1f\\n\", media)\n\n    }\n \n}\n",
+            "lines": "22"
+        }
+    ]
+}
