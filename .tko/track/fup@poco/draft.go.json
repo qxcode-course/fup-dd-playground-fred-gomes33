@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_17-16-28",
+            "content": "@@ -177,23 +177,8 @@\n := 0\n-%0A    salto := S\n %0A%0A  \n@@ -184,32 +184,41 @@\n    for %7B%0A       \n+ salto :=\n  posicao += salt\n@@ -215,15 +215,10 @@\n ao +\n-= salto\n+ S\n %0A   \n@@ -225,22 +225,20 @@\n      if \n-posica\n+salt\n o %3E= P %7B\n@@ -281,22 +281,16 @@\n  posicao\n--salto\n )%0A      \n@@ -295,97 +295,17 @@\n     \n-break%0A        %7D%0A        fmt.Printf(%22%25d %25d%5Cn%22, posicao-salto, posicao)%0A        //\n+    \n break\n-    \n %0A   \n@@ -313,111 +313,52 @@\n     \n+%7D\n %0A\n-  \n     \n-  posicao -= E%0A        if posicao %3C 0 %7B%0A            fmt.Println()%0A        %7D%0A    %7D%0A    %0A    %7D%0A    %0A%0A\n+%7D%0A    %0A    fmt.Println(%22Hello, World!%22)%0A%7D\n %0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-11_17-36-15",
+            "content": "@@ -480,51 +480,12 @@\n rint\n-f(%22%25d morreu%5Cn%22, posicao)%0A            break\n+ln()\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_17-37-28",
+            "content": "@@ -534,133 +534,8 @@\n   %7D%0A\n-    %0A        salto -= 10%0A        if salto %3C= 0%7B%0A            fmt.Printf(%22%25d morreu%5Cn%22, posicao)%0A        %7D%0A    %0A    %0A    %0A    %0A\n     \n@@ -554,9 +554,8 @@\n %0A    %0A%0A%0A\n-%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_17-38-53",
+            "content": "@@ -637,34 +637,44 @@\n     \n+%7D%0A\n     \n-break\n %0A    \n+%0A\n     \n-%7D\n+%0A    \n %0A    %7D%0A\n+    %0A   \n  %7D%0A \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-11_17-39-18",
+            "content": "@@ -392,14 +392,19 @@\n     \n+//\n break \n+   \n %0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-11_17-39-34",
+            "content": "@@ -302,36 +302,32 @@\n -salto)%0A        \n-    \n break%0A        %7D%0A\n@@ -372,32 +372,47 @@\n salto, posicao)%0A\n+        break %0A\n         %0A       \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-11_17-40-25",
+            "content": "@@ -611,14 +611,8 @@\n icao\n-,salto\n )%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-11_17-47-17",
+            "content": "@@ -608,17 +608,16 @@\n posicao,\n- \n salto)%0A \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-11_17-47-56",
+            "content": "@@ -599,32 +599,39 @@\n rreu%5Cn%22, posicao\n+, salto\n )%0A            br\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-11_17-48-05",
+            "content": "@@ -215,80 +215,21 @@\n  pos\n-Salto:= posicao + salto%0A        fmt.Printf(%22%25d %25d%5Cn%22, posicao, posS\n+icao += s\n alto\n-)\n %0A   \n@@ -286,25 +286,30 @@\n saiu%5Cn%22, pos\n-S\n+icao-s\n alto)%0A      \n@@ -334,24 +334,78 @@\n   %7D%0A        \n+fmt.Printf(%22%25d %25d%5Cn%22, posicao-salto, posicao)%0A        \n %0A        pos\n@@ -411,22 +411,12 @@\n sica\n-o = posSalt\n o -\n+=\n  E%0A \n@@ -566,42 +566,8 @@\n  0%7B%0A\n-            posicao = posicao - E%0A\n     \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-12_00-36-38",
+            "content": "@@ -77,16 +77,94 @@\n  &S, &E)\n+%0A    // P -%3E Profundidade do po%C3%A7o%0A    // S -%3E Salto%0A    // E -%3E Escorregamento\n %0A%0A    po\n@@ -164,16 +164,20 @@\n %0A    pos\n+icao\n  := 0%0A  \n@@ -220,15 +220,18 @@\n alto\n- \n := pos\n+icao\n  + s\n@@ -268,16 +268,20 @@\n %5Cn%22, pos\n+icao\n , posSal\n@@ -284,17 +284,16 @@\n sSalto)%0A\n-%0A\n         \n@@ -298,20 +298,19 @@\n   if pos\n-Salt\n+ica\n o %3E= P %7B\n@@ -388,27 +388,40 @@\n   %7D%0A        \n-pos\n+%0A        posicao\n  = posSalto \n@@ -438,16 +438,20 @@\n   if pos\n+icao\n  %3C 0 %7B%0A \n@@ -482,32 +482,36 @@\n d morreu%5Cn%22, pos\n+icao\n )%0A            br\n@@ -524,16 +524,20 @@\n       %7D%0A\n+    \n %0A       \n@@ -570,17 +570,16 @@\n lto %3C= 0\n- \n %7B%0A      \n@@ -587,22 +587,30 @@\n      pos\n+icao\n  = pos\n+icao\n  - E%0A   \n@@ -647,16 +647,20 @@\n %5Cn%22, pos\n+icao\n )%0A      \n@@ -687,10 +687,19 @@\n %7D%0A    %7D%0A\n+ \n %7D%0A\n+    %0A%0A%0A%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-12_00-38-31",
+            "content": "@@ -86,20 +86,16 @@\n %0A    pos\n-icao\n  := 0%0A  \n@@ -141,20 +141,16 @@\n o := pos\n-icao\n  + salto\n@@ -150,16 +150,62 @@\n + salto%0A\n+        fmt.Printf(%22%25d %25d%5Cn%22, pos, posSalto)%0A%0A\n         \n@@ -304,28 +304,24 @@\n %0A        pos\n-icao\n  = posSalto \n@@ -338,20 +338,16 @@\n   if pos\n-icao\n  %3C 0 %7B%0A \n@@ -378,36 +378,32 @@\n d morreu%5Cn%22, pos\n-icao\n )%0A            br\n@@ -480,22 +480,14 @@\n  pos\n-icao\n  = pos\n-icao\n  - E\n@@ -532,12 +532,8 @@\n  pos\n-icao\n )%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-12_00-40-09",
+            "content": "@@ -263,56 +263,8 @@\n   %7D%0A\n-       fmt.Printf(%22%25d %25d%5Cn%22, posicao, posSalto)%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-12_00-41-15",
+            "content": "@@ -158,17 +158,16 @@\n + salto%0A\n-%0A\n         \n@@ -216,35 +216,36 @@\n %22%25d saiu%5Cn%22, pos\n-ica\n+Salt\n o)%0A            b\n@@ -255,26 +255,24 @@\n k%0A        %7D%0A\n-%0A \n        fmt.P\n@@ -307,17 +307,16 @@\n sSalto)%0A\n-%0A\n         \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-12_00-43-52",
+            "content": "@@ -30,19 +30,23 @@\n c main()\n+ \n %7B%0A\n-%09\n+    \n var P, S\n@@ -57,183 +57,86 @@\n int%0A\n-%0A%09_, err1 := fmt.Scan(&P)%0A%09_, err2 := fmt.Scan(&S)%0A%09_, err3 := fmt.Scan(&E)%0A%0A%09if err1 != nil %7C%7C err2 != nil %7C%7C err3 != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09posicaoAtual\n+    fmt.Scan(&P, &S, &E)%0A%0A    posicao := 0%0A    salto\n  := \n-0%0A%0A%09\n+S%0A%0A    \n for %7B%0A\n-%09%09posicaoP\n+        p\n osSa\n@@ -153,31 +153,30 @@\n icao\n-Atual + S%0A%09%09if posicaoP\n+ + salto%0A%0A        if p\n osSa\n@@ -186,19 +186,28 @@\n  %3E= P %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -233,38 +233,47 @@\n icao\n-Atual)%0A%09%09%09break%0A%09%09%7D else %7B%0A%09%09%09\n+)%0A            break%0A        %7D%0A%0A        \n fmt.\n@@ -301,22 +301,36 @@\n icao\n-Atual,\n+, posSalto)%0A%0A       \n  posicao\n PosS\n@@ -329,153 +329,282 @@\n icao\n-P\n+ = p\n osSalto\n-)%0A%09%09%7D%0A%09%09posicaoAtual = posicaoPosSalto - E%0A%09%09S = S - 10%0A%09%09if posicaoAtual %3C 0 %7B%0A%09%09%09fmt.Printf(%22%25d morreu%5Cn%22, posicaoAtual)%0A%09%09%09break%0A%09%09%7D%0A%09\n+ - E%0A        if posicao %3C 0 %7B%0A            fmt.Printf(%22%25d morreu%5Cn%22, posicao)%0A            break%0A        %7D%0A%0A        salto -= 10%0A        if salto %3C= 0 %7B%0A            posicao = posicao - E%0A            fmt.Printf(%22%25d morreu%5Cn%22, posicao)%0A            break%0A        %7D%0A    \n %7D%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-12_00-45-53",
+            "content": "@@ -53,32 +53,144 @@\n int%0A\n-    fmt.Scan(&P, &S, &E)\n+%0A%09_, err1 := fmt.Scan(&P)%0A%09_, err2 := fmt.Scan(&S)%0A%09_, err3 := fmt.Scan(&E)%0A%0A%09if err1 != nil %7C%7C err2 != nil %7C%7C err3 != nil %7B%0A%09%09return%0A%09%7D\n %0A%0A%09p\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-12_00-46-24",
+            "content": "@@ -53,144 +53,32 @@\n int%0A\n-%0A%09_, err1 := fmt.Scan(&P)%0A%09_, err2 := fmt.Scan(&S)%0A%09_, err3 := fmt.Scan(&E)%0A%0A%09if err1 != nil %7C%7C err2 != nil %7C%7C err3 != nil %7B%0A%09%09return%0A%09%7D\n+    fmt.Scan(&P, &S, &E)\n %0A%0A%09p\n@@ -140,17 +140,16 @@\n ual + S%0A\n-%0A\n %09%09if pos\n@@ -289,17 +289,16 @@\n to)%0A%09%09%7D%0A\n-%0A\n %09%09posica\n@@ -326,16 +326,16 @@\n lto - E%0A\n+\n %09%09S = S \n@@ -339,17 +339,16 @@\n  S - 10%0A\n-%0A\n %09%09if pos\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-12_00-48-08",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -30,23 +30,19 @@\n c main()\n- \n %7B%0A\n-    \n+%09\n var P, S\n@@ -53,86 +53,183 @@\n int%0A\n-    fmt.Scan(&P, &S, &E)%0A%0A    posicao := 0%0A    salto\n+%0A%09_, err1 := fmt.Scan(&P)%0A%09_, err2 := fmt.Scan(&S)%0A%09_, err3 := fmt.Scan(&E)%0A%0A%09if err1 != nil %7C%7C err2 != nil %7C%7C err3 != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09posicaoAtual\n  := \n-S%0A%0A    \n+0%0A%0A%09\n for %7B%0A\n-        p\n+%09%09posicaoP\n osSa\n@@ -246,30 +246,32 @@\n icao\n- + salto%0A%0A        if p\n+Atual + S%0A%0A%09%09if posicaoP\n osSa\n@@ -281,28 +281,19 @@\n  %3E= P %7B%0A\n-            \n+%09%09%09\n fmt.Prin\n@@ -319,110 +319,123 @@\n icao\n-)%0A            break%0A        %7D%0A%0A        fmt.Printf(%22%25d %25d%5Cn%22, posicao, posSalto)%0A%0A        \n+Atual)%0A%09%09%09break%0A%09%09%7D else %7B%0A%09%09%09fmt.Printf(%22%25d %25d%5Cn%22, posicaoAtual, posicaoPosSalto)%0A%09%09%7D%0A%0A%09%09\n posicao\n+Atual\n  = pos\n+icaoPos\n Salt\n@@ -444,266 +444,103 @@\n - E%0A\n-        if posicao %3C 0 %7B%0A            fmt.Printf(%22%25d morreu%5Cn%22, posicao)%0A            break%0A        %7D%0A%0A        salto -= 10%0A        if salto\n+%09%09S = S - 10%0A%0A%09%09if posicaoAtual\n  %3C\n-=\n  0 %7B%0A\n-            posicao = posicao - E%0A            fmt.Printf(%22%25d morreu%5Cn%22, posicao)%0A            break%0A        %7D%0A    \n+%09%09%09fmt.Printf(%22%25d morreu%5Cn%22, posicaoAtual)%0A%09%09%09break%0A%09%09%7D%0A%09\n %7D%0A%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_00-53-38",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var P, S, E int\n    fmt.Scan(&P, &S, &E)\n\n    posicao := 0\n    salto := S\n\n    for {\n        posSalto := posicao + salto\n\n        if posSalto >= P {\n            fmt.Printf(\"%d saiu\\n\", posicao)\n            break\n        }\n\n        fmt.Printf(\"%d %d\\n\", posicao, posSalto)\n\n        posicao = posSalto - E\n        if posicao < 0 {\n            fmt.Printf(\"%d morreu\\n\", posicao)\n            break\n        }\n\n        salto -= 10\n        if salto <= 0 {\n            posicao = posicao - E\n            fmt.Printf(\"%d morreu\\n\", posicao)\n            break\n        }\n    }\n}\n",
+            "lines": "34"
+        }
+    ]
+}
