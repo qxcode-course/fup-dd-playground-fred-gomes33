@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-17_01-40-04",
+            "content": "@@ -120,17 +120,16 @@\n %3C N; i++\n- \n %7B%0A      \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-17_01-41-28",
+            "content": "@@ -127,66 +127,8 @@\n + %7B%0A\n-        if i %3C N-1%7B%0A            fmt.Print(%22, %22)%0A        %7D%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-17_01-42-52",
+            "content": "@@ -127,37 +127,8 @@\n + %7B%0A\n-        fmt.Scan(&Array%5Bi%5D)%0A \n     \n@@ -177,24 +177,52 @@\n )%0A        %7D%0A\n+        fmt.Scan(&Array%5Bi%5D)%0A\n     %7D%0A    fm\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-17_01-43-06",
+            "content": "@@ -156,70 +156,8 @@\n %5D)%0A \n-   %7D%0A    for i := 0; i %3C N; i++ %7B%0A        fmt.Print(Array%5Bi%5D)%0A\n     \n@@ -170,17 +170,16 @@\n  i %3C N-1\n- \n %7B%0A      \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-17_01-45-59",
+            "content": "@@ -157,16 +157,49 @@\n )%0A    %7D%0A\n+    for i := 0; i %3C N; i++ %7B%0A    \n     fmt.\n@@ -207,21 +207,105 @@\n rint\n-ln\n (Array\n-,%22, %22\n+%5Bi%5D)%0A        if i %3C N-1 %7B%0A            fmt.Print(%22, %22)%0A        %7D%0A    %7D%0A    fmt.Println(Array\n )%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-17_01-46-25",
+            "content": "@@ -178,12 +178,17 @@\n ln(Array\n+,%22, %22\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-17_01-47-16",
+            "content": "@@ -155,32 +155,8 @@\n i%5D)%0A\n-        fmt.Print(%22, %22)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-17_01-47-47",
+            "content": "@@ -155,42 +155,8 @@\n i%5D)%0A\n-    %7D%0A    for i := 0; i %3C N; i++%7B%0A\n     \n@@ -173,18 +173,8 @@\n int(\n-Array%5Bi%5D, \n %22, %22\n@@ -198,19 +198,16 @@\n rint\n+ln\n (Array\n-%5BN-1%5D\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-17_01-50-51",
+            "content": "@@ -244,12 +244,17 @@\n nt(Array\n+%5BN-1%5D\n )%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-17_01-51-01",
+            "content": "@@ -225,10 +225,31 @@\n )%0A    %7D%0A\n+    fmt.Print(Array)%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-17_01-51-22",
+            "content": "@@ -161,28 +161,8 @@\n   %7D%0A\n-    fmt.Print(%22%5B %22)%0A\n     \n@@ -229,25 +229,6 @@\n   %7D%0A\n-    fmt.Print(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-17_01-51-50",
+            "content": "@@ -196,17 +196,16 @@\n = 0; i %3C\n-=\n  N; i++%7B\n@@ -260,15 +260,14 @@\n .Print(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-17_01-52-42",
+            "content": "@@ -192,24 +192,25 @@\n  i := 0; i %3C\n+=\n  N; i++%7B%0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-17_01-52-50",
+            "content": "@@ -235,16 +235,17 @@\n y%5Bi%5D, %22,\n+ \n %22)%0A    %7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-17_01-53-04",
+            "content": "@@ -235,17 +235,16 @@\n y%5Bi%5D, %22,\n- \n %22)%0A    %7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-17_01-53-09",
+            "content": "@@ -243,69 +243,8 @@\n  %22)%0A\n-        if i == N%7B%0A            fmt.Print(Array%5Bi%5D)%0A        %7D%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-17_01-53-32",
+            "content": "@@ -227,24 +227,30 @@\n int(Array%5Bi%5D\n+, %22, %22\n )%0A        if\n@@ -256,13 +256,12 @@\n f i \n-%3C N-1\n+== N\n %7B%0A  \n@@ -280,20 +280,24 @@\n t.Print(\n-%22, %22\n+Array%5Bi%5D\n )%0A      \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-17_01-54-39",
+            "content": "@@ -312,14 +312,15 @@\n .Print(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-17_01-54-47",
+            "content": "@@ -173,16 +173,17 @@\n Print(%22%5B\n+ \n %22)%0A    f\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-17_01-54-57",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    Array := make([]int, N)\n\n    for i := 0; i < N; i++ {\n        fmt.Scan(&Array[i])\n    }\n    fmt.Print(\"[\")\n    for i := 0; i < N; i++{\n        fmt.Print(Array[i])\n        if i < N-1{\n            fmt.Print(\", \")\n        }\n    }\n    fmt.Print(\"]\")\n}\n",
+            "lines": "20"
+        }
+    ]
+}

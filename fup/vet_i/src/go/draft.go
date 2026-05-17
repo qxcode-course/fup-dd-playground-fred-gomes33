@@ -1,21 +1,19 @@
 package main
 import "fmt"
-func mostrar_vetor(arr []int, sep string) {
-	for i, valor := range arr {
-		if i != 0 {
-			fmt.Println(sep)
-		}
-		fmt.Printf("%v", valor)
-	}
-	
-}
-
 func main() {
-	var qtd int
-	fmt.Scan(&qtd)
-	var arr []int = make([]int, qtd)
-	for i := range arr {
-		fmt.Scan(&arr[i])
+	var n int
+	fmt.Scan(&n)
+
+	array := make([]int, n) // -> criar um array inteiro de tamanho n(como se fosse o x/y na mat)
+	
+	if n == 0 {
+		fmt.Println("")
 	}
-	mostrar_vetor(arr, " ")
+	for i := 0; i < n; i++{ // lê os elementos e guarda no array
+		fmt.Scan(&array[i])
+	}
+
+	for _, v := range array{// imprime elemntos na ordem de leitura
+		fmt.Println(v)      // range -> devolve indice e valor
+	}
 }

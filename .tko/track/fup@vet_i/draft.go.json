@@ -57,8 +57,83 @@
         },
         {
             "label": "2026-05-08_00-41-46",
-            "content": "package main\nimport \"fmt\"\nfunc mostrar_vetor(arr []int, sep string) {\n\tfor i, valor := range arr {\n\t\tif i != 0 {\n\t\t\tfmt.Print(sep)\n\t\t}\n\t\tfmt.Printf(\"%v\", valor)\n\t}\n\t\n}\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tvar arr []int = make([]int, qtd)\n\tfor i := range arr {\n\t\tfmt.Scan(&arr[i])\n\t}\n\tmostrar_vetor(arr, \" \")\n}\n",
+            "content": "@@ -122,10 +122,8 @@\n rint\n-ln\n (sep\n",
             "lines": "21"
+        },
+        {
+            "label": "2026-05-12_17-19-01",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mos\n@@ -118,16 +118,18 @@\n mt.Print\n+ln\n (sep)%0A%09%09\n@@ -159,16 +159,18 @@\n lor)%0A%09%7D%0A\n+%09%0A\n %7D%0A%0Afunc \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-12_17-31-26",
+            "content": "@@ -123,10 +123,8 @@\n rint\n-ln\n (sep\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-12_17-31-35",
+            "content": "@@ -151,16 +151,8 @@\n (%22%25v\n-%5Cn%0A%09%09%0A%09%09\n %22, v\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-12_17-31-57",
+            "content": "@@ -147,16 +147,24 @@\n intf(%22%25v\n+%5Cn%0A%09%09%0A%09%09\n %22, valor\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-12_17-32-14",
+            "content": "@@ -142,18 +142,17 @@\n mt.Print\n-ln\n+f\n (%22%25v%22, v\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-12_17-32-25",
+            "content": "@@ -142,16 +142,18 @@\n mt.Print\n+ln\n (%22%25v%22, v\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-12_17-32-31",
+            "content": "@@ -142,17 +142,16 @@\n mt.Print\n-f\n (%22%25v%22, v\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-12_17-32-37",
+            "content": "@@ -23,356 +23,297 @@\n mt%22%0A\n+%0A\n func m\n-ain() %7B%0A%09var n int%0A%09fmt.Scan(&n)%0A%0A%09array := make(%5B%5Dint, n) // -%3E criar um array inteiro de tamanho n(como se fosse o x/y na mat)%0A%09%0A%09for i := 0; i %3C n; i++%7B // l%C3%AA os elementos e guarda no array%0A%09%09fmt.Scan(&array%5Bi%5D)%0A%09%7D%0A%0A%09for _, v := range array%7B// imprime elemntos na ordem de leitura%0A%09%09fmt.Println(v)      // range -%3E devolve indice e valor%0A%09%7D\n+ostrar_vetor(arr %5B%5Dint, sep string) %7B%0A%09for i, valor := range arr %7B%0A%09%09if i != 0 %7B%0A%09%09%09fmt.Println(sep)%0A%09%09%7D%0A%09%09fmt.Printf(%22%25v%22, valor)%0A%09%7D%0A%7D%0A%0Afunc main() %7B%0A%09var qtd int%0A%09fmt.Scan(&qtd)%0A%09var arr %5B%5Dint = make(%5B%5Dint, qtd)%0A%09for i := range arr %7B%0A%09%09fmt.Scan(&arr%5Bi%5D)%0A%09%7D%0A%09mostrar_vetor(arr, %22 %22)\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-12_17-50-40",
+            "content": "@@ -248,16 +248,19 @@\n %09%7D%0A%0A%09for\n+ _,\n  v := ra\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-53-41",
+            "content": "@@ -252,11 +252,8 @@\n %09for\n- _,\n  v :\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-54-04",
+            "content": "@@ -253,52 +253,124 @@\n for \n-i := 0; i %3C n; i++ %7B%0A%09%09fmt.Println(array%5Bi%5D)\n+_, v := range array%7B// imprime elemntos na ordem de leitura%0A%09%09fmt.Println(v)      // range -%3E devolve indice e valor\n %0A%09%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-17_01-18-50",
+            "content": "@@ -63,19 +63,8 @@\n n)%0A%0A\n-%09if n %3E 0%7B%0A\n %09arr\n@@ -253,128 +253,54 @@\n for \n-_, v := range array%7B// imprime elemntos na ordem de leitura%0A%09%09fmt.Println(v)      // range -%3E devolve indice e valor\n+i := 0; i %3C n; i++ %7B%0A%09%09fmt.Println(array%5Bi%5D)\n %0A%09%7D%0A\n-%09%7D\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-17_01-21-25",
+            "content": "@@ -59,16 +59,27 @@\n an(&n)%0A%0A\n+%09if n %3E 0%7B%0A\n %09array :\n@@ -380,10 +380,12 @@\n alor%0A%09%7D%0A\n+%09%7D\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-17_01-36-58",
+            "content": "@@ -160,42 +160,8 @@\n )%0A%09%0A\n-%09if n == 0 %7B%0A%09%09fmt.Println(%22%22)%0A%09%7D%0A\n %09for\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-17_01-37-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tarray := make([]int, n) // -> criar um array inteiro de tamanho n(como se fosse o x/y na mat)\n\t\n\tif n == 0 {\n\t\tfmt.Println(\"\")\n\t}\n\tfor i := 0; i < n; i++{ // l\u00ea os elementos e guarda no array\n\t\tfmt.Scan(&array[i])\n\t}\n\n\tfor _, v := range array{// imprime elemntos na ordem de leitura\n\t\tfmt.Println(v)      // range -> devolve indice e valor\n\t}\n}\n",
+            "lines": "19"
         }
     ]
 }
