@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_17-48-32",
+            "content": "@@ -160,112 +160,8 @@\n   %7D%0A\n-    menores := 0%0A    for i := 0; i %3C N; i++ %7B%0A        if Array%5Bi%5D %3C 0 %7B%0A            menores++%0A        %7D%0A\n     \n@@ -176,15 +176,13 @@\n tln(\n-menores\n+Array\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-18_17-49-39",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var N in\n@@ -47,17 +47,20 @@\n r N int%0A\n-%09\n+    \n fmt.Scan\n@@ -64,17 +64,20 @@\n can(&N)%0A\n-%09\n+    \n Array :=\n@@ -93,17 +93,20 @@\n nt, N)%0A%0A\n-%09\n+    \n for i :=\n@@ -122,18 +122,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n fmt.Scan\n@@ -150,20 +150,26 @@\n ray%5Bi%5D)%0A\n-%09%7D%0A%09\n+    %7D%0A    \n menores \n@@ -173,17 +173,20 @@\n es := 0%0A\n-%09\n+    \n for i :=\n@@ -202,18 +202,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n if Array\n@@ -232,29 +232,44 @@\n 0 %7B%0A\n-%09%09%09menores++%0A%09%09%7D%0A%09%7D%0A%09\n+            menores++%0A        %7D%0A    \n fmt.\n@@ -287,10 +287,8 @@\n ores)%0A%7D%0A\n-%0A%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-18_17-49-58",
+            "content": "@@ -147,21 +147,15 @@\n enor\n-E\n+es\n  := \n-Array%5B0%5D\n+0\n %0A%09fo\n@@ -193,22 +193,17 @@\n ay%5Bi%5D %3C \n-menorE\n+0\n  %7B%0A%09%09%09me\n@@ -209,20 +209,12 @@\n enor\n-E = Array%5Bi%5D\n+es++\n %0A%09%09%7D\n@@ -239,9 +239,12 @@\n enor\n-E\n+es\n )%0A%7D%0A\n+%0A%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-18_17-52-06",
+            "content": "@@ -171,9 +171,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-18_17-52-41",
+            "content": "@@ -171,25 +171,16 @@\n  := \n-0\n+1\n ; i %3C \n-len(Array)\n+N\n ; i+\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-18_17-53-10",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -20,16 +20,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -147,15 +147,21 @@\n enor\n-es\n+E\n  := \n-0\n+Array%5B0%5D\n %0A%09fo\n@@ -166,33 +166,42 @@\n for i := 0; i %3C \n-N\n+len(Array)\n ; i++ %7B%0A%09%09if Arr\n@@ -208,17 +208,22 @@\n ay%5Bi%5D %3C \n-0\n+menorE\n  %7B%0A%09%09%09me\n@@ -229,12 +229,20 @@\n enor\n-es++\n+E = Array%5Bi%5D\n %0A%09%09%7D\n@@ -267,11 +267,9 @@\n enor\n-es\n+E\n )%0A%7D%0A\n-%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-18_17-55-27",
+            "content": "@@ -37,15 +37,39 @@\n ) %7B%0A\n-    arr\n+%09var N int%0A%09fmt.Scan(&N)%0A%09Array\n  := \n@@ -84,15 +84,13 @@\n nt, \n-5)%0A    \n+N)%0A%0A%09\n for \n@@ -97,33 +97,33 @@\n i := 0; i %3C \n-5\n+N\n ; i++ %7B%0A\n         fmt.\n@@ -110,24 +110,18 @@\n ; i++ %7B%0A\n-        \n+%09%09\n fmt.Scan\n@@ -126,47 +126,36 @@\n an(&\n-a\n+A\n rr\n+ay\n %5Bi%5D)%0A\n-    %7D%0A%0A    \n+%09%7D%0A%09\n menor\n+es\n  := \n-arr%5B0%5D%0A    \n+0%0A%09\n for \n@@ -163,24 +163,24 @@\n  := \n-1\n+0\n ; i %3C \n-5\n+N\n ; i++ %7B%0A\n     \n@@ -179,84 +179,49 @@\n + %7B%0A\n-        if a\n+%09%09if A\n rr\n+ay\n %5Bi%5D %3C \n-menor %7B%0A            menor = arr%5Bi%5D%0A        %7D%0A    %7D%0A%0A    \n+0 %7B%0A%09%09%09menores++%0A%09%09%7D%0A%09%7D%0A%09\n fmt.\n@@ -237,8 +237,11 @@\n enor\n+es\n )%0A%7D%0A\n+%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-18_17-57-39",
+            "content": "@@ -40,45 +40,9 @@\n %0A   \n-var array int%0A   fmt.Scan(&array)%0A%09%0A%09\n+ \n arr \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-18_17-58-29",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,20 +37,28 @@\n ) %7B%0A\n-%09\n+   \n var \n-N\n+array\n  int%0A\n-%09\n+   \n fmt.\n@@ -67,36 +67,23 @@\n an(&\n-N)%0A%0A%09var array %5B%5Dint\n+array)%0A%09\n %0A%09arr\n-ay\n  \n+:\n = ma\n@@ -96,12 +96,15 @@\n nt, \n-N)%0A%09\n+5)%0A    \n for \n@@ -115,25 +115,25 @@\n  0; i %3C \n-N\n+5\n ; i++ %7B%0A\n %09%09fmt.Sc\n@@ -124,18 +124,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n fmt.Scan\n@@ -149,20 +149,24 @@\n &arr\n-ay\n %5Bi%5D)%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A    \n meno\n@@ -177,15 +177,16 @@\n  arr\n-ay\n %5B0%5D%0A\n-%09\n+    \n for \n@@ -201,17 +201,17 @@\n i %3C \n-N\n+5\n ; i++ %7B%0A\n %09%09if\n@@ -210,18 +210,22 @@\n + %7B%0A\n-%09%09\n+        \n if arr\n-ay\n %5Bi%5D \n@@ -238,11 +238,20 @@\n r %7B%0A\n-%09%09%09\n+            \n meno\n@@ -261,23 +261,33 @@\n  arr\n-ay\n %5Bi%5D%0A\n-%09%09%7D%0A%09%7D%0A%0A%09\n+        %7D%0A    %7D%0A%0A    \n fmt.\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-18_18-00-19",
+            "content": "@@ -175,33 +175,33 @@\n ay%5B0%5D%0A%09for i := \n-0\n+1\n ; i %3C N; i++ %7B%0A%09\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-18_18-01-18",
+            "content": "@@ -187,9 +187,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-18_18-01-41",
+            "content": "@@ -123,9 +123,9 @@\n i %3C \n-4\n+N\n ; i+\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-18_18-03-36",
+            "content": "@@ -115,25 +115,25 @@\n i := 0; i %3C \n-N\n+4\n ; i++ %7B%0A%09%09fm\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-18_18-03-42",
+            "content": "@@ -175,33 +175,33 @@\n ay%5B0%5D%0A%09for i := \n-0\n+1\n ; i %3C N; i++ %7B%0A%09\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-18_18-05-01",
+            "content": "@@ -187,9 +187,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-18_18-07-47",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N int\n\tfmt.Scan(&N)\n\n\tvar array []int\n\tarray = make([]int, N)\n\tfor i := 0; i < N; i++ {\n\t\tfmt.Scan(&array[i])\n\t}\n\n\tmenor := array[0]\n\tfor i := 1; i < N; i++ {\n\t\tif array[i] < menor {\n\t\t\tmenor = array[i]\n\t\t}\n\t}\n\n\tfmt.Println(menor)\n}\n",
+            "lines": "23"
+        }
+    ]
+}

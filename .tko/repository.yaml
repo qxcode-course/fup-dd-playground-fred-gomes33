@@ -19,17 +19,17 @@ sources:
   writeable: false
   quests: null
 expanded:
+- fup@struct
+- fup@string
+- fup@list
 - sandbox@sandbox
 - fup@mat
-- fup@list
-- fup@string
-- fup@struct
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: sandbox@sandbox
-selected_index: 0
+selected: fup@apertada
+selected_index: 16
