@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-28-18",
+            "content": "@@ -289,18 +289,11 @@\n rint\n-f(%22%25.1f%22, \n+ln(\n med)\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-19_17-29-48",
+            "content": "@@ -299,20 +299,11 @@\n f%22, \n-float64(\n med)\n-)\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-19_17-30-06",
+            "content": "@@ -296,10 +296,8 @@\n %25.1f\n-%5Cn\n %22, f\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-19_17-30-18",
+            "content": "@@ -97,22 +97,8 @@\n  N)%0A\n-    soma := 0%0A\n     \n@@ -157,69 +157,126 @@\n     \n-    soma += Array%5Bi%5D%0A    %7D%0A%0A\n+%7D%0A%0Amed := Array%5B0%5D%0A    for i := 1; i %3C N; i++ %7B%0A        if Array%5Bi%5D %3E med %7B%0A            \n med \n-:\n = \n-float64(soma) / float64(N)\n+Array%5Bi%5D%0A        %7D%0A    %7D\n %0A   \n@@ -301,11 +301,20 @@\n n%22, \n+float64(\n med)\n+)\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-19_17-32-19",
+            "content": "@@ -202,19 +202,23 @@\n %0Amed := \n-int\n+float64\n (soma) /\n@@ -218,19 +218,23 @@\n soma) / \n-int\n+float64\n (N)%0A    \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-19_17-53-44",
+            "content": "@@ -202,23 +202,19 @@\n %0Amed := \n-float64\n+int\n (soma) /\n@@ -218,15 +218,11 @@\n ) / \n-float64\n+int\n (N)%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-19_17-54-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    Array := make([]int, N)\n    soma := 0\n    for i := 0; i < N; i++{\n        fmt.Scan(&Array[i])\n        soma += Array[i]\n    }\n\nmed := float64(soma) / float64(N)\n    fmt.Printf(\"%.1f\\n\", med)\n}\n",
+            "lines": "16"
+        }
+    ]
+}

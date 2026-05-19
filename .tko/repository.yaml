@@ -19,11 +19,14 @@ sources:
   writeable: false
   quests: null
 expanded:
+- fup@for_extra
+- fup@if1
 - fup@struct
-- fup@string
 - fup@list
-- sandbox@sandbox
+- fup@base
+- fup@string
 - fup@mat
+- sandbox@sandbox
 flags:
   inbox: all
   panel: graph
@@ -31,5 +34,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@apertada
-selected_index: 16
+selected: fup@patas
+selected_index: 51
