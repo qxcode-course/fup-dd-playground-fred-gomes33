@@ -20,13 +20,13 @@ sources:
   quests: null
 expanded:
 - fup@for_extra
-- fup@if1
-- fup@struct
 - fup@list
 - fup@base
-- fup@string
-- fup@mat
 - sandbox@sandbox
+- fup@mat
+- fup@if1
+- fup@struct
+- fup@string
 flags:
   inbox: all
   panel: graph
@@ -34,5 +34,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@patas
-selected_index: 51
+selected: fup@dindin
+selected_index: 52

@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_16-50-31",
+            "content": "@@ -41,160 +41,35 @@\n     \n-var N int   %0A    fmt.Scan(&N)%0A%0A    Array := make(%5B%5Dint, N)%0A    for i := 0; i %3C N; i++ %7B%0A        fmt.Scan(&Array%5Bi%5D)%0A    %7D%0A    %0A    fmt.Println(Array%5B0%5D)\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-25_16-51-44",
+            "content": "@@ -189,11 +189,12 @@\n rray%5B0%5D)\n+)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-25_16-51-48",
+            "content": "@@ -185,12 +185,15 @@\n ln(Array\n+%5B0%5D\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-25_16-51-55",
+            "content": "@@ -189,11 +189,8 @@\n rray\n-%5B0%5D\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-25_16-52-31",
+            "content": "@@ -192,20 +192,8 @@\n y%5B0%5D\n-, Array%5BN-1%5D\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-25_16-52-51",
+            "content": "@@ -196,14 +196,16 @@\n , Array%5B\n+N-\n 1%5D)%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-25_16-53-00",
+            "content": "@@ -188,12 +188,22 @@\n Array%5B0%5D\n+, Array%5B1%5D\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-25_16-53-13",
+            "content": "@@ -168,32 +168,8 @@\n    %0A\n-    fmt.Print(Array%5B0%5D)%0A\n     \n@@ -190,9 +190,9 @@\n ray%5B\n-1\n+0\n %5D)%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-25_16-56-02",
+            "content": "@@ -186,18 +186,34 @@\n Array%5B0%5D\n-, \n+)%0A    fmt.Println(\n Array%5B1%5D\n@@ -214,11 +214,10 @@\n ray%5B1%5D)%0A\n-%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-25_16-56-18",
+            "content": "@@ -186,13 +186,23 @@\n Array%5B0%5D\n+, Array%5B1%5D\n )%0A%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-25_16-56-26",
+            "content": "@@ -163,109 +163,8 @@\n   %7D%0A\n-    for i := 0; i %3C N; i++ %7B%0A        if Array%5Bi%5D %3C 0 %7B%0A            Array%5Bi%5D = 0%0A        %7D%0A    %7D%0A    %0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-25_17-21-25",
+            "content": "@@ -45,127 +45,62 @@\n var \n-chutechico, chutecebolinha, qtdanimais int%0A    fmt.Scan(&chutechico, &chutecebolinha, &qtdanimais)%0A%0A    totalPatas := 0\n+N int   %0A    fmt.Scan(&N)%0A%0A    Array := make(%5B%5Dint, N)\n %0A   \n@@ -120,26 +120,17 @@\n i %3C \n-qtdanimais\n+N\n ; i++ %7B%0A\n     \n@@ -129,34 +129,8 @@\n + %7B%0A\n-        var animal string%0A\n     \n@@ -147,103 +147,78 @@\n an(&\n-animal\n+Array%5Bi%5D\n )%0A    \n+%7D%0A\n     \n-switch animal %7B%0A        case %22v%22:%0A            totalPatas += 4%0A        case %22g%22:\n+for i := 0; i %3C N; i++ %7B%0A        if Array%5Bi%5D %3C 0 %7B\n %0A   \n@@ -230,23 +230,20 @@\n     \n-totalPatas += 2\n+Array%5Bi%5D = 0\n %0A   \n@@ -251,58 +251,30 @@\n     \n-case %22c%22:%0A            totalPatas += 4\n+%7D%0A    %7D%0A    \n %0A    \n+%0A\n     \n-%7D%0A%7D%0A\n fmt.\n@@ -283,16 +283,17 @@\n int(\n-totalPatas)\n+Array%5B0%5D)%0A%0A%7D\n %0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-25_17-29-17",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -423,26 +423,18 @@\n       %7D%0A\n-    %7D%0A    \n+%7D%0A\n fmt.Prin\n@@ -447,10 +447,8 @@\n lPatas)%0A\n-%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-25_17-30-07",
+            "content": "@@ -10,34 +10,20 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22\n-%0A%09%22math%22%0A)\n %0A%0Afu\n@@ -459,347 +459,7 @@\n tas)\n-%0A%0A    distChico := int(math.Abs(float64(chutechico - totalPatas)))%0A    distCebolinha := int(math.Abs(float64(chutecebolinha - totalPatas)))%0A%0A    if distChico %3C distCebolinha %7B%0A        fmt.Println(%22%5CnChico Bento%22)%0A    %7D else if distCebolinha %3C distChico %7B%0A        fmt.Println(%22%5CnCebolinha%22)%0A    %7D else %7B%0A        fmt.Println(%22%5Cnempate%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-25_17-31-55",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n    var chutechico, chutecebolinha, qtdanimais int\n    fmt.Scan(&chutechico, &chutecebolinha, &qtdanimais)\n\n    totalPatas := 0\n    for i := 0; i < qtdanimais; i++ {\n        var animal string\n        fmt.Scan(&animal)\n        switch animal {\n        case \"v\":\n            totalPatas += 4\n        case \"g\":\n            totalPatas += 2\n        case \"c\":\n            totalPatas += 4\n        }\n    }\n    fmt.Print(totalPatas)\n\n    distChico := int(math.Abs(float64(chutechico - totalPatas)))\n    distCebolinha := int(math.Abs(float64(chutecebolinha - totalPatas)))\n\n    if distChico < distCebolinha {\n        fmt.Println(\"\\nChico Bento\")\n    } else if distCebolinha < distChico {\n        fmt.Println(\"\\nCebolinha\")\n    } else {\n        fmt.Println(\"\\nempate\")\n    }\n}\n",
+            "lines": "37"
+        }
+    ]
+}

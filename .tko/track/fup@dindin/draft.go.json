@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_17-49-12",
+            "content": "@@ -173,14 +173,11 @@\n rno \n-str\n in\n-g\n+t\n %0A   \n@@ -551,17 +551,17 @@\n    if m \n-%3E\n+%3C\n  t %7B%0A   \n@@ -598,17 +598,17 @@\n se if t \n-%3E\n+%3C\n  m %7B%0A   \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-25_17-49-37",
+            "content": "@@ -222,32 +222,24 @@\n     \n-switch\n+if\n  sabor \n-%7B%0Acase\n+==\n  %22c%22\n-:\n+%7B\n %0A   \n@@ -263,17 +263,30 @@\n     \n-case\n+%7Delse if sabor ==\n  %22l%22\n-:\n+%7B\n %0A   \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-25_17-49-57",
+            "content": "@@ -233,24 +233,16 @@\n sabor %7B%0A\n-        \n case %22c%22\n@@ -316,40 +316,24 @@\n     \n-switch\n+if\n  turno \n-%7B%0A        case\n+==\n  %22m%22\n-:\n+%7B\n %0A   \n@@ -357,17 +357,30 @@\n     \n-case\n+%7Delse if turno ==\n  %22t%22\n-:\n+%7B\n %0A   \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-25_17-50-03",
+            "content": "@@ -423,29 +423,29 @@\n   %7D%0A%0A    if \n-l %3E c\n+c %3E l\n %7B%0A        fm\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-25_17-50-20",
+            "content": "@@ -431,13 +431,13 @@\n  if \n-c %3E l\n+l %3E c\n %7B%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-25_17-50-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var qtd int\n    fmt.Scan(&qtd)\n\n    c := 0\n    l := 0\n    m := 0\n    t := 0\n\n    for i := 0; i < qtd; i++ {\n        var sabor, turno string\n        fmt.Scan(&sabor, &turno)\n\n        switch sabor {\n        case \"c\":\n            c++\n        case \"l\":\n            l++\n        }\n\n        switch turno {\n        case \"m\":\n            m++\n        case \"t\":\n            t++\n        }\n    }\n\n    if c > l{\n        fmt.Println(\"c\")\n    }else if l > c{\n        fmt.Println(\"l\")\n    }else{\n        fmt.Println(\"empate\")\n    }\n    if m > t {\n        fmt.Println(\"m\")\n    } else if t > m {\n        fmt.Println(\"t\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "45"
+        }
+    ]
+}
