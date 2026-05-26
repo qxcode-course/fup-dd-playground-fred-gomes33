@@ -4,8 +4,8 @@ func main() {
    var qtd int
     fmt.Scan(&qtd)
 
-    c := 0
-    l := 0
+    c := 0 
+    l := 0 
     m := 0
     t := 0
 
@@ -35,7 +35,7 @@ func main() {
     }else{
         fmt.Println("empate")
     }
-    if m > t {
+    if m < t {
         fmt.Println("m")
     } else if t > m {
         fmt.Println("t")

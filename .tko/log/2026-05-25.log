@@ -46,3 +46,7 @@
 2026-05-25 17:50:26, MOVE, v:1, k:fup@dindin, mode:EDIT
 2026-05-25 17:50:25, MOVE, v:1, k:fup@dindin, mode:EDIT
 2026-05-25 18:00:25, MOVE, v:1, k:fup@dindin, mode:BACK
+2026-05-25 18:15:31, MOVE, v:1, k:sandbox@user_005, mode:PICK
+2026-05-25 18:16:07, EXEC, v:1, k:sandbox@user_005, mode:LOCK, rate:0, size:49
+2026-05-25 18:16:04, MOVE, v:1, k:sandbox@user_005, mode:EDIT
+2026-05-25 18:16:07, MOVE, v:1, k:sandbox@user_005, mode:EDIT

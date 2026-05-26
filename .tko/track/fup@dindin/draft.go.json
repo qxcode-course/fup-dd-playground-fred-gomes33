@@ -27,7 +27,22 @@
         },
         {
             "label": "2026-05-25_17-50-26",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var qtd int\n    fmt.Scan(&qtd)\n\n    c := 0\n    l := 0\n    m := 0\n    t := 0\n\n    for i := 0; i < qtd; i++ {\n        var sabor, turno string\n        fmt.Scan(&sabor, &turno)\n\n        switch sabor {\n        case \"c\":\n            c++\n        case \"l\":\n            l++\n        }\n\n        switch turno {\n        case \"m\":\n            m++\n        case \"t\":\n            t++\n        }\n    }\n\n    if c > l{\n        fmt.Println(\"c\")\n    }else if l > c{\n        fmt.Println(\"l\")\n    }else{\n        fmt.Println(\"empate\")\n    }\n    if m > t {\n        fmt.Println(\"m\")\n    } else if t > m {\n        fmt.Println(\"t\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "content": "@@ -74,25 +74,24 @@\n %0A%0A    c := 0\n- \n %0A    l := 0 \n@@ -89,17 +89,16 @@\n   l := 0\n- \n %0A    m :\n@@ -560,17 +560,17 @@\n    if m \n-%3C\n+%3E\n  t %7B%0A   \n@@ -607,17 +607,17 @@\n se if t \n-%3C\n+%3E\n  m %7B%0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-26_16-57-44",
+            "content": "@@ -562,17 +562,17 @@\n    if m \n-%3E\n+%3C\n  t %7B%0A   \n@@ -609,17 +609,17 @@\n se if t \n-%3E\n+%3C\n  m %7B%0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-26_16-59-06",
+            "content": "@@ -562,17 +562,17 @@\n    if m \n-%3C\n+%3E\n  t %7B%0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-26_16-59-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var qtd int\n    fmt.Scan(&qtd)\n\n    c := 0 \n    l := 0 \n    m := 0\n    t := 0\n\n    for i := 0; i < qtd; i++ {\n        var sabor, turno string\n        fmt.Scan(&sabor, &turno)\n\n        switch sabor {\n        case \"c\":\n            c++\n        case \"l\":\n            l++\n        }\n\n        switch turno {\n        case \"m\":\n            m++\n        case \"t\":\n            t++\n        }\n    }\n\n    if c > l{\n        fmt.Println(\"c\")\n    }else if l > c{\n        fmt.Println(\"l\")\n    }else{\n        fmt.Println(\"empate\")\n    }\n    if m < t {\n        fmt.Println(\"m\")\n    } else if t > m {\n        fmt.Println(\"t\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
             "lines": "45"
         }
     ]

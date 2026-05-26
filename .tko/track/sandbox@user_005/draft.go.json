@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_18-16-07",
+            "content": "package main\nimport \"fmt\"\ntype Bota struct {\n\ttam int\n\tpe  string\n}\n\nfunc gerarPar(bota Bota) Bota {\n\tpar := Bota{tam: bota.tam}\n\tif bota.pe == \"D\" {\n\t\tpar.pe = \"E\"\n\t} else {\n\t\tpar.pe = \"D\"\n\t}\n\treturn par\n}\n\nfunc procurarBota(lista []Bota, bota Bota) (bool, int) {\n\tfor i, elem := range lista {\n\t\tif elem == bota {\n\t\t\treturn true, i\n\t\t}\n\t}\n\treturn false, 0\n}\n\nfunc main() {\n\tqtd := 0\n\tfmt.Scan(&qtd)\n\tbotas := make([]Bota, qtd)\n\tfor i := range botas {\n\t\tfmt.Scan(&botas[i].tam, &botas[i].pe)\n\t}\n\tdescasados := make([]Bota, 0)\n\tcont_pares := 0\n\tfor _, elem := range botas {\n\t\tpar := gerarPar(elem)\n\t\tencontrei, onde := procurarBota(descasados, par)\n\t\tif !encontrei {\n\t\t\tdescasados = append(descasados, elem)\n\t\t} else {\n\t\t\tcont_pares += 1\n\t\t\tdescasados[onde].tam = 0\n\t\t\t// slices.Delete(descasados, onde, onde + 1)\n\t\t}\n\t}\n\tfmt.Println(cont_pares)\n}\n \n",
+            "lines": "49"
+        }
+    ]
+}
