@@ -38,3 +38,7 @@
 2026-05-26 17:25:40, MOVE, v:1, k:sandbox@user_006, mode:EDIT
 2026-05-26 17:52:42, EXEC, v:1, k:sandbox@user_006, mode:LOCK, rate:0
 2026-05-26 17:52:47, MOVE, v:1, k:sandbox@user_006, mode:BACK
+2026-05-26 18:00:14, MOVE, v:1, k:sandbox@user_006, mode:PICK
+2026-05-26 18:00:25, EXEC, v:1, k:sandbox@user_006, mode:LOCK, rate:0, size:56
+2026-05-26 18:00:21, MOVE, v:1, k:sandbox@user_006, mode:EDIT
+2026-05-26 18:00:25, MOVE, v:1, k:sandbox@user_006, mode:EDIT

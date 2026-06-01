@@ -92,8 +92,113 @@
         },
         {
             "label": "2026-05-12_00-53-38",
-            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var P, S, E int\n    fmt.Scan(&P, &S, &E)\n\n    posicao := 0\n    salto := S\n\n    for {\n        posSalto := posicao + salto\n\n        if posSalto >= P {\n            fmt.Printf(\"%d saiu\\n\", posicao)\n            break\n        }\n\n        fmt.Printf(\"%d %d\\n\", posicao, posSalto)\n\n        posicao = posSalto - E\n        if posicao < 0 {\n            fmt.Printf(\"%d morreu\\n\", posicao)\n            break\n        }\n\n        salto -= 10\n        if salto <= 0 {\n            posicao = posicao - E\n            fmt.Printf(\"%d morreu\\n\", posicao)\n            break\n        }\n    }\n}\n",
+            "content": "@@ -467,16 +467,134 @@\n  10%0A    \n+    if salto %3C= 0 %7B%0A            posicao = posicao - E%0A            fmt.Printf(%22%25d morreu%5Cn%22, posicao)%0A            break\n %0A       \n@@ -598,13 +598,14 @@\n     %7D%0A    %7D%0A\n+%7D\n %0A\n",
             "lines": "34"
+        },
+        {
+            "label": "2026-06-01_17-20-46",
+            "content": "@@ -438,24 +438,25 @@\n k%0A        %7D%0A\n+%0A\n         salt\n@@ -463,16 +463,21 @@\n o -= 10%0A\n+    %0A\n         \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_17-21-55",
+            "content": "@@ -318,27 +318,16 @@\n %0A       \n-%0A        if\n  posicao\n@@ -331,27 +331,31 @@\n cao \n-%3C\n = \n-0 %7B%0A    \n+posSalto - E%0A\n         \n  pos\n@@ -346,24 +346,26 @@\n - E%0A        \n+if\n  posicao = p\n@@ -357,38 +357,29 @@\n  if posicao \n-= posSalto - E\n+%3C 0 %7B\n %0A           \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_17-23-39",
+            "content": "@@ -314,24 +314,35 @@\n to)%0A%0A       \n+%0A        if\n  posicao = p\n@@ -342,31 +342,27 @@\n cao \n+%3C\n = \n-posSalto - E%0A\n+0 %7B%0A    \n         \n if p\n@@ -349,34 +349,32 @@\n 0 %7B%0A            \n-if\n  posicao %3C= 0 %7B%0A\n@@ -358,38 +358,46 @@\n         posicao \n-%3C\n = \n-0 %7B\n+posSalto - E\n %0A            fmt\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_17-23-58",
+            "content": "@@ -362,16 +362,17 @@\n osicao %3C\n+=\n  0 %7B%0A   \n@@ -435,33 +435,32 @@\n break%0A        %7D%0A\n-%0A\n         salto -=\n@@ -471,8 +471,17 @@\n     \n-%7D%0A\n+    %7D%0A    \n %7D%0A\n+%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_17-25-40",
+            "content": "@@ -362,17 +362,16 @@\n osicao %3C\n-=\n  0 %7B%0A   \n@@ -438,24 +438,25 @@\n k%0A        %7D%0A\n+%0A\n         salt\n@@ -471,17 +471,8 @@\n     \n-    %7D%0A    \n+%7D%0A\n %7D%0A\n-%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_17-25-47",
+            "content": "@@ -362,16 +362,17 @@\n osicao %3C\n+=\n  0 %7B%0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_17-25-54",
+            "content": "@@ -434,33 +434,32 @@\n break%0A        %7D%0A\n-%0A\n         salto -=\n@@ -470,8 +470,17 @@\n     \n-%7D%0A\n+    %7D%0A    \n %7D%0A\n+%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_17-39-53",
+            "content": "@@ -61,21 +61,8 @@\n %0A   \n- if _, err :=\n  fmt\n@@ -82,43 +82,8 @@\n  &E)\n-; err != nil %7B%0A        return%0A    %7D\n %0A%0A  \n@@ -116,33 +116,8 @@\n = S%0A\n-    primeiro := true%0A    \n %0A   \n@@ -191,78 +191,8 @@\n P %7B%0A\n-            if !primeiro%7B%0A                fmt.Print(%22%22)%0A            %7D%0A\n     \n@@ -214,19 +214,16 @@\n ntf(%22%25d \n-%25d \n saiu%5Cn%22,\n@@ -226,34 +226,24 @@\n %5Cn%22, posicao\n-, posSalto\n )%0A          \n@@ -265,68 +265,8 @@\n  %7D%0A%0A\n-        if !primeiro%7B%0A            fmt.Print(%22 %22)%0A        %7D %0A\n     \n@@ -314,41 +314,8 @@\n to)%0A\n-        primeiro = false%0A        \n %0A   \n@@ -442,16 +442,17 @@\n       %7D%0A\n+%0A\n         \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_17-45-33",
+            "content": "@@ -19,16 +19,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -34,17 +34,20 @@\n ain() %7B%0A\n-%09\n+    \n var P, S\n@@ -54,19 +54,20 @@\n , E int%0A\n-%09%0A%09\n+    \n if _, er\n@@ -110,22 +110,34 @@\n l %7B%0A\n-%09%09return%0A%09%7D%0A%0A%09\n+        return%0A    %7D%0A%0A    \n posi\n@@ -145,17 +145,20 @@\n ao := 0%0A\n-%09\n+    \n salto :=\n@@ -160,17 +160,20 @@\n to := S%0A\n-%09\n+    \n primeiro\n@@ -184,20 +184,32 @@\n true\n- %0A%0A%09for %7B%0A%09%09\n+%0A    %0A    for %7B%0A        \n posS\n@@ -233,21 +233,24 @@\n  salto%0A%0A\n-%09%09%0A%09%09\n+        \n if posSa\n@@ -260,19 +260,28 @@\n  %3E= P %7B%0A\n-%09%09%09\n+            \n if !prim\n@@ -288,15 +288,26 @@\n eiro\n- \n %7B%0A\n-%09%09%09%09\n+                \n fmt.\n@@ -317,20 +317,37 @@\n nt(%22\n- \n %22)%0A\n-%09%09%09%7D%0A%09%09%09\n+            %7D%0A            \n fmt.\n@@ -392,26 +392,45 @@\n to)%0A\n-%09%09%09break%0A%09%09%7D%0A%0A%09%0A%09%09\n+            break%0A        %7D%0A%0A        \n if !\n@@ -437,22 +437,30 @@\n primeiro\n- \n %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -470,14 +470,27 @@\n  %22)%0A\n-%09%09%7D%0A%09%09\n+        %7D %0A        \n fmt.\n@@ -502,16 +502,18 @@\n f(%22%25d %25d\n+%5Cn\n %22, posic\n@@ -526,18 +526,24 @@\n sSalto)%0A\n-%09%09\n+        \n primeiro\n@@ -551,22 +551,33 @@\n = false%0A\n-%0A%09%09%0A%09%09\n+        %0A        \n posicao \n@@ -591,22 +591,24 @@\n lto - E%0A\n-%0A%09%09%0A%09%09\n+        \n if posic\n@@ -616,19 +616,28 @@\n o %3C 0 %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -640,17 +640,16 @@\n Printf(%22\n- \n %25d morre\n@@ -667,27 +667,44 @@\n ao)%0A\n-%09%09%09break%0A%09%09%7D%0A%0A%09%09%0A%09%09\n+            break%0A        %7D%0A        \n salt\n@@ -715,9 +715,12 @@\n  10%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-01_17-46-19",
+            "content": "@@ -533,16 +533,19 @@\n ak%0A%09%09%7D%0A%0A\n+%09%09%0A\n %09%09salto \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-01_17-46-36",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,20 +33,17 @@\n ain() %7B%0A\n-    \n+%09\n var P, S\n@@ -50,20 +50,19 @@\n , E int%0A\n-    \n+%09%0A%09\n if _, er\n@@ -105,34 +105,22 @@\n l %7B%0A\n-        return%0A    %7D%0A%0A    \n+%09%09return%0A%09%7D%0A%0A%09\n posi\n@@ -128,20 +128,17 @@\n ao := 0%0A\n-    \n+%09\n salto :=\n@@ -140,20 +140,17 @@\n to := S%0A\n-    \n+%09\n primeiro\n@@ -161,32 +161,20 @@\n true\n-%0A    %0A    for %7B%0A        \n+ %0A%0A%09for %7B%0A%09%09\n posS\n@@ -198,24 +198,21 @@\n  salto%0A%0A\n-        \n+%09%09%0A%09%09\n if posSa\n@@ -222,28 +222,19 @@\n  %3E= P %7B%0A\n-            \n+%09%09%09\n if !prim\n@@ -241,26 +241,15 @@\n eiro\n+ \n %7B%0A\n-                \n+%09%09%09%09\n fmt.\n@@ -259,37 +259,20 @@\n nt(%22\n+ \n %22)%0A\n-            %7D%0A            \n+%09%09%09%7D%0A%09%09%09\n fmt.\n@@ -317,45 +317,26 @@\n to)%0A\n-            break%0A        %7D%0A%0A        \n+%09%09%09break%0A%09%09%7D%0A%0A%09%0A%09%09\n if !\n@@ -343,30 +343,22 @@\n primeiro\n+ \n %7B%0A\n-            \n+%09%09%09\n fmt.Prin\n@@ -368,27 +368,14 @@\n  %22)%0A\n-        %7D %0A        \n+%09%09%7D%0A%09%09\n fmt.\n@@ -387,18 +387,16 @@\n f(%22%25d %25d\n-%5Cn\n %22, posic\n@@ -409,24 +409,18 @@\n sSalto)%0A\n-        \n+%09%09\n primeiro\n@@ -432,25 +432,14 @@\n lse%0A\n-        %0A        \n+%0A%09%09%0A%09%09\n posi\n@@ -457,24 +457,22 @@\n lto - E%0A\n-        \n+%0A%09%09%0A%09%09\n if posic\n@@ -480,28 +480,19 @@\n o %3C 0 %7B%0A\n-            \n+%09%09%09\n fmt.Prin\n@@ -495,16 +495,17 @@\n Printf(%22\n+ \n %25d morre\n@@ -523,44 +523,24 @@\n ao)%0A\n-            break%0A        %7D%0A        \n+%09%09%09break%0A%09%09%7D%0A%0A%09%09\n salt\n@@ -551,12 +551,9 @@\n  10%0A\n-    \n+%09\n %7D%0A%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-01_17-46-52",
+            "content": "@@ -551,16 +551,25 @@\n = false%0A\n+        %0A\n         \n@@ -683,33 +683,32 @@\n break%0A        %7D%0A\n-%0A\n         salto -=\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-01_17-47-00",
+            "content": "@@ -57,16 +57,29 @@\n  int%0A   \n+ if _, err :=\n  fmt.Sca\n@@ -91,16 +91,51 @@\n  &S, &E)\n+; err != nil %7B%0A        return%0A    %7D\n %0A%0A    po\n@@ -160,16 +160,41 @@\n to := S%0A\n+    primeiro := true%0A    \n %0A    for\n@@ -260,16 +260,86 @@\n  %3E= P %7B%0A\n+            if !primeiro%7B%0A                fmt.Print(%22%22)%0A            %7D%0A\n         \n@@ -357,16 +357,19 @@\n ntf(%22%25d \n+%25d \n saiu%5Cn%22,\n@@ -368,32 +368,42 @@\n saiu%5Cn%22, posicao\n+, posSalto\n )%0A            br\n@@ -413,24 +413,84 @@\n %0A        %7D%0A%0A\n+        if !primeiro%7B%0A            fmt.Print(%22 %22)%0A        %7D %0A\n         fmt.\n@@ -526,16 +526,40 @@\n sSalto)%0A\n+        primeiro = false\n %0A       \n@@ -674,32 +674,33 @@\n break%0A        %7D%0A\n+%0A\n         salto -=\n@@ -707,21 +707,12 @@\n  10%0A\n-        %7D%0A\n     %7D%0A\n+%7D\n %0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-01_17-47-46",
+            "content": "@@ -408,20 +408,19 @@\n %5Cn%22, pos\n-Salt\n+ica\n o)%0A     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_18-00-32",
+            "content": "@@ -400,35 +400,36 @@\n d morreu%5Cn%22, pos\n-ica\n+Salt\n o)%0A            b\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_18-00-44",
+            "content": "@@ -19,16 +19,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -34,17 +34,20 @@\n ain() %7B%0A\n-%09\n+    \n var P, S\n@@ -58,21 +58,11 @@\n int%0A\n-%09if _, err :=\n+   \n  fmt\n@@ -82,37 +82,14 @@\n  &E)\n-; err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09\n+%0A%0A    \n posi\n@@ -97,17 +97,20 @@\n ao := 0%0A\n-%09\n+    \n salto :=\n@@ -117,17 +117,26 @@\n  S%0A%0A\n-%09\n+    \n for %7B%0A\n-%09%09\n+        \n posS\n@@ -160,18 +160,24 @@\n  salto%0A%0A\n-%09%09\n+        \n if posSa\n@@ -187,19 +187,28 @@\n  %3E= P %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -214,19 +214,16 @@\n ntf(%22%25d \n-%25d \n saiu%5Cn%22,\n@@ -234,36 +234,47 @@\n icao\n-, posSalto)%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09\n+)%0A            break%0A        %7D%0A%0A        \n fmt.\n@@ -311,18 +311,24 @@\n Salto)%0A%0A\n-%09%09\n+        \n posicao \n@@ -342,19 +342,24 @@\n lto - E%0A\n-%0A%09%09\n+        \n if posic\n@@ -367,19 +367,28 @@\n o %3C 0 %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -418,37 +418,69 @@\n ao)%0A\n-%09%09%09break%0A%09%09%7D%0A%0A%09%09salto -= 10%0A%09%7D%0A\n+            break%0A        %7D%0A        salto -= 10%0A        %7D%0A    \n %7D%0A\n+%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_18-05-37",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,20 +33,17 @@\n ain() %7B%0A\n-    \n+%09\n var P, S\n@@ -50,19 +50,29 @@\n , E int%0A\n-   \n+%09if _, err :=\n  fmt.Sca\n@@ -84,22 +84,45 @@\n  &S, &E)\n-%0A%0A    \n+; err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09\n posicao \n@@ -126,20 +126,17 @@\n ao := 0%0A\n-    \n+%09\n salto :=\n@@ -143,26 +143,17 @@\n  S%0A%0A\n-    \n+%09\n for %7B%0A\n-        \n+%09%09\n posS\n@@ -177,24 +177,18 @@\n  salto%0A%0A\n-        \n+%09%09\n if posSa\n@@ -198,28 +198,19 @@\n  %3E= P %7B%0A\n-            \n+%09%09%09\n fmt.Prin\n@@ -216,16 +216,19 @@\n ntf(%22%25d \n+%25d \n saiu%5Cn%22,\n@@ -239,47 +239,36 @@\n icao\n-)%0A            break%0A        %7D%0A%0A        \n+, posSalto)%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09\n fmt.\n@@ -305,24 +305,18 @@\n Salto)%0A%0A\n-        \n+%09%09\n posicao \n@@ -330,24 +330,19 @@\n lto - E%0A\n-        \n+%0A%09%09\n if posic\n@@ -350,28 +350,19 @@\n o %3C 0 %7B%0A\n-            \n+%09%09%09\n fmt.Prin\n@@ -392,69 +392,37 @@\n ao)%0A\n-            break%0A        %7D%0A        salto -= 10%0A        %7D%0A    \n+%09%09%09break%0A%09%09%7D%0A%0A%09%09salto -= 10%0A%09%7D%0A\n %7D%0A\n-%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_18-05-54",
+            "content": "@@ -19,16 +19,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -34,17 +34,20 @@\n ain() %7B%0A\n-%09\n+    \n var P, S\n@@ -58,21 +58,11 @@\n int%0A\n-%09if _, err :=\n+   \n  fmt\n@@ -82,37 +82,14 @@\n  &E)\n-; err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09\n+%0A%0A    \n posi\n@@ -97,17 +97,20 @@\n ao := 0%0A\n-%09\n+    \n salto :=\n@@ -117,17 +117,26 @@\n  S%0A%0A\n-%09\n+    \n for %7B%0A\n-%09%09\n+        \n posS\n@@ -164,54 +164,16 @@\n to%0A%0A\n-%09%09if salto %3C 0 %7B%0A%09%09%09posSalto = posicao%0A%09%09%7D%0A%0A%09%09\n+        \n if p\n@@ -187,19 +187,28 @@\n  %3E= P %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -214,19 +214,16 @@\n ntf(%22%25d \n-%25d \n saiu%5Cn%22,\n@@ -234,36 +234,47 @@\n icao\n-, posSalto)%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09\n+)%0A            break%0A        %7D%0A%0A        \n fmt.\n@@ -311,18 +311,24 @@\n Salto)%0A%0A\n-%09%09\n+        \n posicao \n@@ -342,19 +342,24 @@\n lto - E%0A\n-%0A%09%09\n+        \n if posic\n@@ -367,19 +367,28 @@\n o %3C 0 %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -418,36 +418,69 @@\n ao)%0A\n-%09%09%09break%0A%09%09%7D%0A%09%09salto -= 10%0A%09%7D%0A\n+            break%0A        %7D%0A        salto -= 10%0A        %7D%0A    \n %7D%0A\n+%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_18-07-26",
+            "content": "@@ -177,16 +177,60 @@\n  salto%0A%0A\n+%09%09if salto %3C 0 %7B%0A%09%09%09posSalto = posicao%0A%09%09%7D%0A%0A\n %09%09if pos\n@@ -260,16 +260,19 @@\n ntf(%22%25d \n+%25d \n saiu%5Cn%22,\n@@ -271,32 +271,42 @@\n saiu%5Cn%22, posicao\n+, posSalto\n )%0A%09%09%09break%0A%09%09%7D%0A%0A\n@@ -445,17 +445,16 @@\n eak%0A%09%09%7D%0A\n-%0A\n %09%09salto \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-01_18-09-37",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -179,64 +179,8 @@\n alto\n-%0A%09%09if salto %3C 0 %7B%0A%09%09%09posSalto = posicao + salto + 10%0A%09%09%7D\n %0A%0A%09%09\n@@ -384,20 +384,21 @@\n %09%09break%0A\n-\n %09%09%7D%0A\n+%0A\n %09%09salto \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_18-11-29",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar P, S, E int\n\tif _, err := fmt.Scan(&P, &S, &E); err != nil {\n\t\treturn\n\t}\n\n\tposicao := 0\n\tsalto := S\n\n\tfor {\n\t\tposSalto := posicao + salto\n\t\tif salto < 0 {\n\t\t\tposSalto = posicao + salto + 10\n\t\t}\n\n\t\tif posSalto >= P {\n\t\t\tfmt.Printf(\"%d saiu\\n\", posicao)\n\t\t\tbreak\n\t\t}\n\n\t\tfmt.Printf(\"%d %d\\n\", posicao, posSalto)\n\n\t\tposicao = posSalto - E\n\n\t\tif posicao < 0 {\n\t\t\tfmt.Printf(\"%d morreu\\n\", posicao)\n\t\t\tbreak\n\t\t}\n\t\tsalto -= 10\n\t}\n}\n",
+            "lines": "35"
         }
     ]
 }
