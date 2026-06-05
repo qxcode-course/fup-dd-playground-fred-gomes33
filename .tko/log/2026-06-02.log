@@ -1,0 +1,12 @@
+2026-06-02 17:27:15, MOVE, v:1, k:fup@bundona, mode:PICK
+2026-06-02 17:27:18, EXEC, v:1, k:fup@bundona, mode:FULL, rate:100
+2026-06-02 17:31:07, MOVE, v:1, k:fup@bundona, mode:BACK
+2026-06-02 17:31:17, MOVE, v:1, k:fup@poco, mode:PICK
+2026-06-02 17:31:18, EXEC, v:1, k:fup@poco, mode:FULL, rate:100
+2026-06-02 17:31:20, MOVE, v:1, k:fup@poco, mode:BACK
+2026-06-02 17:27:17, MOVE, v:1, k:fup@bundona, mode:EDIT
+2026-06-02 17:27:37, MOVE, v:1, k:fup@bundona, mode:EDIT
+2026-06-02 17:31:18, MOVE, v:1, k:fup@poco, mode:EDIT
+2026-06-02 17:33:02, MOVE, v:1, k:fup@adedonha, mode:PICK
+2026-06-02 17:33:49, EXEC, v:1, k:fup@adedonha, mode:FULL, rate:100
+2026-06-02 17:33:49, MOVE, v:1, k:fup@adedonha, mode:EDIT

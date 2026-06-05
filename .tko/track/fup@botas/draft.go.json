@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_23-42-18",
+            "content": "@@ -522,22 +522,23 @@\n ares += \n-direit\n+esquerd\n a%5Bi%5D%0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-04_23-42-29",
+            "content": "@@ -97,18 +97,19 @@\n (%5B%5Dint, \n-70\n+num\n )%0A    di\n@@ -129,18 +129,19 @@\n (%5B%5Dint, \n-70\n+num\n )%0A%0A    f\n@@ -294,26 +294,28 @@\n squerda%5B\n+i%5D = \n tamanho\n-%5D++\n %0A       \n@@ -346,18 +346,33 @@\n ita%5B\n+i%5D = \n tamanho\n-%5D++\n+%0A            \n %0A   \n@@ -378,22 +378,16 @@\n       %7D%0A\n-    %7D%0A\n     pare\n@@ -422,10 +422,11 @@\n i %3C \n-70\n+num\n ; i+\n@@ -559,9 +559,10 @@\n %7D%0A    %7D%0A\n+%7D\n %0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-05_00-02-17",
+            "content": "@@ -543,31 +543,8 @@\n   %7D%0A\n-    fmt.Println(pares)%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-05_00-02-57",
+            "content": "@@ -473,23 +473,10 @@\n ares\n- += esquerda%5Bi%5D\n+++\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-05_00-03-24",
+            "content": "@@ -42,16 +42,18 @@\n    var n\n+um\n  int%0A   \n@@ -64,16 +64,18 @@\n .Scan(&n\n+um\n )%0A%0A    e\n@@ -76,16 +76,21 @@\n %0A    esq\n+uerda\n  := make\n@@ -108,16 +108,20 @@\n %0A    dir\n+eita\n  := make\n@@ -154,22 +154,23 @@\n 0; i %3C n\n+um\n ; i++\n- \n %7B%0A%0A     \n@@ -212,17 +212,16 @@\n  string%0A\n-%0A\n         \n@@ -269,17 +269,16 @@\n o == %22E%22\n- \n %7B%0A      \n@@ -286,16 +286,21 @@\n      esq\n+uerda\n %5Btamanho\n@@ -304,38 +304,36 @@\n nho%5D++%0A        %7D\n- \n else\n- \n %7B%0A            di\n@@ -333,16 +333,20 @@\n      dir\n+eita\n %5Btamanho\n@@ -361,25 +361,24 @@\n     %7D%0A    %7D%0A\n-%0A\n     pares :=\n@@ -380,16 +380,20 @@\n es := 0%0A\n+    \n %0A    for\n@@ -412,19 +412,17 @@\n  70; i++\n- %7B%0A\n+%7B\n %0A       \n@@ -432,21 +432,30 @@\n  esq\n+uerda\n %5Bi%5D \n-%3C\n+==\n  dir\n+eita\n %5Bi%5D\n- \n %7B%0A  \n@@ -476,16 +476,21 @@\n s += esq\n+uerda\n %5Bi%5D%0A    \n@@ -498,14 +498,12 @@\n    %7D\n- \n else\n- \n %7B%0A  \n@@ -524,20 +524,25 @@\n s += dir\n+eita\n %5Bi%5D%0A\n+ \n         \n@@ -547,18 +547,20 @@\n   %7D%0A    \n+   \n %7D\n-%0A\n %0A    fmt\n@@ -575,10 +575,15 @@\n (pares)%0A\n+    \n %7D%0A\n+%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-05_00-04-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    esq := make([]int, 70)\n    dir := make([]int, 70)\n\n    for i := 0; i < n; i++ {\n\n        var tamanho int\n        var lado string\n\n        fmt.Scan(&tamanho, &lado)\n\n        if lado == \"E\" {\n            esq[tamanho]++\n        } else {\n            dir[tamanho]++\n        }\n    }\n\n    pares := 0\n\n    for i := 0; i < 70; i++ {\n\n        if esq[i] < dir[i] {\n            pares += esq[i]\n        } else {\n            pares += dir[i]\n        }\n    }\n\n    fmt.Println(pares)\n}\n",
+            "lines": "36"
+        }
+    ]
+}

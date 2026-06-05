@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-05_00-08-26",
+            "content": "@@ -41,247 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    if n == 0%7B%0A        fmt.Println(0)%0A        return%0A    %7D%0A    if n == 1%7B%0A        fmt.Println(1)%0A        return%0A    %7D%0A%0A    a, b := 1, 1%0A%0A    for i := 2; i %3C= n; i++%7B%0A        a, b = b, a+b%0A    %7D%0A    fmt.Println(b\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-05_00-15-10",
+            "content": "@@ -199,17 +199,17 @@\n b := 1, \n-0\n+1\n %0A%0A    fo\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-05_00-15-55",
+            "content": "@@ -81,21 +81,69 @@\n  == \n-1 %7C%7C\n+0%7B%0A        fmt.Println(0)%0A        return%0A    %7D%0A    if\n  n == \n-2%7B \n+1%7B\n %0A   \n@@ -199,17 +199,17 @@\n b := 1, \n-1\n+0\n %0A%0A    fo\n@@ -219,9 +219,9 @@\n  := \n-3\n+2\n ; i \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-05_00-17-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    if n == 1 || n == 2{ \n        fmt.Println(1)\n        return\n    }\n\n    a, b := 1, 1\n\n    for i := 3; i <= n; i++{\n        a, b = b, a+b\n    }\n    fmt.Println(b)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

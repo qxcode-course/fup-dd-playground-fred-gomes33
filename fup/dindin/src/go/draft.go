@@ -1,45 +1,51 @@
 package main
 import "fmt"
 func main() {
-   var qtd int
-    fmt.Scan(&qtd)
+  {
+    var n int
+    fmt.Scan(&n)
 
-    c := 0 
-    l := 0 
-    m := 0
-    t := 0
+  
+    chocolate := 0
+    limao := 0
+    manha := 0
+    tarde := 0
 
-    for i := 0; i < qtd; i++ {
+    for i := 0; i < n; i++ {
         var sabor, turno string
         fmt.Scan(&sabor, &turno)
 
-        switch sabor {
-        case "c":
-            c++
-        case "l":
-            l++
+       
+        if sabor == "c" {
+            chocolate++
+        } else if sabor == "l" {
+            limao++
         }
 
-        switch turno {
-        case "m":
-            m++
-        case "t":
-            t++
+       
+        if turno == "m" {
+            manha++
+        } else if turno == "t" {
+            tarde++
         }
     }
 
-    if c > l{
+   
+    if chocolate > limao {
         fmt.Println("c")
-    }else if l > c{
+    } else if limao > chocolate {
         fmt.Println("l")
-    }else{
+    } else {
         fmt.Println("empate")
     }
-    if m < t {
+
+   
+    if manha < tarde {
         fmt.Println("m")
-    } else if t > m {
+    } else if tarde < manha {
         fmt.Println("t")
     } else {
         fmt.Println("empate")
     }
+ }
 }

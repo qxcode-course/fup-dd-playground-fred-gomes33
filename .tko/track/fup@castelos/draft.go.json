@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_23-37-43",
+            "content": "@@ -72,36 +72,8 @@\n um)%0A\n-//castelo de cubos for extra\n %0A   \n@@ -270,17 +270,16 @@\n ntln(%22si\n-m\n %22)%0A    %7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-05_00-08-36",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var num \n@@ -49,17 +49,20 @@\n num int%0A\n-%09\n+    \n fmt.Scan\n@@ -72,18 +72,42 @@\n um)%0A\n-%0A%09quadrado\n+//castelo de cubos for extra%0A    q\n  := \n@@ -112,18 +112,25 @@\n = false%0A\n-%0A%09\n+    %0A    \n for i :=\n@@ -146,21 +146,26 @@\n num; i++\n- \n %7B%0A\n-%09%09\n+        \n if i == \n@@ -174,62 +174,83 @@\n m %7B%0A\n-%09%09%09quadrado = true%0A%09%09%09break%0A%09%09%7D%0A%09%7D%0A%0A%09if !quadrado %7B%0A%09%09\n+            q = true%0A            break%0A        %7D%0A    %7D%0A%0A    if !q%7B%0A        \n fmt.\n@@ -268,20 +268,27 @@\n o%22)%0A\n-%09%7D \n+    %7D\n else\n- \n %7B%0A\n-%09%09\n+        \n fmt.\n@@ -306,9 +306,13 @@\n m%22)%0A\n-%09%7D\n+    %7D%0A\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-05_00-10-21",
+            "content": "@@ -45,17 +45,16 @@\n ar n\n+um\n  int%0A\n-    \n+%09\n fmt.\n@@ -64,18 +64,15 @@\n n(&n\n+um\n )%0A%0A\n-    ehQ\n+%09q\n uadr\n@@ -84,20 +84,18 @@\n = false%0A\n-    \n+%0A%09\n for i :=\n@@ -103,23 +103,23 @@\n 1; i\n-*i\n  %3C= n\n+um\n ; i++ %7B%0A\n     \n@@ -118,105 +118,66 @@\n + %7B%0A\n-        \n+%09%09\n if i\n-*i\n  == n\n+um\n  %7B%0A\n-            ehQuadrado = true%0A            break%0A        %7D%0A    %7D%0A%0A    if ehQ\n+%09%09%09quadrado = true%0A%09%09%09break%0A%09%09%7D%0A%09%7D%0A%0A%09if !q\n uadr\n@@ -182,24 +182,18 @@\n drado %7B%0A\n-        \n+%09%09\n fmt.Prin\n@@ -201,18 +201,15 @@\n ln(%22\n-sim%22)%0A    \n+nao%22)%0A%09\n %7D el\n@@ -217,16 +217,10 @@\n e %7B%0A\n-        \n+%09%09\n fmt.\n@@ -232,18 +232,15 @@\n ln(%22\n-nao%22)%0A    \n+sim%22)%0A%09\n %7D%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-05_00-11-19",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n    fmt.Scan(&n)\n\n    ehQuadrado := false\n    for i := 1; i*i <= n; i++ {\n        if i*i == n {\n            ehQuadrado = true\n            break\n        }\n    }\n\n    if ehQuadrado {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "22"
+        }
+    ]
+}

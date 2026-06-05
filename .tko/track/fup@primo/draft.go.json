@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_23-46-29",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n   var num int\n   fmt.Scan(&num)\n\n   primo:= 1\n\n   for i := 2; i <= int(math.Sqrt(float64(num))); i++{\n    if num % i == 0{\n        primo = 0\n        break\n    }\n   }\n    fmt.Println(primo)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

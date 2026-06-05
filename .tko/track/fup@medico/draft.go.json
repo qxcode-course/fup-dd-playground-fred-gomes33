@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_23-33-41",
+            "content": "@@ -461,17 +461,8 @@\n tup \n-== false \n %7B%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-04_23-34-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qnt int\n    fmt.Scan(&qnt)\n\n    seq := make([]int, qnt)\n\n    for i := 0; i < qnt; i++ {\n        fmt.Scan(&seq[i])\n    }\n\n    cont := 0\n    \n    for i := 0; i < len(seq); i++ {\n        if seq[i] == 0 {\n            tup := false\n            if i > 0 && seq[i-1] == 1 {\n                tup = true\n            }\n            if i < len(seq)-1 && seq[i+1] == 1 {\n                tup = true\n            }\n            if tup == false {\n                cont++\n            }\n        }\n        \n    }\nfmt.Println(cont)\n}\n",
+            "lines": "31"
+        }
+    ]
+}

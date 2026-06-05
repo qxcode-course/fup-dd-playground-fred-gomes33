@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-05_00-19-55",
+            "content": "@@ -384,10 +384,28 @@\n %7D%0A    %7D%0A\n+    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-05_00-20-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P, E int\n    fmt.Scan(&P, &E)\n\n    for forcaini := 1; forcaini <= P; forcaini++ {\n        for forcaini2 := 1; forcaini2 <= E; forcaini2++ {\n            if (forcaini*forcaini2) == P {\n                if (forcaini + forcaini2) == E {\n                    fmt.Printf(\"%d %d\\n\", forcaini, forcaini2)\n                }\n            }\n        }\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

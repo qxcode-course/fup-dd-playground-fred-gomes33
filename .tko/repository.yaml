@@ -19,18 +19,14 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@list
-- fup@mat
-- sandbox@sandbox
-- fup@string
 - fup@for_extra
-- fup@struct
+- fup@list
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@poco
-selected_index: 14
+selected: fup@castelos
+selected_index: 10

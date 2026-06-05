@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_23-55-21",
+            "content": "@@ -718,25 +718,32 @@\n    fmt.Print\n-(\n+f(%22%25d%22, \n elem)%0A      \n@@ -794,18 +794,21 @@\n rint\n-(elem, %22 %22\n+f(%22%25d %22, elem\n )%0A  \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-04_23-55-59",
+            "content": "@@ -726,10 +726,8 @@\n rint\n-ln\n (ele\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-04_23-56-13",
+            "content": "package main\nimport \"fmt\"\nimport \"sort\"\nfunc contains(array []int, valor int) bool {\n    for _, elem := range array {\n        if elem == valor {\n            return true\n        }\n    }\n    return false\n}\n\nfunc separador(array []int) []int {\n    especies := make([]int, 0)\n    for _, animal := range array{\n        if !contains(especies, animal){\n            especies = append(especies, animal)\n        }\n    }\n    return especies\n}\nfunc main(){\n    var qtd int\n    fmt.Scan(&qtd)\n    animais := make([]int, qtd)\n    for i :=range animais {\n        fmt.Scan(&animais[i])\n    }\n    especies := separador(animais)\n    sort.Ints(especies)\n\n    for i, elem := range especies {\n        if i == len(especies) - 1 {\n            fmt.Println(elem)\n            break\n        }else{\n            fmt.Print(elem, \" \")\n        }\n    }\n}\n",
+            "lines": "40"
+        }
+    ]
+}

@@ -1,5 +1,18 @@
 package main
 import "fmt"
 func main() {
-    fmt.Println("Hello, World!")
+    var n int
+    fmt.Scan(&n)
+
+    if n == 1 || n == 2{ 
+        fmt.Println(1)
+        return
+    }
+
+    a, b := 1, 1
+
+    for i := 3; i <= n; i++{
+        a, b = b, a+b
+    }
+    fmt.Println(b)
 }

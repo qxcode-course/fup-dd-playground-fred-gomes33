@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-05_00-01-26",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -484,32 +484,33 @@\n            res =\n+=\n  elem%0A          \n@@ -550,32 +550,33 @@\n       res = elem\n+ \n %0A            con\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-05_00-01-44",
+            "content": "package main\n\nimport \"fmt\"\nfunc main() {\n   var qtd, cont, res int\n   fmt.Scan(&qtd)\n\n   blocos := make([]int, qtd)\n   for i := range blocos {\n       fmt.Scan(&blocos[i])\n   }\n   res = blocos[0]\n   for _, elem := range blocos{\n    if elem > res{\n        if elem - 1 > res{\n            cont += 1\n            res = elem\n            continue\n        }else{\n            res = elem\n            continue\n        }\n    }else if elem < res {\n        if elem + 1 < res{\n            cont += 1\n            res = elem\n            continue\n        }else {\n            res = elem\n            continue\n        }\n    }\n}\n   \n    fmt.Println(cont)\n}\n",
+            "lines": "36"
+        }
+    ]
+}
