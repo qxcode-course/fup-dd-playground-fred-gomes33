@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_16-57-37",
+            "content": "@@ -41,159 +41,35 @@\n     \n-var numE int%0A    fmt.Scan(&numE)%0A%0A    Array := make(%5B%5Dint, numE)%0A    for i :=0; i %3C numE; i++%7B%0A        fmt.Scan(&Array%5Bi%5D)%0A    %7D%0A%0A    fmt.Println(Array\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-09_17-50-52",
+            "content": "@@ -106,40 +106,8 @@\n mE)%0A\n-    Array2 := make(%5B%5Dint, numE)%0A\n     \n@@ -168,113 +168,9 @@\n     \n-    if Array%5Bi%5D == 0%7B%0A            Array2%5Bi%5D = 1%0A        %7Delse%7B%0A            Array2%5Bi%5D = 0%0A        %7D%0A    %7D%0A\n+%7D\n %0A%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-09_17-53-12",
+            "content": "@@ -194,20 +194,8 @@\n y%5Bi%5D\n-, &Array2%5Bi%5D\n )%0A  \n@@ -219,18 +219,9 @@\n  == \n-Array2%5Bi%5D \n+0\n %7B%0A  \n@@ -234,26 +234,21 @@\n     \n-fmt.Println(%22sim%22)\n+Array2%5Bi%5D = 1\n %0A   \n@@ -275,42 +275,61 @@\n     \n-fmt.Println(%22nao%22)%0A        %7D%0A    %7D%0A\n+Array2%5Bi%5D = 0%0A        %7D%0A    %7D%0A%0A%0A    fmt.Println(Array)\n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-09_17-54-22",
+            "content": "@@ -260,16 +260,18 @@\n mt.Print\n+ln\n (%22sim%22)%0A\n@@ -306,16 +306,18 @@\n mt.Print\n+ln\n (%22nao%22)%0A\n@@ -332,10 +332,11 @@\n %7D%0A    %7D%0A\n+%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-09_17-54-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numE int\n    fmt.Scan(&numE)\n\n    Array := make([]int, numE)\n    Array2 := make([]int, numE)\n    for i :=0; i < numE; i++{\n        fmt.Scan(&Array[i], &Array2[i])\n        if Array[i] == Array2[i] {\n            fmt.Print(\"sim\")\n        }else{\n            fmt.Print(\"nao\")\n        }\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}

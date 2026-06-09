@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_18-02-11",
+            "content": "@@ -169,16 +169,22 @@\n 10, 0.05\n+, 0.01\n %7D%0A%0A    c\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-09_18-03-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var troco float64\n    fmt.Scan(&troco)\n\n    array := []float64{100.00, 50.00, 20.00, 10.00, 5.00, 2.00, 1.00, 0.50, 0.25, 0.10, 0.05}\n\n    cedulas := make([]int, len(array))\n\n    for troco > 0 && troco >= 0.05{\n        for i := 0; i < len(array); i++ {\n            if troco >= array[i]{\n                cedulas[i] = (int) (troco/(array[i]))\n                troco = troco - (array[i] * float64(cedulas[i]))\n            }else{\n                cedulas[i] = 0\n            }\n    }\n    } \n        for i := 0; i < len(array); i++ {\n            if cedulas[i] == 0{\n                continue\n            }\n            fmt.Printf(\"%d de %0.2f\\n\", cedulas[i], array[i])\n        }\n        if troco > 0 && troco < 0.05{\n            fmt.Printf(\"Falta %0.2f\\n\", troco)\n        }\n    }\n",
+            "lines": "30"
+        }
+    ]
+}
