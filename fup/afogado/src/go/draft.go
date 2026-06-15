@@ -4,12 +4,23 @@ func main() {
     var P, E int
     fmt.Scan(&P, &E)
 
-    for forcaini := 1; forcaini <= P; forcaini++ {
-        for forcaini2 := 1; forcaini2 <= E; forcaini2++ {
-            if (forcaini*forcaini2) == P {
-                if (forcaini + forcaini2) == E {
-                    fmt.Printf("%d %d\n", forcaini, forcaini2)
-                }
+    for forçaInicial := 1; ; forçaInicial++ {
+        altura := 0
+        salto := forçaInicial
+
+        for {
+            altura += salto
+            if altura >= P {
+                fmt.Println(forçaInicial)
+                return
+            }
+            altura -= E
+            if altura < 0 {
+                break
+            }
+            salto -= 10
+            if salto <= 0 {
+                break
             }
         }
     }

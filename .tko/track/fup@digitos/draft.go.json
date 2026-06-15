@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_00-33-13",
+            "content": "@@ -23,25 +23,8 @@\n mt%22%0A\n-import %22strconv%22%0A\n func\n@@ -91,53 +91,40 @@\n  := \n-strconv.Itoa(B)%0A    digito := strconv.Itoa(A)\n+A + B%0A    digito := contato %25 10\n %0A%0A  \n@@ -171,16 +171,22 @@\n Sprintf(\n+%22%25d%22, \n contato)\n@@ -212,23 +212,43 @@\n g(ch) ==\n+ string(rune('0' +\n  digito\n+))\n  %7B%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-15_00-35-29",
+            "content": "package main\nimport \"fmt\"\nimport \"strconv\"\nfunc main() {\n    var A, B int\n    fmt.Scan(&A, &B)\n\n    contato := strconv.Itoa(B)\n    digito := strconv.Itoa(A)\n\n    count := 0\n    for _, ch := range fmt.Sprintf(contato) {\n        if string(ch) == digito {\n            count++\n        }\n    }\n    fmt.Println(count)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

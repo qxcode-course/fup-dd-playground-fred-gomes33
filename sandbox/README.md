@@ -15,3 +15,4 @@ Sinta-se à vontade para organizar seus rascunhos em subpastas dentro do sandbox
 - [ ] `@user_005 🛠️ 👤 type=make xp=1 tier=1 loss=part :self` [struct](user_005/README.md)
 
 - [ ] `@user_006 🛠️ 👤 type=make xp=1 tier=1 loss=part :self` [jogo de cartas](user_006/README.md)
+- [ ] `@user_007 👤 xp=1                                 ` [Estudo - AP2](user_007/README.md)

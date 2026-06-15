@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-14_23-54-01",
+            "content": "@@ -46,116 +46,13 @@\n     \n-Array := %5B%5Dstring%7B%22Ma%C3%A7%C3%A3%22, %22Banana%22, %22Abacate%22%7D%0A    Array = append(Array, %22Uva%22) //-%3E adiciona Uva no final%0A%0A\n+%0A    \n %0A   \n@@ -68,13 +68,23 @@\n tln(\n-Array\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-14_23-59-43",
+            "content": "@@ -176,12 +176,8 @@\n rray\n-, %22%22\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-14_23-59-54",
+            "content": "@@ -175,14 +175,13 @@\n Array, %22\n- \n %22)%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-14_23-59-58",
+            "content": "@@ -111,11 +111,8 @@\n pend\n-%5B2%5D\n (Arr\n@@ -172,12 +172,17 @@\n ln(Array\n+, %22 %22\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-15_00-01-32",
+            "content": "@@ -107,16 +107,19 @@\n = append\n+%5B2%5D\n (Array, \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-15_00-01-38",
+            "content": "@@ -45,10 +45,8 @@\n %0A   \n-/*\n  Arr\n@@ -177,183 +177,7 @@\n ray)\n-*/%0A%0A    Array := %5B%5Dstring%7B%22Cenoura%22, %22Alface%22, %22Beterraba%22%7D%0A    Array = append(Array, %22Mel%C3%A3o%22)%0A    for _, Compras := range Array%7B%0A        fmt.Println(%22Comprei:%22, Compras)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-15_00-04-54",
+            "content": "@@ -23,138 +23,8 @@\n mt%22%0A\n-Type Pessoa struct%7B%0A        Nome string%0A        Idade int%0A        Raca string%0A        Sexualidade string%0A        numfav int%0A    %7D%0A\n func\n@@ -183,18 +183,16 @@\n */%0A%0A    \n-/*\n Array :=\n@@ -350,123 +350,12 @@\n as)%0A\n+\n     %7D\n-*/%0A    // 1%C2%AA Pessoa%0A%0A    1pessoa := Pessoa%7B%22Felipe%22, 18, %22Parda%22, %22Gay%22, 7%7D%0A    Fmt.Println(1pessoa.Nome)%0A    %0A\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-15_00-09-08",
+            "content": "@@ -19,17 +19,17 @@\n t %22fmt%22%0A\n-t\n+T\n ype Pess\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-15_00-09-35",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n type Pes\n@@ -41,24 +41,18 @@\n ruct\n- \n %7B%0A\n-%09Nome\n         \n stri\n@@ -51,52 +51,58 @@\n     \n+Nome \n string%0A\n-%09Idade\n+ \n        \n-int%0A%09Raca\n+Idade int%0A \n        \n+Raca\n  string%0A\n %09Sex\n@@ -97,17 +97,24 @@\n  string%0A\n-%09\n+        \n Sexualid\n@@ -128,27 +128,32 @@\n ing%0A\n-%09numfav      int%0A%7D%0A\n+        numfav int%0A    %7D\n %0Afun\n@@ -163,18 +163,24 @@\n ain() %7B%0A\n-%0A%09\n+    %0A   \n /* Array\n@@ -221,17 +221,17 @@\n acate%22%7D%0A\n-%09\n+ \n    Array\n@@ -283,20 +283,20 @@\n final%0A%0A%0A\n-%09\n    \n+ \n fmt.Prin\n@@ -309,17 +309,20 @@\n ray)*/%0A%0A\n-%09\n+    \n /*Array \n@@ -367,17 +367,18 @@\n rraba%22%7D%0A\n-%09\n+  \n   Array \n@@ -402,17 +402,18 @@\n Mel%C3%A3o%22)%0A\n-%09\n+  \n   for _,\n@@ -437,17 +437,18 @@\n  Array%7B%0A\n-%09\n+  \n       fm\n@@ -482,16 +482,20 @@\n as)%0A\n-%09\n+  \n   %7D*/%0A\n-%09\n+    \n // 1\n@@ -508,16 +508,19 @@\n oa%0A%0A\n-%09\n+    1\n pessoa\n-1\n  := \n@@ -563,10 +563,13 @@\n  7%7D%0A\n-%09f\n+    F\n mt.P\n@@ -579,21 +579,26 @@\n tln(\n+1\n pessoa\n-1\n .Nome)\n+%0A    \n %0A%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-15_00-10-16",
+            "content": "@@ -559,24 +559,8 @@\n Nome\n-, pessoa1.numfav\n )%0A%0A%7D\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-15_00-10-32",
+            "content": "@@ -540,17 +540,18 @@\n mt.Print\n-f\n+ln\n (pessoa1\n@@ -575,13 +575,8 @@\n mfav\n-,%22%5Cn%22\n )%0A%0A%7D\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-15_00-10-46",
+            "content": "@@ -544,17 +544,10 @@\n rint\n-ln(%22%5Cn%22, \n+f(\n pess\n@@ -570,13 +570,18 @@\n 1.numfav\n+,%22%5Cn%22\n )%0A%0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-15_00-11-11",
+            "content": "@@ -543,16 +543,22 @@\n Println(\n+%22%5Cn%22, \n pessoa1.\n@@ -562,21 +562,16 @@\n a1.Nome,\n-%22%5Cn%22,\n  pessoa1\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-15_00-11-31",
+            "content": "@@ -561,16 +561,17 @@\n me,%22%5Cn%22,\n+ \n pessoa1.\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-15_00-11-37",
+            "content": "@@ -579,21 +579,8 @@\n mfav\n-,pessoa1.Raca\n )%0A%0A%7D\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-15_00-12-11",
+            "content": "@@ -547,13 +547,8 @@\n tln(\n-%22%25n%22,\n pess\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-15_00-12-29",
+            "content": "@@ -543,16 +543,21 @@\n Println(\n+%22%25n%22,\n pessoa1.\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-15_00-12-38",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Pessoa struct {\n\tNome        string\n\tIdade       int\n\tRaca        string\n\tSexualidade string\n\tnumfav      int\n}\n\nfunc main() {\n\n\t/* Array := []string{\"Ma\u00e7\u00e3\", \"Banana\", \"Abacate\"}\n\t   Array = append(Array, \"Uva\") //-> adiciona Uva no final\n\n\n\t   fmt.Println(Array)*/\n\n\t/*Array := []string{\"Cenoura\", \"Alface\", \"Beterraba\"}\n\t  Array = append(Array, \"Mel\u00e3o\")\n\t  for _, Compras := range Array{\n\t      fmt.Println(\"Comprei:\", Compras)\n\t  }*/\n\t// 1\u00aa Pessoa\n\n\tpessoa1 := Pessoa{\"Felipe\", 18, \"Parda\", \"Gay\", 7}\n\tfmt.Println(pessoa1.Nome,\"\\n\",pessoa1.numfav,pessoa1.Raca)\n\n}\n",
+            "lines": "31"
+        }
+    ]
+}

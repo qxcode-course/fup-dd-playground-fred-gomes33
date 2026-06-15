@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_00-21-22",
+            "content": "@@ -73,302 +73,59 @@\n     \n-largura := 2*N - 1%0A%0A    for i := 1; i %3C=N; i++%7B%0A        linha := make(%5B%5Drune, largura)%0A        for j := 0; j %3C largura; j++%7B%0A            linha%5Bj%5D = %22.%22%0A        %7D%0A        for k := 0; k %3C i; k++%7B%0A            pos := (largura/2) - (i-1) + 2*k%0A            linha%5Bpos%5D = rune(%220%22 + N)%0A        %7D%0A    %7D%0A\n+for i :=N; i %3E 0 && i %3C 50; i++%7B%0A        if N%0A    %7D\n %0A   \n@@ -141,21 +141,23 @@\n tln(\n-string(linha)\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-15_00-27-44",
+            "content": "@@ -221,11 +221,11 @@\n %5D = \n-'.'\n+%22.%22\n %0A   \n@@ -342,11 +342,11 @@\n une(\n-'0'\n+%220%22\n  + N\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-15_00-28-23",
+            "content": "@@ -357,24 +357,27 @@\n       %7D%0A    \n+%7D%0A%0A\n     fmt.Prin\n@@ -395,16 +395,10 @@\n linha))%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-15_00-30-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    largura := 2*N - 1\n\n    for i := 1; i <=N; i++{\n        linha := make([]rune, largura)\n        for j := 0; j < largura; j++{\n            linha[j] = '.'\n        }\n        for k := 0; k < i; k++{\n            pos := (largura/2) - (i-1) + 2*k\n            linha[pos] = rune('0' + N)\n        }\n        fmt.Println(string(linha))\n    }\n}\n",
+            "lines": "20"
+        }
+    ]
+}

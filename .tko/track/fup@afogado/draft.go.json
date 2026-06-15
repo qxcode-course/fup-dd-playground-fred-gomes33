@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-06-05_00-20-19",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P, E int\n    fmt.Scan(&P, &E)\n\n    for forcaini := 1; forcaini <= P; forcaini++ {\n        for forcaini2 := 1; forcaini2 <= E; forcaini2++ {\n            if (forcaini*forcaini2) == P {\n                if (forcaini + forcaini2) == E {\n                    fmt.Printf(\"%d %d\\n\", forcaini, forcaini2)\n                }\n            }\n        }\n    }\n}\n",
+            "content": "@@ -87,229 +87,197 @@\n  for\n-%C3%A7aInicial\n+caini\n  := 1;\n- ;\n  for\n-%C3%A7aInicial++ %7B%0A        altura := 0%0A        salto := for%C3%A7aInicial%0A%0A        for %7B%0A            altura += salto%0A            if altura %3E= P %7B%0A                fmt.Println(for%C3%A7aInicial)%0A                return\n+caini %3C= P; forcaini++ %7B%0A        for forcaini2 := 1; forcaini2 %3C= E; forcaini2++ %7B%0A            if (forcaini*forcaini2) == P %7B%0A                if (forcaini + forcaini2) == E %7B\n %0A   \n@@ -273,38 +273,32 @@\n  == E %7B%0A        \n-    %7D%0A\n             altu\n@@ -297,135 +297,50 @@\n     \n-altura -= E%0A            if altura %3C 0 %7B%0A                break%0A            %7D%0A            salto -= 10%0A            if salto %3C= 0 %7B\n+fmt.Printf(%22%25d %25d%5Cn%22, forcaini, forcaini2)\n %0A   \n@@ -356,13 +356,9 @@\n     \n-break\n+%7D\n %0A   \n",
             "lines": "16"
+        },
+        {
+            "label": "2026-06-15_00-17-34",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P, E int\n    fmt.Scan(&P, &E)\n\n    for for\u00e7aInicial := 1; ; for\u00e7aInicial++ {\n        altura := 0\n        salto := for\u00e7aInicial\n\n        for {\n            altura += salto\n            if altura >= P {\n                fmt.Println(for\u00e7aInicial)\n                return\n            }\n            altura -= E\n            if altura < 0 {\n                break\n            }\n            salto -= 10\n            if salto <= 0 {\n                break\n            }\n        }\n    }\n}\n",
+            "lines": "27"
         }
     ]
 }

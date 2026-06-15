@@ -20,12 +20,16 @@ sources:
   quests: null
 expanded:
 - fup@list
+- fup@if2
+- fup@for2
+- sandbox@sandbox
+- fup@for1
 flags:
   inbox: all
-  panel: skills
-  show_panel: 'true'
+  panel: graph
+  show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@troco
-selected_index: 22
+selected: fup@string
+selected_index: 126
