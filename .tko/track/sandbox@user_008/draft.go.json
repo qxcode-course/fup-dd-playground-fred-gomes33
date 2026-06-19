@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_17-35-33",
+            "content": "@@ -59,25 +59,17 @@\n map%5B\n-str\n in\n-g\n+t\n %5Dint)%0A\n-    %0A\n     \n@@ -81,22 +81,19 @@\n     \n-palavras := %22%22\n+var num int\n %0A   \n@@ -103,24 +103,19 @@\n t.Scan(&\n-palavras\n+num\n )%0A%0A    i\n@@ -120,29 +120,18 @@\n  if \n-palavras == %22pare%22\n+num == 0\n  %7B\n- \n %0A   \n@@ -146,16 +146,22 @@\n ak%0A    %7D\n+else %7B\n %0A       \n@@ -171,22 +171,20 @@\n mes%5B\n-palavras%5D += 1\n+num%5D++%0A    %7D\n %0A%7D%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-15_17-38-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    nomes := make(map[string]int)\n    \n    for{\n    palavras := \"\"\n    fmt.Scan(&palavras)\n\n    if palavras == \"pare\" { \n        break\n    }\n        nomes[palavras] += 1\n}\n    fmt.Println(nomes)\n}\n",
+            "lines": "16"
+        }
+    ]
+}

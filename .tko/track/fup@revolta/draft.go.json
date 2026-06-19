@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_00-51-27",
+            "content": "@@ -189,21 +189,18 @@\n rebeldes\n- += x\n+++\n %0A    %7Del\n@@ -224,13 +224,10 @@\n ados\n- += x\n+++\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_00-52-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var n int\n   fmt.Scan(&n)\n\n   soldados := 0\n   rebeldes := 0\n\n   for i := 0; i < n; i++{\n    var x int\n    fmt.Scan(&x)\n    if x%2 == 0{\n        rebeldes += x\n    }else {\n        soldados += x\n    }\n   }\n   if soldados > rebeldes{\n    fmt.Println(\"soldados\")\n   }else if rebeldes > soldados{\n    fmt.Println(\"rebeldes\")\n   }else{\n    fmt.Println(\"empate\")\n   }\n}\n",
+            "lines": "26"
+        }
+    ]
+}

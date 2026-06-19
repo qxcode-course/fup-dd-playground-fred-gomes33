@@ -1,0 +1,2 @@
+{"ts":1781826971,"hash":"84ec1ab7db0c311d8900a184a708d2953a19637b41978a11c0c06bd18a429112","mode":"full","content":"H4sIAJ2FNGoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHi4uJKK81LBktoaCpUcykAAYIAKtELKMrMK8nJ01DySM3JyddRCM8vyklRVNLkquUCACub+apXAAAA"}
+{"ts":1781827000,"hash":"7025c7c0d1d0796fc314310d007882d1c0464cd6f94eeb795fa4bd363a14223a","mode":"diff","ops":[{"tag":"insert","a1":3,"a2":3,"text":"type pedra A struct {\n"},{"tag":"insert","a1":4,"a2":4,"text":"}\ntype pedra B struct\n"}]}

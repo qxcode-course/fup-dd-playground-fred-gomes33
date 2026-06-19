@@ -19,17 +19,22 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@list
-- fup@if2
-- fup@for2
+- fup@dict
 - sandbox@sandbox
+- fup@list
+- fup@struct
+- fup@string
+- fup@if2
 - fup@for1
+- fup@for2
 flags:
   inbox: all
-  panel: graph
-  show_panel: 'false'
+  panel: skills
   task_graph_mode: executions
   show_time: 'true'
+audit:
+  enabled: true
+  interval_seconds: null
 lang: go
-selected: fup@string
-selected_index: 126
+selected: fup@cartas
+selected_index: 87

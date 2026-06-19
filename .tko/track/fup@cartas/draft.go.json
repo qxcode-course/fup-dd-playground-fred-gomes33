@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_00-59-31",
+            "content": "@@ -268,222 +268,8 @@\n   %7D%0A\n-        switch c%7B%0A        case 1:%0A            fmt.Print(%22A%22)%0A        case 11:%0A            fmt.Print(%22J%22)%0A        case 12:%0A            fmt.Print(%22Q%22)%0A        case 13:%0A            fmt.Print(%22K%22)%0A        default:%0A    \n     \n@@ -285,26 +285,16 @@\n rint(c)%0A\n-        %7D%0A\n     %7D%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_01-01-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    cartas := make([]int, n)\n    for i := 0; i < n; i++{\n        fmt.Scan(&cartas[i])\n    }\n\n    fmt.Print(\"[\")\n    for i, c := range cartas {\n        if i > 0{\n            fmt.Print(\", \")\n        }\n        switch c{\n        case 1:\n            fmt.Print(\"A\")\n        case 11:\n            fmt.Print(\"J\")\n        case 12:\n            fmt.Print(\"Q\")\n        case 13:\n            fmt.Print(\"K\")\n        default:\n            fmt.Print(c)\n        }\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "31"
+        }
+    ]
+}
