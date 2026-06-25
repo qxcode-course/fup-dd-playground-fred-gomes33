@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-25_13-33-05",
+            "content": "@@ -188,20 +188,16 @@\n %5D)%0A   %7D%0A\n-   %0A\n    casai\n@@ -235,54 +235,8 @@\n ++%7B%0A\n-    if vetor%5Bi%5D == 0%7B%0A        continue%0A    %7D%0A \n     \n@@ -325,81 +325,16 @@\n     \n-%0A        array%5Bi%5D = 0%0A        array%5Bj%5D = 0%0A        break%0A        \n %7D%0A    %7D%0A\n %7D%0A  \n@@ -329,16 +329,19 @@\n %7D%0A    %7D%0A\n+   \n %7D%0A    fm\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-25_13-38-59",
+            "content": "@@ -238,29 +238,29 @@\n i++%7B%0A    if \n-array\n+vetor\n %5Bi%5D == 0%7B%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-25_13-39-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var n int\n   if _, err := fmt.Scan(&n); err != nil{\n    return\n   }\n\n   array := make([]int, n)\n   for i := 0; i < n; i++{\n    fmt.Scan(&array[i])\n   }\n   \n   casais := 0\n\n   for i := 0; i < n; i++{\n    if array[i] == 0{\n        continue\n    }\n     for j := i + 1; j < n; j++{\n       if array[i] == -array[j]{\n         casais++\n       \n        array[i] = 0\n        array[j] = 0\n        break\n        }\n    }\n}\n    fmt.Println(casais)\n}\n",
+            "lines": "31"
+        }
+    ]
+}

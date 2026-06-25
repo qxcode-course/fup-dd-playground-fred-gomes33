@@ -1,45 +1,45 @@
 package main
 import "fmt"
 func main() {
-    var total, qtd int
-   fmt.Scan(&total, &qtd)
+	var totalAlbum, totalPossuidas int
+	
+	if _, err := fmt.Scan(&totalAlbum); err != nil {
+		return
+	}
+	if _, err := fmt.Scan(&totalPossuidas); err != nil {
+		return
+	}
 
-   figurinhas := make([]int, qtd)
-    for i:= 0; i < qtd; i++{
-        fmt.Scan(&figurinhas[i])
-    }
-    repetidas := []int{}
-    for i := 1; i < qtd; i++{
-        if figurinhas[i] == figurinhas[i-1]{
-            repetidas = append(repetidas, figurinhas[i])
-        }
-    }
+	frequencia := make([]int, totalAlbum+1)
+	var repetidas []int
 
-    faltando := []int{}
-    idx := 0
-    for num := 1; num <= total; num++{
-       for idx < qtd && figurinhas[idx] < num{
-        idx++
-       }
-       if idx >= qtd || figurinhas[idx] != num{
-        faltando = append(faltando, num)
-       }
-    }
-    fmt.Print("[ ")
-    for i, r := range repetidas {
-        if i > 0{
-            fmt.Print(" ")
-        }
-        fmt.Print(r)
-    }
-    fmt.Println(" ]")
+	for i := 0; i < totalPossuidas; i++ {
+		var fig int
+		fmt.Scan(&fig)
 
-    fmt.Print("[ ")
-    for i, f := range faltando{
-        if i > 0{
-            fmt.Print(" ")
-        }
-        fmt.Print(f)
-    }
-    fmt.Println(" ]")
+		if frequencia[fig] > 0 {
+			repetidas = append(repetidas, fig)
+		}
+		frequencia[fig]++
+	}
+
+	// Identificação das figurinhas que estão faltando
+	var faltando []int
+	for i := 1; i <= totalAlbum; i++ {
+		if frequencia[i] == 0 {
+			faltando = append(faltando, i)
+		}
+	}
+
+	imprimirResultado(repetidas)
+	imprimirResultado(faltando)
+}
+
+func imprimirResultado(lista []int) {
+	fmt.Print("[")
+	for _, num := range lista {
+		fmt.Printf(" %d", num)
+	}
+	
+	fmt.Println(" ]")
 }

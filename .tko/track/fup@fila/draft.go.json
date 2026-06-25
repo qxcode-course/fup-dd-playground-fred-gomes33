@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-25_13-24-17",
+            "content": "@@ -46,21 +46,16 @@\n ar n int\n-%0A    \n if _, er\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-25_13-24-40",
+            "content": "@@ -278,25 +278,21 @@\n         \n-servidore\n+aluno\n s = appe\n@@ -344,37 +344,41 @@\n                 \n-aluno\n+servidore\n s = append(servi\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-25_13-25-23",
+            "content": "@@ -298,16 +298,24 @@\n  append(\n+alunos, \n servidor\n@@ -316,24 +316,19 @@\n rvidores\n-, numero\n+...\n )%0A      \n@@ -372,21 +372,25 @@\n  append(\n-aluno\n+servidore\n s, numer\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-25_13-25-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    if _, err := fmt.Scan(&n); err != nil{\n        return\n    }    \n    var alunos []int\n    var servidores []int\n\n    for i := 0; i < n; i++{\n        var numero int\n        fmt.Scan(&numero)\n\n        if numero%2 == 0{\n            servidores = append(servidores, numero)\n            }else{\n                alunos = append(alunos, numero)\n            }\n        }\n        imprimirresultado(alunos)\n        imprimirresultado(servidores)\n    }\nfunc imprimirresultado(array []int){\n    fmt.Print(\"[\")\n    for _, num := range array{\n        fmt.Printf(\" %d\", num)\n    }\n    fmt.Println(\" ]\")\n}\n",
+            "lines": "30"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{"ts":1782395318,"hash":"db3b03f6fbe0dc132b6c32a2c7aa83378f95cb6a1a54ff9c1f1243dd3ad41413","mode":"full","content":"H4sIAMExPWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFQWC+gKDOvJCdPQ8kjNScnX0chPL8oJ0VRSZOrlgsAdYpEcEsAAAA="}
+{"ts":1782395368,"hash":"10a8d6c09aa5cf14d017e17b018c6aa014a701130b299d168d3679bd40619bb5","mode":"diff","ops":[{"tag":"insert","a1":3,"a2":3,"text":"   va\n"}]}
+{"ts":1782395408,"hash":"fbfe5fc8e624d9424709080da60475b5627f30e9370155948989a4315e3352dd","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"   var n int\n   if _, err := fmt.Scan(&n); err != nil\n"}]}
+{"ts":1782395429,"hash":"d7dccca40336436398d97c5d7f1efff1b2fb0dcda52c865eeec831282c02854a","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":5,"text":"   if _, err := fmt.Scan(&n); err != nil {\n     return\n   }\n\n   melhorT\n"}]}
+{"ts":1782395449,"hash":"d26f8031628397621dab02f511f78921a36b9ca64d4afab740b9c13f050efec8","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"   melhorTrilha := 1\n   menor\n"}]}
+{"ts":1782395485,"hash":"a0b95fd986c7240d711730a1d9f339bde3129958691819ccad79c18199426ecd","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"   menorEsforco := 0\n\n   for i := 1; i <=j\n"}]}
+{"ts":1782395508,"hash":"3cf21c83b2d986469f566f39d100f9e05f917a754575f03a6c8b6832f5356ec4","mode":"diff","ops":[{"tag":"replace","a1":11,"a2":12,"text":"   for i := 1; i <=j; i++{\n    var m int\n    fmt.Scan\n   }\n"}]}
+{"ts":1782395546,"hash":"5031669aa049bc0bd1ade3940e49fab68f04ba543d8a7631fe9341ba55549e17","mode":"diff","ops":[{"tag":"replace","a1":13,"a2":14,"text":"    fmt.Scan(&m)\n\n    h := make([]int, m)\n    for \n"}]}
+{"ts":1782395589,"hash":"145a4a6d762acbd678d9de56498d327c39a0ef1c15d84d8eaa36bf6479931127","mode":"diff","ops":[{"tag":"replace","a1":16,"a2":17,"text":"    for t := 0; t < m; t++{\n        fmt.Scan(&)\n    }\n"}]}
+{"ts":1782395616,"hash":"24d375e6f06d51125f5e8c04ecaeef824aed5c542cf06a2262d2a8f8facd9c95","mode":"diff","ops":[{"tag":"replace","a1":17,"a2":18,"text":"        fmt.Scan(&h[t])\n"},{"tag":"insert","a1":19,"a2":19,"text":"\n    subidaIda := 0\n"}]}

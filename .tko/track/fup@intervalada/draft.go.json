@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-25_13-45-28",
+            "content": "@@ -246,17 +246,16 @@\n if num %3E\n-=\n  min && \n@@ -259,17 +259,16 @@\n && num %3C\n-=\n  max %7B%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-25_13-45-50",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, min, max int\n    if _, err := fmt.Scan(&n, &min, &max); err != nil{\n        return\n    }\n\n    count := 0\n\n    for i := 0; i < n; i++{\n        var num int\n        fmt.Scan(&num)\n        \n        if num >= min && num <= max {\n            count++\n        }\n    }\n    fmt.Println(count)\n}\n",
+            "lines": "20"
+        }
+    ]
+}
