@@ -2,8 +2,48 @@
     "patches": [
         {
             "label": "2026-06-25_13-39-45",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,218 +41,35 @@\n     \n-var texto string%0A    fmt.Scan(&texto)%0A%0A    runes := %5B%5Drune(texto)%0A    n := len(runes)%0A%0A    for i:= 0; i %3C n/2; 1++%7B%0A        runes%5Bi%5D, runes %5Bn-1-i%5D = runes%5Bn-1-i%5D, %5Brunes%5Bi%5D%5D%0A    %7D%0A    fmt.Println(string(runes)\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-26_12-12-08",
+            "content": "@@ -148,17 +148,17 @@\n  %3C n/2; \n-i\n+1\n ++%7B%0A    \n@@ -201,24 +201,25 @@\n n-1-i%5D, \n+%5B\n runes%5Bi%5D\n %0A    %7D%0A \n@@ -210,16 +210,17 @@\n runes%5Bi%5D\n+%5D\n %0A    %7D%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-26_12-13-29",
+            "content": "@@ -62,86 +62,24 @@\n     \n-%0A    if _, err := fmt.Scanf(%22%25%5B%5E%5Cn%5D%22, texto); err != nil%7B%0A        return%0A    %7D\n+fmt.Scan(&texto)\n %0A%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-26_12-14-57",
+            "content": "@@ -54,16 +54,21 @@\n  string%0A\n+    %0A\n     if _\n@@ -234,24 +234,25 @@\n es%5Bi%5D, runes\n+ \n %5Bn-1-i%5D = ru\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-26_12-15-34",
+            "content": "@@ -58,16 +58,19 @@\n ing%0A    \n+if \n _, err :\n@@ -97,23 +97,17 @@\n , texto)\n-%0A    if\n+;\n  err != \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-26_12-17-09",
+            "content": "@@ -62,163 +62,78 @@\n     \n-for %7B%0A        var caractere string%0A        fmt.Scanf(%22%25s%22, &caractere)%0A   \n+_, err := fmt.Scanf(%22%25%5B%5E%5Cn%5D%22, texto)%0A\n     \n- \n if \n-caractere == %22%5Cn%22%7B%0A            break%0A        %7D%0A        texto += caractere\n+err != nil%7B%0A        return\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-26_12-19-23",
+            "content": "@@ -376,17 +376,25 @@\n Println(\n+string(\n runes)\n+)\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-26_12-20-53",
+            "content": "@@ -380,21 +380,13 @@\n tln(\n-string(\n runes)\n-)\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-26_12-21-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var texto string\n    for {\n        var caractere string\n        fmt.Scanf(\"%s\", &caractere)\n        if caractere == \"\\n\"{\n            break\n        }\n        texto += caractere\n    }\n\n    runes := []rune(texto)\n    n := len(runes)\n\n    for i:= 0; i < n/2; i++{\n        runes[i], runes[n-1-i] = runes[n-1-i], runes[i]\n    }\n    fmt.Println(string(runes))\n}\n",
+            "lines": "21"
         }
     ]
 }
