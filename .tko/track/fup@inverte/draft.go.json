@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_15-15-54",
+            "content": "@@ -410,12 +410,13 @@\n aractere\n+%22\n )%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-28_15-16-13",
+            "content": "@@ -399,17 +399,16 @@\n tf(%22%25c%5Cn\n-%22\n , caract\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-28_15-16-14",
+            "content": "package main\nimport \"fmt\"\nimport \"unicode\"\nfunc main() {\n   var caractere rune\n   if _, err := fmt.Scanf(\"%c\", &caractere); err != nil{\n    return\n   }\n\n   if unicode.IsLower(caractere){ //indentifica se a letra \u00e9 minu.\n    caractere = unicode.ToUpper(caractere)\n   } else if unicode.IsUpper(caractere) { //indentifica se a letra \u00e9 maiu.\n    caractere = unicode.ToLower(caractere)\n   }\n    fmt.Printf(\"%c\\n\", caractere)\n}\n",
+            "lines": "16"
+        }
+    ]
+}

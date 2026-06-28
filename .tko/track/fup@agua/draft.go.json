@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_15-33-40",
+            "content": "@@ -245,25 +245,34 @@\n for \n-j\n+casa\n  := a; \n-j\n+casa\n  %3C= b; \n-j\n+casa\n ++%7B%0A\n@@ -292,9 +292,12 @@\n asa%5B\n-j\n+casa\n %5D +=\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-28_15-34-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, q int\n    if _, err := fmt.Scan(&n, &q); err != nil{\n        return\n    }\n\n    casa := make([]int, n)\n\n    for i := 0; i < q; i++{\n        var a, b, l int\n        fmt.Scan(&a, &b, &l)\n\n        for j := a; j <= b; j++{\n            casa[j] += l\n        }\n}\n\nfor i, v := range casa{\n    fmt.Print(v)\n    if i < n-1{\n        fmt.Print(\" \")\n    }\n}\n    fmt.Println()\n}\n",
+            "lines": "27"
+        }
+    ]
+}

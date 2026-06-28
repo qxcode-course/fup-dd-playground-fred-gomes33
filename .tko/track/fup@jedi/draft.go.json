@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_16-06-40",
+            "content": "@@ -574,17 +574,17 @@\n rintln(%22\n-E\n+e\n mpate%22)%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-28_16-06-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nElementos int\n    fmt.Scan(&nElementos)\n\n    Array := make([]int, nElementos)\n\n    for i := 0; i < nElementos; i++{\n        fmt.Scan(&Array[i])\n    }\n\n    forcaJ := 0\n    forcaS := 0\n\n    for i := 0; i < nElementos; i++{\n        if i < (nElementos/2){\n            forcaJ += Array[i]\n        }else if i >= (nElementos/2){\n            forcaS += Array[i]\n        }\n    }\n\n    if forcaJ > forcaS {\n        fmt.Println(\"Jedi\")\n    }else if forcaS > forcaJ{\n        fmt.Println(\"Sith\")\n    }else if forcaS == forcaJ{\n        fmt.Println(\"Empate\")\n    }\n}\n",
+            "lines": "31"
+        }
+    ]
+}

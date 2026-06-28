@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_14-54-13",
+            "content": "@@ -41,556 +41,35 @@\n     \n-var n, x int%0A    fmt.Scan(&n, &x)%0A%0A    operarios := make(%5B%5Dint, n)%0A    for i := 0; i %3C n; i++%7B%0A        fmt.Scan(&operarios%5Bi%5D)%0A    %7D%0A%0A    for j := 0; j %3C x; j++%7B%0A        var grito int%0A        fmt.Scan(&grito)%0A%0A        var indiceChefe int%0A%0A        for i := 0; i %3C n; i++%7B%0A            if operarios%5Bi%5D == grito%7B%0A                indiceChefe = i%0A                break%0A            %7D%0A        %7D%0A%0A        operarios%5BindiceChefe-1%5D = -operarios%5BindiceChefe-1%5D%0A        operarios%5BindiceChefe+1%5D = -operarios%5BindiceChefe+1%5D%0A    %7D%0A    fmt.Printf(%22%25v%5Cn%22, operarios\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_14-59-28",
+            "content": "@@ -57,21 +57,8 @@\n %0A   \n- if _, err :=\n  fmt\n@@ -74,42 +74,8 @@\n  &x)\n-; err != nil%7B%0A        return%0A    %7D\n %0A%0A  \n@@ -247,32 +247,36 @@\n grito)%0A%0A        \n+var \n indiceChefe := 1\n@@ -275,12 +275,11 @@\n efe \n-:= 1\n+int\n %0A%0A  \n@@ -293,30 +293,25 @@\n or i\n-, v\n  := \n-range operarios\n+0; i %3C n; i++\n %7B%0A  \n@@ -327,27 +327,24 @@\n  if \n-v== grito %7C%7C v\n+operarios%5Bi%5D\n  == \n--\n grit\n@@ -429,105 +429,8 @@\n  %7D%0A%0A\n-        if indiceChefe == -1%7B%0A            continue%0A        %7D%0A%0A        if indiceChefe-1 %3E= 0%7B%0A    \n     \n@@ -490,52 +490,8 @@\n -1%5D%0A\n-        %7D%0A%0A        if indiceChefe+1 %3C n%7B%0A   \n     \n@@ -547,26 +547,16 @@\n hefe+1%5D%0A\n-        %7D%0A\n     %7D%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-28_15-04-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, x int\n    if _, err := fmt.Scan(&n, &x); err != nil{\n        return\n    }\n\n    operarios := make([]int, n)\n    for i := 0; i < n; i++{\n        fmt.Scan(&operarios[i])\n    }\n\n    for j := 0; j < x; j++{\n        var grito int\n        fmt.Scan(&grito)\n\n        indiceChefe := 1\n\n        for i, v := range operarios{\n            if v== grito || v == -grito{\n                indiceChefe = i\n                break\n            }\n        }\n\n        if indiceChefe == -1{\n            continue\n        }\n\n        if indiceChefe-1 >= 0{\n            operarios[indiceChefe-1] = -operarios[indiceChefe-1]\n        }\n\n        if indiceChefe+1 < n{\n           operarios[indiceChefe+1] = -operarios[indiceChefe+1]\n        }\n    }\n    fmt.Printf(\"%v\\n\", operarios)\n}\n",
+            "lines": "40"
+        }
+    ]
+}

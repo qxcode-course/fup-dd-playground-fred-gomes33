@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_15-08-29",
+            "content": "@@ -23,616 +23,53 @@\n mt%22%0A\n-%0A\n func m\n-dc(a, b int) int%7B%0A    for b != 0%7B%0A        a, b = b, a%25b%0A    %7D%0A    return a%0A%7D%0A%0Afunc mmcArray(numeros %5B%5Dint) int%7B%0A    if len(numeros) == 0%7B%0A        return 0%0A    %7D%0A    resultado := numeros%5B0%5D%0A    for _, num := range numeros%5B1:%5D%7B%0A        if resultado == 0 %7C%7C num == 1%7B%0A            return 0%0A        %7D%0A%0A        resultado = (resultado / mdc(resultado, num)) * num%0A    %7D%0A    return resultado%0A%7D%0Afunc main() %7B%0A   var n int%0A   if _, err := fmt.Scan(&n); err != nil %7C%7C n %3C= 0 %7B%0A        return%0A   %7D%0A%0A   Array := make(%5B%5Dint, n)%0A   for i := 0; i %3C n; i++%7B%0A    fmt.Scan(&Array%5Bi%5D)%0A   %7D%0A    fmt.Println(mmcArray(Array)\n+ain() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_15-26-26",
+            "content": "package main\nimport \"fmt\"\n\nfunc mdc(a, b int) int{\n    for b != 0{\n        a, b = b, a%b\n    }\n    return a\n}\n\nfunc mmcArray(numeros []int) int{\n    if len(numeros) == 0{\n        return 0\n    }\n    resultado := numeros[0]\n    for _, num := range numeros[1:]{\n        if resultado == 0 || num == 1{\n            return 0\n        }\n\n        resultado = (resultado / mdc(resultado, num)) * num\n    }\n    return resultado\n}\nfunc main() {\n   var n int\n   if _, err := fmt.Scan(&n); err != nil || n <= 0 {\n        return\n   }\n\n   Array := make([]int, n)\n   for i := 0; i < n; i++{\n    fmt.Scan(&Array[i])\n   }\n    fmt.Println(mmcArray(Array))\n}\n",
+            "lines": "36"
+        }
+    ]
+}

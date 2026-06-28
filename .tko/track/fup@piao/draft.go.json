@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_15-50-09",
+            "content": "@@ -399,18 +399,18 @@\n        m\n-ai\n+en\n orDist =\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-28_15-50-40",
+            "content": "@@ -394,99 +394,8 @@\n st%7B%0A\n-        menorDist = dist%0A        perdedor = i%0A        %7D%0A%0A        if dist %3E= maiorDist%7B%0A    \n     \n@@ -411,28 +411,24 @@\n Dist = dist%0A\n-    \n         perd\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-28_15-52-13",
+            "content": "@@ -155,20 +155,16 @@\n , 0%0A    \n-var \n menorDis\n@@ -176,19 +176,26 @@\n iorDist \n-int\n+:= l+1, -1\n %0A%0A    fo\n@@ -371,41 +371,11 @@\n %3C= l\n-%7B%0A            if ganhador == 1 %7C%7C\n+ &&\n  dis\n@@ -386,32 +386,24 @@\n  menorDist%7B%0A\n-        \n         meno\n@@ -427,42 +427,20 @@\n     \n-        ganhador = i%0A            %7D\n+perdedor = i\n %0A   \n@@ -461,18 +461,8 @@\n   if\n- i == 0 %7C%7C\n  dis\n@@ -569,17 +569,16 @@\n or == -1\n- \n %7B%0A      \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-28_15-56-29",
+            "content": "@@ -50,17 +50,20 @@\n , n int%0A\n-%09\n+    \n if _, er\n@@ -99,25 +99,36 @@\n  nil\n- \n %7B%0A\n-%09%09return%0A%09%7D%0A%0A%09\n+        return%0A    %7D%0A%0A    \n ganh\n@@ -151,17 +151,20 @@\n = -1, 0%0A\n-%09\n+    \n var meno\n@@ -185,17 +185,20 @@\n st int%0A%0A\n-%09\n+    \n for i :=\n@@ -211,21 +211,26 @@\n %3C n; i++\n- \n %7B%0A\n-%09%09\n+        \n var joga\n@@ -236,18 +236,24 @@\n ada int%0A\n-%09%09\n+        \n fmt.Scan\n@@ -263,18 +263,24 @@\n ogada)%0A%0A\n-%09%09\n+        \n dist := \n@@ -286,18 +286,24 @@\n  jogada%0A\n-%09%09\n+        \n if dist \n@@ -305,22 +305,30 @@\n dist %3C 0\n- \n %7B%0A\n-%09%09%09\n+            \n dist = -\n@@ -336,26 +336,35 @@\n ist%0A\n-%09%09%7D%0A%0A%09%09%0A%09%09\n+        %7D%0A%0A        \n if dist \n %3C= l\n@@ -363,18 +363,27 @@\n ist \n+ \n %3C= l\n- \n %7B%0A\n-%09%09%09\n+            \n if g\n@@ -393,17 +393,16 @@\n ador == \n--\n 1 %7C%7C dis\n@@ -419,15 +419,26 @@\n Dist\n- \n %7B%0A\n-%09%09%09%09\n+                \n meno\n@@ -454,40 +454,70 @@\n ist%0A\n-%09%09%09%09ganhador = i%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09%0A%09%09\n+                ganhador = i%0A            %7D%0A        %7D%0A%0A        \n if i\n@@ -546,14 +546,22 @@\n Dist\n- \n %7B%0A\n-%09%09%09\n+            \n maio\n@@ -577,11 +577,20 @@\n ist%0A\n-%09%09%09\n+            \n perd\n@@ -602,17 +602,29 @@\n = i%0A\n-%09%09%7D%0A%09%7D%0A%0A%09\n+        %7D%0A    %7D%0A%0A    \n if g\n@@ -639,18 +639,24 @@\n == -1 %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -673,20 +673,28 @@\n m%22)%0A\n-%09%7D \n+    %7D\n else %7B%0A\n-%09%09\n+        \n fmt.\n@@ -715,12 +715,18 @@\n or)%0A\n-%09%7D%0A%09\n+    %7D%0A    \n fmt.\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-28_15-59-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var l, n int\n\tif _, err := fmt.Scan(&l, &n); err != nil {\n\t\treturn\n\t}\n\n\tganhador, perdedor := -1, 0\n\tvar menorDist, maiorDist int\n\n\tfor i := 0; i < n; i++ {\n\t\tvar jogada int\n\t\tfmt.Scan(&jogada)\n\n\t\tdist := jogada\n\t\tif dist < 0 {\n\t\t\tdist = -dist\n\t\t}\n\n\t\t\n\t\tif dist <= l {\n\t\t\tif ganhador == -1 || dist <= menorDist {\n\t\t\t\tmenorDist = dist\n\t\t\t\tganhador = i\n\t\t\t}\n\t\t}\n\n\t\t\n\t\tif i == 0 || dist >= maiorDist {\n\t\t\tmaiorDist = dist\n\t\t\tperdedor = i\n\t\t}\n\t}\n\n\tif ganhador == -1 {\n\t\tfmt.Println(\"nenhum\")\n\t} else {\n\t\tfmt.Println(ganhador)\n\t}\n\tfmt.Println(perdedor)\n}\n",
+            "lines": "42"
+        }
+    ]
+}
