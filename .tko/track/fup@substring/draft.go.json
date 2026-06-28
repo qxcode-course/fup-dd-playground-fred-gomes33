@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_16-28-17",
+            "content": "@@ -113,18 +113,80 @@\n n(&texto\n-, \n+); err != nil%7B%0A        return%0A    %7D%0A    if _, err := fmt.Scanln(\n &inicio,\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-28_16-30-23",
+            "content": "@@ -104,16 +104,18 @@\n fmt.Scan\n+ln\n (&texto,\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-28_16-31-12",
+            "content": "@@ -109,103 +109,16 @@\n can(\n-%22%25%5B%5E%5Cn%5D%5Cn%22, &texto, &inicio, &qtd); err != nil%7B%0A        return%0A    %7D%0A    if _, err := fmt.Scan(\n+&texto, \n &ini\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-28_16-33-21",
+            "content": "@@ -109,16 +109,103 @@\n can(\n-&texto, \n+%22%25%5B%5E%5Cn%5D%5Cn%22, &texto, &inicio, &qtd); err != nil%7B%0A        return%0A    %7D%0A    if _, err := fmt.Scan(\n &ini\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-28_16-33-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var texto string\n    var inicio, qtd int\n\n    if _, err := fmt.Scan(&texto, &inicio, &qtd); err != nil{\n        return\n    }\n\n    if inicio < 0 || inicio >= len(texto) || qtd <= 0{\n        fmt.Println(\"\")\n        return\n    }\n\n    fim := inicio + qtd\n    if fim > len(texto){\n        fim = len(texto)\n    }\n    fmt.Println(texto[inicio:fim])\n}\n",
+            "lines": "21"
+        }
+    ]
+}
