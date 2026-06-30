@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-29_23-25-59",
+            "content": "@@ -82,16 +82,16 @@\n nf(%22\n-%5Cn\n %25%5B%5E%5Cn%5D\n+%5Cn\n %22, &\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-29_23-27-41",
+            "content": "@@ -151,19 +151,8 @@\n rase\n-, tamTrecho\n  := \n@@ -161,17 +161,33 @@\n n(frase)\n-,\n+%0A    tamTrecho :=\n  len(tre\n@@ -192,17 +192,16 @@\n recho)%0A%0A\n-%0A\n     for \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-29_23-28-28",
+            "content": "@@ -50,286 +50,58 @@\n rase\n- string%0A    var caractere byte%0A%0A    for %7B%0A        n, err := fmt.Scanf(%22%25c%22, &caractere)%0A        if n != 1 %7C%7C err != nil %7C%7C caractere == '%5Cn' %7B%0A            break%0A        %7D%0A        if caractere != '%5Cr' %7B%0A            frase += string(caractere)%0A        %7D%0A    %7D%0A    var trecho string\n+, trecho string%0A%0A    fmt.Scanf(%22%5Cn%25%5B%5E%5Cn%5D%22, &frase)\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-29_23-32-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var frase string\n    var caractere byte\n\n    for {\n        n, err := fmt.Scanf(\"%c\", &caractere)\n        if n != 1 || err != nil || caractere == '\\n' {\n            break\n        }\n        if caractere != '\\r' {\n            frase += string(caractere)\n        }\n    }\n    var trecho string\n    fmt.Scan(&trecho)\n\n    count := 0\n    tamFrase, tamTrecho := len(frase), len(trecho)\n\n\n    for i := 0; i <= tamFrase-tamTrecho; i++{\n        if frase[i:i+tamTrecho] == trecho{\n            count++\n        }\n    }\n    fmt.Println(count)\n}\n",
+            "lines": "29"
+        }
+    ]
+}

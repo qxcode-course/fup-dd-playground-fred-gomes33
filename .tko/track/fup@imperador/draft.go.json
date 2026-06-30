@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_00-50-38",
+            "content": "@@ -129,16 +129,17 @@\n  for i :\n+ \n = 0; i %3C\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-30_00-50-54",
+            "content": "@@ -223,43 +223,23 @@\n     \n-switch item %7B%0A            case\n+if item ==\n  %22G%22\n-:\n+%7B\n %0A   \n@@ -279,17 +279,29 @@\n     \n-case\n+%7Delse if item ==\n  %22C%22\n-:\n+%7B\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-30_00-51-10",
+            "content": "@@ -51,19 +51,16 @@\n int%0A    \n-if \n fmt.Scan\n@@ -67,345 +67,9 @@\n (&n)\n- != 1%7B%0A        return%0A    %7D%0A    arena := make(%5B%5D%5B%5Dstring, n)%0A    leaoL, leaoC := -1, -1%0A%0A    for i := 0; i %3C n; i++%7B%0A        arena%5Bi%5D = make(%5B%5Dstring, n)%0A        for j := 0; j %3C n; j++%7B%0A            fmt.Scan(&arena%5Bi%5D%5Bj%5D)%0A            if arena%5Bi%5D%5Bj%5D == %22L%22%7B%0A                leaoL = i%0A                leaoC = j%0A            %7D%0A        %7D%0A    %7D\n+%0A\n %0A   \n@@ -96,16 +96,36 @@\n toC := 0\n+%0A    var item string\n %0A%0A    fo\n@@ -194,111 +194,72 @@\n     \n-if i == leaoL %7C%7C j == leaoC%7B%0A                continue%0A            %7D%0A%0A            if arena%5Bi%5D%5Bj%5D ==\n+fmt.Scan(&item)%0A%0A            switch item %7B%0A            case\n  %22G%22\n-%7B\n+:\n %0A   \n@@ -299,36 +299,17 @@\n     \n-%7Delse if arena%5Bi%5D%5Bj%5D ==\n+case\n  %22C%22\n-%7B\n+:\n %0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-30_00-56-24",
+            "content": "@@ -55,17 +55,10 @@\n     \n-_, err :=\n+if\n  fmt\n@@ -70,26 +70,13 @@\n (&n)\n-%0A    if err\n  != \n-nil\n+1\n %7B%0A  \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-30_00-56-38",
+            "content": "@@ -930,27 +930,8 @@\n lse \n-if pontoC %3E pontoG \n %7B%0A  \n@@ -974,51 +974,8 @@\n e%22)%0A\n-    %7Delse %7B%0A        fmt.Println(%22Ninguem%22)%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-30_00-57-43",
+            "content": "@@ -614,14 +614,10 @@\n     \n-switch\n+if\n  are\n@@ -629,19 +629,15 @@\n %5Bj%5D \n-%7B%0Acase\n+==\n  %22G%22\n-:\n+%7B\n %0A   \n@@ -677,17 +677,36 @@\n     \n-case\n+%7Delse if arena%5Bi%5D%5Bj%5D ==\n  %22C%22\n-:\n+%7B\n %0A   \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-30_00-58-28",
+            "content": "@@ -433,17 +433,16 @@\n    ponto\n-s\n G := 0%0A \n@@ -449,17 +449,16 @@\n    ponto\n-s\n C := 0%0A%0A\n@@ -602,34 +602,38 @@\n  %7D%0A%0A            \n-if\n+switch\n  arena%5Bi%5D%5Bj%5D == \n@@ -633,16 +633,19 @@\n %5Bj%5D \n-==\n+%7B%0Acase\n  %22G%22\n- %7B\n+:\n %0A   \n@@ -662,17 +662,16 @@\n    ponto\n-s\n G += 2%0A \n@@ -685,36 +685,17 @@\n     \n-%7Delse if arena%5Bi%5D%5Bj%5D ==\n+case\n  %22C%22\n-%7B\n+:\n %0A   \n@@ -743,25 +743,24 @@\n        ponto\n-s\n C += 2%0A     \n@@ -803,17 +803,16 @@\n    ponto\n-s\n C += 1%0A \n@@ -862,17 +862,16 @@\n if ponto\n-s\n G %3E pont\n@@ -871,17 +871,16 @@\n  %3E ponto\n-s\n C%7B%0A     \n@@ -923,17 +923,16 @@\n if ponto\n-s\n C %3E pont\n@@ -932,17 +932,16 @@\n  %3E ponto\n-s\n G %7B%0A    \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-30_01-01-25",
+            "content": "@@ -616,14 +616,10 @@\n     \n-switch\n+if\n  are\n@@ -631,31 +631,16 @@\n %5Bj%5D \n-%7B%0A            case\n+==\n  %22G%22\n-:\n+ %7B\n %0A   \n@@ -681,17 +681,36 @@\n     \n-case\n+%7Delse if arena%5Bi%5D%5Bj%5D ==\n  %22C%22\n-:\n+%7B\n %0A   \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-30_01-01-38",
+            "content": "@@ -734,18 +734,16 @@\n i+j == n\n--1\n  %7B%0A     \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-30_01-02-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    _, err := fmt.Scan(&n)\n    if err != nil{\n        return\n    }\n    arena := make([][]string, n)\n    leaoL, leaoC := -1, -1\n\n    for i := 0; i < n; i++{\n        arena[i] = make([]string, n)\n        for j := 0; j < n; j++{\n            fmt.Scan(&arena[i][j])\n            if arena[i][j] == \"L\"{\n                leaoL = i\n                leaoC = j\n            }\n        }\n    }\n    pontosG := 0\n    pontosC := 0\n\n    for i := 0; i < n; i++{\n        for j := 0; j < n; j++{\n            if i == leaoL || j == leaoC{\n                continue\n            }\n\n            switch arena[i][j] {\n            case \"G\":\n                pontosG += 2\n            case \"C\":\n                if  i+j == n-1 {\n                    pontosC += 2\n                }else {\n                    pontosC += 1\n                }\n            }\n        }\n}\nif pontosG > pontosC{\n        fmt.Println(\"Gladiadores\")\n}else if pontosC > pontosG {\n        fmt.Println(\"Condenados a morte\")\n    }else {\n        fmt.Println(\"Ninguem\")\n    }\n}\n",
+            "lines": "50"
+        }
+    ]
+}

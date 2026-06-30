@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_00-22-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var atual, anterior string\n    ordenado := true\n\n    if n, _ := fmt.Scan(&anterior); n == 1 {\n        for n, _ := fmt.Scan(&atual); n == 1; n, _ = fmt.Scan(&atual) {\n            if atual < anterior {\n                ordenado = false\n            }\n            anterior = atual\n        }\n    }\n\n    if ordenado {\n        fmt.Println(\"sim\")\n    }else{\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}

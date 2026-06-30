@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_01-04-13",
+            "content": "@@ -41,426 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    somaColunas := make(%5B%5Dint, n)%0A%0A    for i := 0; i %3C n; i++%7B%0A        for j := 0; j %3C n; j++%5B%0A            var elementos int%0A            fmt.Scan(&elementos)%0A            somaColunas%5Bj%5D += elementos%0A        %5D%0A    %7D%0A%0A    maiorColuna := 0%0A    for j := 1; j %3C n; j++%7B%0A        if somaColunas%5Bj%5D %3E= somaColunas%5BmaiorColuna%5D%7B%0A            maiorColuna = j%0A        %7D%0A    %7D%0A    fmt.Println(maiorColuna\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_01-08-11",
+            "content": "@@ -150,33 +150,33 @@\n := 0; j %3C n; j++\n-%7B\n+%5B\n %0A            var\n@@ -267,25 +267,25 @@\n tos%0A        \n-%7D\n+%5D\n %0A    %7D%0A%0A    \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_01-08-26",
+            "content": "@@ -266,20 +266,8 @@\n ntos\n- * elementos\n %0A   \n@@ -305,40 +305,8 @@\n = 0%0A\n-    maiorSoma := somaColunas%5B0%5D%0A\n     \n@@ -360,58 +360,35 @@\n j%5D %3E\n- maiorSoma%7B%0A            maiorSoma = soma\n+= somaColunas%5Bmaior\n Coluna\n-s%5Bj\n %5D\n+%7B\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_01-10-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    somaColunas := make([]int, n)\n\n    for i := 0; i < n; i++{\n        for j := 0; j < n; j++{\n            var elementos int\n            fmt.Scan(&elementos)\n            somaColunas[j] += elementos * elementos\n        }\n    }\n\n    maiorColuna := 0\n    maiorSoma := somaColunas[0]\n    for j := 1; j < n; j++{\n        if somaColunas[j] > maiorSoma{\n            maiorSoma = somaColunas[j]\n            maiorColuna = j\n        }\n    }\n    fmt.Println(maiorColuna)\n}\n",
+            "lines": "26"
+        }
+    ]
+}

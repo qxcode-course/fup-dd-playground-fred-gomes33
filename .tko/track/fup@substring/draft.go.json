@@ -22,8 +22,23 @@
         },
         {
             "label": "2026-06-28_16-33-39",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var texto string\n    var inicio, qtd int\n\n    if _, err := fmt.Scan(&texto, &inicio, &qtd); err != nil{\n        return\n    }\n\n    if inicio < 0 || inicio >= len(texto) || qtd <= 0{\n        fmt.Println(\"\")\n        return\n    }\n\n    fim := inicio + qtd\n    if fim > len(texto){\n        fim = len(texto)\n    }\n    fmt.Println(texto[inicio:fim])\n}\n",
+            "content": "@@ -66,114 +66,85 @@\n var \n-caractere byte%0A%0A    for fmt.Scanf(%22%25c%22, caractere) == 1 && caractere != '%5Cn'%7B%0A        if caractere\n+inicio, qtd int%0A%0A    if _, err := fmt.Scan(&texto, &inicio, &qtd); err\n  != \n-'%5Cr'\n+nil\n %7B%0A  \n@@ -153,78 +153,21 @@\n     \n-    texto += string(caractere)%0A        %7D%0A    %7D%0A    var inicio, qtd int\n+return%0A    %7D%0A\n %0A   \n",
             "lines": "21"
+        },
+        {
+            "label": "2026-06-30_01-16-01",
+            "content": "@@ -89,67 +89,8 @@\n  for\n- %7B%0A        var n int%0A        var err error%0A        n, err =\n  fmt\n@@ -102,17 +102,16 @@\n f(%22%25c%22, \n-&\n caracter\n@@ -116,43 +116,16 @@\n ere)\n-%0A        if n != 1 %7C%7C err != nil %7C%7C\n+ == 1 &&\n  car\n@@ -135,46 +135,17 @@\n ere \n-=\n+!\n = '%5Cn'\n- \n %7B%0A\n-            break%0A        %7D%0A\n     \n@@ -168,17 +168,16 @@\n  != '%5Cr'\n- \n %7B%0A      \n@@ -221,24 +221,24 @@\n     %7D%0A    %7D%0A\n+\n     var inic\n@@ -253,27 +253,8 @@\n int%0A\n-    fmt.Scan(&ini)%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-30_01-16-29",
+            "content": "@@ -387,17 +387,8 @@\n &ini\n-cio, &qtd\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_01-16-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var texto string\n    var caractere byte\n\n    for {\n        var n int\n        var err error\n        n, err = fmt.Scanf(\"%c\", &caractere)\n        if n != 1 || err != nil || caractere == '\\n' {\n            break\n        }\n        if caractere != '\\r' {\n            texto += string(caractere)\n        }\n    }\n    var inicio, qtd int\n    fmt.Scan(&inicio, &qtd)\n    if inicio < 0 || inicio >= len(texto) || qtd <= 0{\n        fmt.Println(\"\")\n        return\n    }\n\n    fim := inicio + qtd\n    if fim > len(texto){\n        fim = len(texto)\n    }\n    fmt.Println(texto[inicio:fim])\n}\n",
+            "lines": "30"
         }
     ]
 }

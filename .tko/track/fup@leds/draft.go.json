@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-29_22-51-16",
+            "content": "@@ -380,17 +380,17 @@\n rintf(%22%25\n-c\n+d\n  leds%5Cn%22\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-29_22-52-14",
+            "content": "@@ -380,17 +380,17 @@\n rintf(%22%25\n-d\n+c\n  leds%5Cn%22\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-29_22-52-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    if _, err := fmt.Scan(&n); err != nil{\n        return\n    }\n\n    ledsPdigito := [10]int{6, 2, 5, 5, 4, 5, 6, 3, 7, 6}\n\n    for i := 0; i < n; i++{\n        var v string\n        fmt.Scan(&v)\n\n        totaldleds := 0\n        for _, digito := range v{\n            totaldleds += ledsPdigito[digito-'0']\n        }\n        fmt.Printf(\"%d leds\\n\", totaldleds)\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}

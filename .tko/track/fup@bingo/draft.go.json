@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_00-40-48",
+            "content": "@@ -41,16 +41,20 @@\n     \n+var \n cartela \n := %5B\n@@ -53,135 +53,130 @@\n ela \n-:= %5B\n+%5B4%5D%5B4\n %5Dint\n-%7B\n %0A    \n-    1, 9, 27, 23,%0A        34, 20, 37, 47,%0A        30, 87, 55, 69,%0A        13, 60, 99, 66,%0A    %7D%0A%0A    acertos := 0\n+for i := 0; i %3C 4; i++%7B%0A        for j :=0; j %3C 4; j++%7B%0A            fmt.Scan(&cartela%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D%0A\n %0A   \n@@ -193,14 +193,15 @@\n ados\n- \n+%5B6%5D\n int%0A\n-%0A\n     \n@@ -255,158 +255,12 @@\n ados\n-)%0A%0A        for _, numero := range cartela%7B%0A            if sorteados == numero%7B%0A                acertos++%0A                break%0A            %7D%0A        %7D\n+%5Bi%5D)\n %0A   \n@@ -282,15 +282,9 @@\n tln(\n-acertos\n+0\n )%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-30_00-43-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    cartela := []int{\n        1, 9, 27, 23,\n        34, 20, 37, 47,\n        30, 87, 55, 69,\n        13, 60, 99, 66,\n    }\n\n    acertos := 0\n    var sorteados int\n\n    for i := 0; i < 6; i++{\n        fmt.Scan(&sorteados)\n\n        for _, numero := range cartela{\n            if sorteados == numero{\n                acertos++\n                break\n            }\n        }\n    }\n    fmt.Println(acertos)\n}\n",
+            "lines": "25"
+        }
+    ]
+}

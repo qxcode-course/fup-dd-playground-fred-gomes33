@@ -2,12 +2,21 @@ package main
 import "fmt"
 func main() {
     var texto string
-    var inicio, qtd int
+    var caractere byte
 
-    if _, err := fmt.Scan(&texto, &inicio, &qtd); err != nil{
-        return
+    for {
+        var n int
+        var err error
+        n, err = fmt.Scanf("%c", &caractere)
+        if n != 1 || err != nil || caractere == '\n' {
+            break
+        }
+        if caractere != '\r' {
+            texto += string(caractere)
+        }
     }
-
+    var inicio, qtd int
+    fmt.Scan(&inicio, &qtd)
     if inicio < 0 || inicio >= len(texto) || qtd <= 0{
         fmt.Println("")
         return

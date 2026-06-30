@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-29_22-44-42",
+            "content": "@@ -650,18 +650,18 @@\n p == vr \n-%7C%7C\n+&&\n  (es == \n@@ -676,18 +676,18 @@\n r %3E cp) \n-%7C%7C\n+&&\n  (es == \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-29_22-45-21",
+            "content": "@@ -670,17 +670,17 @@\n %22 && vr \n-%3C\n+%3E\n  cp) %7C%7C \n@@ -692,25 +692,25 @@\n = %22m%22 && vr \n-%3E\n+%3C\n  cp)%7B%0A      \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-29_22-46-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var rodadas int\n    if _, err := fmt.Scan(&rodadas); err != nil || rodadas <= 0{\n        return\n    }\n\n    valoresReais := make([]float64, rodadas)\n    chutesPrimeiro := make([]float64, rodadas)\n    escolhasSegundo := make([]string, rodadas)\n\n    for i := 0; i < rodadas; i++{ \n        fmt.Scan(&valoresReais[i])}\n    for i := 0; i < rodadas; i++{ \n        fmt.Scan(&chutesPrimeiro[i])}\n    for i := 0; i < rodadas; i++{ \n        fmt.Scan(&escolhasSegundo[i])}\n\n    p1, p2 := 0, 0\n    for i := 0; i < rodadas; i++{\n        vr, cp, es := valoresReais[i], chutesPrimeiro[i], escolhasSegundo[i]\n\n        if cp == vr || (es == \"M\" && vr < cp) || (es == \"m\" && vr > cp){\n            p1++\n        }else {\n            p2++\n        }\n    }\n    if p1 > p2{ \n        fmt.Println(\"primeiro\")\n    }else if p2 > p1{\n        fmt.Println(\"segundo\")\n    }else {\n        fmt.Println(\"empate\")\n    }\n\n}\n",
+            "lines": "38"
+        }
+    ]
+}

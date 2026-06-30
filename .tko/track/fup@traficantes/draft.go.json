@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-29_23-40-01",
+            "content": "@@ -47,193 +47,9 @@\n rase\n- string%0A%09var caractere byte%0A%0A    for fmt.Scanf(%22%25c%22, &caractere) == 1 && caractere != '%5Cn'%7B%0A        if caractere != '%5Cr'%7B%0A            frase += string(caractere)%0A        %7D%0A    %7D%0A%0A    var\n+,\n  ant\n@@ -69,12 +69,9 @@\n ing%0A\n-    \n+%09\n fmt.\n@@ -75,16 +75,24 @@\n mt.Scan(\n+&frase, \n &antiga,\n@@ -99,16 +99,17 @@\n  &nova)%0A\n+%0A\n %09tamFras\n@@ -151,16 +151,71 @@\n ntiga)%0A%0A\n+%09if tamAntiga == 0 %7B%0A%09%09fmt.Println(frase)%0A%09%09return%0A%09%7D%0A%0A\n %09for i :\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-29_23-46-13",
+            "content": "@@ -76,24 +76,15 @@\n te%0A%0A\n-%09for %7B%0A%09%09n, _ :=\n+    for\n  fmt\n@@ -111,23 +111,16 @@\n ere)\n-%0A%09%09if n !\n+ =\n = 1 \n-%7C%7C\n+&&\n  car\n@@ -130,33 +130,25 @@\n ere \n-=\n+!\n = '%5Cn'\n- \n %7B%0A\n-%09%09%09break%0A%09%09%7D%0A%09%09\n+        \n if c\n@@ -163,22 +163,30 @@\n  != '%5Cr'\n- \n %7B%0A\n-%09%09%09\n+            \n frase +=\n@@ -208,17 +208,29 @@\n re)%0A\n-%09%09%7D%0A%09%7D%0A%0A%09\n+        %7D%0A    %7D%0A%0A    \n var \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-29_23-46-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar frase string\n\tvar caractere byte\n\n\tfor {\n\t\tn, _ := fmt.Scanf(\"%c\", &caractere)\n\t\tif n != 1 || caractere == '\\n' {\n\t\t\tbreak\n\t\t}\n\t\tif caractere != '\\r' {\n\t\t\tfrase += string(caractere)\n\t\t}\n\t}\n\n\tvar antiga, nova string\n    fmt.Scan(&antiga, &nova)\n\ttamFrase := len(frase)\n\ttamAntiga := len(antiga)\n\n\tfor i := 0; i < tamFrase; {\n\t\tif i+tamAntiga <= tamFrase && frase[i:i+tamAntiga] == antiga {\n\t\t\tfmt.Print(nova)\n\t\t\ti += tamAntiga\n\t\t} else {\n\t\t\tfmt.Printf(\"%c\", frase[i])\n\t\t\ti++\n\t\t}\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "32"
+        }
+    ]
+}

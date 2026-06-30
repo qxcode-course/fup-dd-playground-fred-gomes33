@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_00-09-51",
+            "content": "@@ -185,24 +185,16 @@\n %0A%0A    if\n- n, _ :=\n  fmt.Sca\n@@ -208,17 +208,13 @@\n vra)\n-; n\n  == 1\n- \n %7B%0A  \n@@ -258,92 +258,32 @@\n for \n-%7B%0A        n, _ := fmt.Scan(&palavra)%0A        if n != 1 %7B%0A            break%0A        %7D\n+fmt.Scan(&palavra) == 1%7B\n %0A%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_00-10-27",
+            "content": "@@ -44,20 +44,22 @@\n te) bool\n- \n %7B%0A\n-%09\n+    \n return c\n@@ -116,17 +116,16 @@\n = 'u'%0A%7D%0A\n-%0A\n func mai\n@@ -130,17 +130,20 @@\n ain() %7B%0A\n-%09\n+    \n var pala\n@@ -149,9 +149,23 @@\n avra\n-,\n+ string%0A    var\n  res\n@@ -183,11 +183,22 @@\n ng%0A%0A\n-%09if\n+    if n, _ :=\n  fmt\n@@ -212,24 +212,27 @@\n palavra)\n+; n\n  == 1 %7B%0A\n %09%09result\n@@ -223,18 +223,24 @@\n  == 1 %7B%0A\n-%09%09\n+        \n resultad\n@@ -255,89 +255,134 @@\n vra%0A\n-%09%7D%0A%09for fmt.Scan(&palavra) == 1 %7B%0A%09%09tamRes := len(resultado)%0A%09%09%0A        if tamRes\n+    %7D%0A%0A    for %7B%0A        n, _ := fmt.Scan(&palavra)%0A        if n != 1 %7B%0A            break%0A        %7D%0A%0A        if len(resultado)\n  %3E 0\n@@ -407,14 +407,22 @@\n ado%5B\n-tamRes\n+len(resultado)\n -1%5D)\n@@ -444,22 +444,31 @@\n avra%5B0%5D)\n- \n %7B%0A\n-%09%09%09\n+%0A            \n for len(\n@@ -521,23 +521,34 @@\n ado)-1%5D)\n- \n %7B%0A\n-%09%09%09%09\n+                \n resultad\n@@ -580,24 +580,42 @@\n ado)-1%5D%0A\n-%09%09%09%7D%0A%09%09%09\n+            %7D%0A            \n for len(\n@@ -653,15 +653,26 @@\n %5B0%5D)\n- \n %7B%0A\n-%09%09%09%09\n+                \n pala\n@@ -693,16 +693,34 @@\n 1:%5D%0A\n-%09%09%09%7D%0A%09%09%09\n+            %7D%0A            \n resu\n@@ -740,22 +740,35 @@\n vra%0A\n-%09%09%7D \n+        %7D\n else\n- \n %7B%0A\n-%09%09%09\n+            \n resu\n@@ -794,17 +794,28 @@\n vra%0A\n-%09%09%7D%0A%09%7D%0A%0A%09\n+        %7D%0A    %7D%0A    \n fmt.\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-30_00-14-07",
+            "content": "@@ -168,16 +168,8 @@\n %0A%09if\n- n, _ :=\n  fmt\n@@ -187,11 +187,8 @@\n vra)\n-; n\n  == \n@@ -224,20 +224,8 @@\n %09for\n- %7B%0A%09%09n, _ :=\n  fmt\n@@ -243,35 +243,15 @@\n vra)\n-%0A%09%09if n != 1 %7B%0A%09%09%09break%0A%09%09%7D\n+ == 1 %7B\n %0A%09%09t\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_00-14-32",
+            "content": "@@ -114,16 +114,17 @@\n = 'u'%0A%7D%0A\n+%0A\n func mai\n@@ -231,14 +231,17 @@\n %0A%09%7D%0A\n-%0A\n %09for \n+%7B%0A%09%09\n n, _\n@@ -266,20 +266,36 @@\n vra)\n-; n =\n+%0A%09%09if n !\n = 1\n-;\n  %7B%0A\n+%09%09%09break%0A%09%09%7D%0A\n %09%09ta\n@@ -317,19 +317,27 @@\n ultado)%0A\n-%0A\n %09%09\n+%0A        \n if tamRe\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-30_00-16-43",
+            "content": "package main\nimport \"fmt\"\nfunc ehVogal(c byte) bool {\n\treturn c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n}\nfunc main() {\n\tvar palavra, resultado string\n\n\tif n, _ := fmt.Scan(&palavra); n == 1 {\n\t\tresultado = palavra\n\t}\n\n\tfor n, _ := fmt.Scan(&palavra); n == 1; {\n\t\ttamRes := len(resultado)\n\n\t\tif tamRes > 0 && ehVogal(resultado[tamRes-1]) && ehVogal(palavra[0]) {\n\t\t\tfor len(resultado) > 0 && ehVogal(resultado[len(resultado)-1]) {\n\t\t\t\tresultado = resultado[:len(resultado)-1]\n\t\t\t}\n\t\t\tfor len(palavra) > 0 && ehVogal(palavra[0]) {\n\t\t\t\tpalavra = palavra[1:]\n\t\t\t}\n\t\t\tresultado += palavra\n\t\t} else {\n\t\t\tresultado += \" \" + palavra\n\t\t}\n\t}\n\n\tfmt.Println(resultado)\n}\n",
+            "lines": "30"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-29_23-00-18",
+            "content": "@@ -71,20 +71,9 @@\n Scan\n-f(%22%25%5B%5E%5Cn%5D%22, \n+(\n &fra\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-29_23-00-54",
+            "content": "@@ -67,17 +67,28 @@\n fmt.Scan\n-(\n+f(%22%25%5B%5E%5Cn%5D%22, \n &frase)%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-29_23-01-30",
+            "content": "@@ -71,21 +71,9 @@\n Scan\n-f(%22 %25%5B%5E%5Cn%5D%22, \n+(\n &fra\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-29_23-02-53",
+            "content": "@@ -67,19 +67,29 @@\n fmt.Scan\n-ln(\n+f(%22 %25%5B%5E%5Cn%5D%22, \n &frase)%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-29_23-05-28",
+            "content": "@@ -45,22 +45,45 @@\n var \n-palavra string\n+frase string %0A    fmt.Scanln(&frase)%0A\n %0A   \n@@ -126,144 +126,97 @@\n for \n-%7B%0A        if _, err := fmt.Scan(&palavra); err != nil %7B%0A            break%0A        %7D%0A        for _, letra := range palavra %7B%0A\n+_, letra := range frase%7B%0A        if letra == ' '%7B%0A            continue%0A  \n      \n+ %7D%0A\n        \n+ \n swit\n@@ -226,20 +226,16 @@\n letra %7B%0A\n-    \n         \n@@ -276,20 +276,16 @@\n         \n-    \n vogais =\n@@ -315,20 +315,16 @@\n         \n- \n-   \n default:\n@@ -324,20 +324,16 @@\n efault:%0A\n-    \n         \n@@ -379,22 +379,8 @@\n ra)%0A\n-            %7D%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-29_23-09-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var palavra string\n    var vogais, consoantes []rune\n\n    for {\n        if _, err := fmt.Scan(&palavra); err != nil {\n            break\n        }\n        for _, letra := range palavra {\n            switch letra {\n            case 'a', 'e', 'i', 'o', 'u':\n                vogais = append(vogais, letra)\n            default:\n                consoantes = append(consoantes, letra)\n            }\n        }\n    }\n    fmt.Println(string(vogais))\n    fmt.Println(string(consoantes))\n}\n",
+            "lines": "22"
+        }
+    ]
+}
