@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_22-08-54",
+            "content": "@@ -41,135 +41,35 @@\n     \n-soma := 0%0A    var nota int%0A%0A    for i := 0; i %3C 3; i++%7B%0A        fmt.Scan(&nota)%0A        soma += nota%0A    %7D%0A    fmt.Println(soma\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_22-10-34",
+            "content": "@@ -88,45 +88,13 @@\n  i %3C\n- 2; i++%7B%0A        for j := 0; j %3C\n  3; \n-j\n+i\n ++%7B%0A\n@@ -144,18 +144,16 @@\n a%0A    %7D%0A\n-%7D%0A\n     fmt.\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-30_22-11-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    soma := 0\n    var nota int\n\n    for i := 0; i < 2; i++{\n        for j := 0; j < 3; j++{\n        fmt.Scan(&nota)\n        soma += nota\n    }\n}\n    fmt.Println(soma)\n}\n",
+            "lines": "14"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_23-30-04",
+            "content": "@@ -41,618 +41,35 @@\n     \n-var palavra string%0A    fmt.Scan(&palavra)%0A%0A    somaBase := 0%0A    for i  := 0; i %3C len(s); i++%7B%0A        somaBase += int(palavra%5Bi%5D)%0A    %7D%0A%0A    valorOriginal := somaBase %25 2%0A    menorValor := valorOriginal%0A    var letraEscolhida byte%0A%0A    for c : = 'a'; c  %3C= 'z'; c++%7B%0A        valNovo := (somaBase + int(c)) %25 2%0A        if valNovo %3C menorValor %7B%0A            menorValor = valNovo%0A            letraEscolhida = byte(c)%0A        %7D%0A    %7D%0A    fmt.Println(valorOriginal)%0A    if letraEscolhida != 0 %7B%0A    fmt.Println(palavra + string(letraEscolhida))%0A    %7Delse%7B%0A        fmt.Println(palavra)%0A    %7D%0A fmt.Println(menorValor\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_23-36-17",
+            "content": "@@ -108,16 +108,17 @@\n   for i \n+ \n := 0; i \n@@ -127,22 +127,15 @@\n len(\n-palavra\n+s\n ); i++\n- \n %7B%0A  \n@@ -281,16 +281,17 @@\n  for c :\n+ \n = 'a'; c\n@@ -291,16 +291,17 @@\n  'a'; c \n+ \n %3C= 'z'; \n@@ -303,17 +303,16 @@\n 'z'; c++\n- \n %7B%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_23-36-50",
+            "content": "@@ -23,49 +23,68 @@\n mt%22%0A\n-%0A\n func \n-obterValorAscologico(s string) int%7B\n+main() %7B%0A    var palavra string%0A    fmt.Scan(&palavra)%0A\n %0A   \n@@ -88,16 +88,20 @@\n     soma\n+Base\n  := 0%0A  \n@@ -126,15 +126,22 @@\n len(\n-s\n+palavra\n ); i++\n+ \n %7B%0A  \n@@ -154,16 +154,20 @@\n soma\n+Base\n  += int(\n s%5Bi%5D\n@@ -166,213 +166,60 @@\n int(\n-s%5Bi%5D)%0A    %7D%0A    return soma %25 2%0A%7D%0Afunc main() %7B%0A    var palavra string%0A    n, err := fmt.Scan(&palavra)%0A    if err != nil %7C%7C n != 1%7B%0A        return%0A    %7D%0A%0A    valorOriginal := obterValorAscologico(palavra)\n+palavra%5Bi%5D)%0A    %7D%0A%0A    valorOriginal := somaBase %25 2\n %0A   \n@@ -255,25 +255,31 @@\n     \n+var \n letra\n-Sufixo := %22%22\n+Escolhida byte\n %0A%0A  \n@@ -307,16 +307,17 @@\n 'z'; c++\n+ \n %7B%0A      \n@@ -322,99 +322,42 @@\n     \n-palavraTeste := palavra + string(c)%0A        valTeste := obterValorAscologico(palavraTeste)%0A\n+valNovo := (somaBase + int(c)) %25 2\n %0A   \n@@ -367,21 +367,20 @@\n   if val\n-Teste\n+Novo\n  %3C menor\n@@ -384,16 +384,17 @@\n norValor\n+ \n %7B%0A      \n@@ -419,13 +419,12 @@\n  val\n-Teste\n+Novo\n %0A   \n@@ -441,23 +441,24 @@\n etra\n-Sufixo = string\n+Escolhida = byte\n (c)%0A\n@@ -512,41 +512,152 @@\n     \n-fmt.Println(palavra + letraSufixo\n+if letraEscolhida != 0 %7B%0A    fmt.Println(palavra + string(letraEscolhida))%0A    %7Delse%7B%0A        fmt.Println(palavra)%0A    %7D%0A fmt.Println(menorValor\n )%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_23-42-28",
+            "content": "@@ -716,34 +716,6 @@\n xo)%0A\n-    fmt.Println(menorValor)%0A\n %7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-30_23-42-44",
+            "content": "@@ -120,165 +120,25 @@\n     \n-if s%5Bi%5D %3E= 'a' && s%5Bi%5D %3C= 'z'%7B%0A            soma += int(s%5Bi%5D - 'a')%0A        %7Delse if s%5Bi%5D %3E= 'A' && s%5Bi%5D %3C= 'Z'%7B%0A            soma += int(s%5Bi%5D - 'A')%0A        %7D\n+soma += int(s%5Bi%5D)\n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-30_23-45-50",
+            "content": "@@ -558,24 +558,68 @@\n = 'z'; c++%7B%0A\n+        palavraTeste := palavra + string(c)%0A\n         valT\n@@ -654,28 +654,21 @@\n (palavra\n- + string(c)\n+Teste\n )%0A%0A     \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-30_23-46-24",
+            "content": "@@ -733,26 +733,8 @@\n (c)%0A\n-            break%0A\n     \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-30_23-46-36",
+            "content": "@@ -182,20 +182,16 @@\n %5D - 'a')\n- + 1\n %0A       \n@@ -267,12 +267,8 @@\n 'A')\n- + 1\n %0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-30_23-47-58",
+            "content": "@@ -753,52 +753,13 @@\n     \n-if c == 'c'%7B%0A            break%0A            %7D\n+break\n %0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-30_23-51-37",
+            "content": "@@ -59,20 +59,22 @@\n ing) int\n- \n %7B%0A\n-%09\n+    \n soma := \n@@ -75,17 +75,20 @@\n ma := 0%0A\n-%09\n+    \n for i :=\n@@ -106,21 +106,26 @@\n (s); i++\n- \n %7B%0A\n-%09%09\n+        \n if s%5Bi%5D \n@@ -145,22 +145,30 @@\n %5D %3C= 'z'\n- \n %7B%0A\n-%09%09%09\n+            \n soma += \n@@ -187,20 +187,25 @@\n a') + 1%0A\n-%09%09%7D \n+        %7D\n else if \n@@ -230,22 +230,30 @@\n %5D %3C= 'Z'\n- \n %7B%0A\n-%09%09%09\n+            \n soma += \n@@ -276,16 +276,28 @@\n + 1%0A\n-%09%09%7D%0A%09%7D%0A%09\n+        %7D%0A    %7D%0A    \n retu\n@@ -310,17 +310,16 @@\n a %25 2%0A%7D%0A\n-%0A\n func mai\n@@ -324,17 +324,20 @@\n ain() %7B%0A\n-%09\n+    \n var pala\n@@ -347,17 +347,20 @@\n  string%0A\n-%09\n+    \n n, err :\n@@ -380,17 +380,20 @@\n alavra)%0A\n-%09\n+    \n if err !\n@@ -411,25 +411,36 @@\n != 1\n- \n %7B%0A\n-%09%09return%0A%09%7D%0A%0A%09\n+        return%0A    %7D%0A%0A    \n valo\n@@ -482,17 +482,20 @@\n alavra)%0A\n-%09\n+    \n menorVal\n@@ -514,17 +514,20 @@\n riginal%0A\n-%09\n+    \n letraSuf\n@@ -537,17 +537,20 @@\n  := %22%22%0A%0A\n-%09\n+    \n for c :=\n@@ -568,21 +568,26 @@\n 'z'; c++\n- \n %7B%0A\n-%09%09\n+        \n valTeste\n@@ -633,18 +633,24 @@\n ng(c))%0A%0A\n-%09%09\n+        \n if valTe\n@@ -665,22 +665,30 @@\n norValor\n- \n %7B%0A\n-%09%09%09\n+            \n menorVal\n@@ -701,19 +701,28 @@\n alTeste%0A\n-%09%09%09\n+            \n letraSuf\n@@ -741,111 +741,85 @@\n (c)%0A\n-%09%09%7D else if valTeste == menorValor && menorValor %3C valorOriginal %7B%0A%09%09%09letraSufixo = string(c)%0A%09%09%7D%0A%09%7D%0A%0A%09\n+            if c == 'c'%7B%0A            break%0A            %7D%0A        %7D%0A    %7D%0A    \n fmt.\n@@ -841,17 +841,20 @@\n iginal)%0A\n-%09\n+    \n fmt.Prin\n@@ -884,9 +884,12 @@\n xo)%0A\n-%09\n+    \n fmt.\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-30_23-55-05",
+            "content": "@@ -19,16 +19,17 @@\n t %22fmt%22%0A\n+%0A\n func obt\n@@ -303,18 +303,25 @@\n string%0A%09\n-if\n+n, err :=\n  fmt.Sca\n@@ -331,16 +331,36 @@\n palavra)\n+%0A%09if err != nil %7C%7C n\n  != 1 %7B%0A\n@@ -468,16 +468,17 @@\n o := %22%22%0A\n+%0A\n %09for c :\n@@ -709,26 +709,8 @@\n l %7B%0A\n-%09%09%09if c == 'c' %7B%0A%09\n %09%09%09l\n@@ -736,13 +736,8 @@\n (c)%0A\n-%09%09%09%7D%0A\n %09%09%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-30_23-55-47",
+            "content": "@@ -306,15 +306,10 @@\n ng%0A%09\n-n, _ :=\n+if\n  fmt\n@@ -327,14 +327,8 @@\n vra)\n-%0A%09if n\n  != \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-30_23-56-04",
+            "content": "@@ -109,27 +109,146 @@\n %7B%0A%09%09\n-%09soma += int(s%5Bi%5D) \n+if s%5Bi%5D %3E= 'a' && s%5Bi%5D %3C= 'z' %7B%0A%09%09%09soma += int(s%5Bi%5D - 'a') + 1%0A%09%09%7D else if s%5Bi%5D %3E= 'A' && s%5Bi%5D %3C= 'Z' %7B%0A%09%09%09soma += int(s%5Bi%5D - 'A') + 1%0A%09%09%7D\n %0A%09%7D%0A\n@@ -267,9 +267,8 @@\n  %25 2\n-6\n %0A%7D%0A%0A\n@@ -687,16 +687,66 @@\n ginal %7B%0A\n+%09%09%09if c == 'c' %7B%0A%09%09%09%09letraSufixo = string(c)%0A%09%09%09%7D%0A\n %09%09%7D%0A%09%7D%0A%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-30_23-58-57",
+            "content": "@@ -502,16 +502,83 @@\n ring(c)%0A\n+%09%09%7D else if valTeste == menorValor && menorValor %3C valorOriginal %7B%0A\n %09%09%7D%0A%09%7D%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-30_23-59-29",
+            "content": "@@ -45,23 +45,17 @@\n ologico(\n-palavra\n+s\n  string)\n@@ -81,39 +81,37 @@\n for \n-_, c := range palavra%7B%0A        \n+i := 0; i %3C len(s); i++ %7B%0A%09%09%09\n soma\n@@ -122,19 +122,16 @@\n int(\n-c-'a')%0A    \n+s%5Bi%5D) %0A%09\n %7D%0A%09r\n@@ -144,16 +144,17 @@\n soma %25 2\n+6\n %0A%7D%0A%0Afunc\n@@ -184,16 +184,24 @@\n string%0A%09\n+n, _ := \n fmt.Scan\n@@ -210,16 +210,41 @@\n palavra)\n+%0A%09if n != 1 %7B%0A%09%09return%0A%09%7D\n %0A%0A%09valor\n@@ -319,32 +319,25 @@\n al%0A%09\n-melhorPalavra := palavra\n+letraSufixo := %22%22\n %0A%09fo\n@@ -370,45 +370,16 @@\n %7B%0A%09%09\n-nova := palavra + string(c)%0A        v\n+valTeste\n  := \n@@ -399,20 +399,35 @@\n ologico(\n-nova\n+palavra + string(c)\n )%0A%0A%09%09if \n@@ -427,16 +427,23 @@\n %0A%0A%09%09if v\n+alTeste\n  %3C menor\n@@ -471,32 +471,42 @@\n  = v\n-%0A%09%09%09melhorPalavra = nova\n+alTeste%0A%09%09%09letraSufixo = string(c)\n %0A%09%09%7D\n@@ -555,21 +555,29 @@\n tln(\n-melhorPalavra\n+palavra + letraSufixo\n )%0A%09f\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-01_00-03-44",
+            "content": "package main\nimport \"fmt\"\nfunc obterValorAscologico(palavra string) int {\n\tsoma := 0\n\tfor _, c := range palavra{\n        soma += int(c-'a')\n    }\n\treturn soma % 2\n}\n\nfunc main() {\n\tvar palavra string\n\tfmt.Scan(&palavra)\n\n\tvalorOriginal := obterValorAscologico(palavra)\n\tmenorValor := valorOriginal\n\tmelhorPalavra := palavra\n\tfor c := 'a'; c <= 'z'; c++ {\n\t\tnova := palavra + string(c)\n        v := obterValorAscologico(nova)\n\n\t\tif v < menorValor {\n\t\t\tmenorValor = v\n\t\t\tmelhorPalavra = nova\n\t\t}\n\t}\n\n\tfmt.Println(valorOriginal)\n\tfmt.Println(melhorPalavra)\n\tfmt.Println(menorValor)\n}\n",
+            "lines": "31"
+        }
+    ]
+}

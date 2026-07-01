@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_22-12-06",
+            "content": "@@ -40,458 +40,36 @@\n %0A   \n-var nl, nc int%0A   fmt.Scan(&nl, &nc)%0A%0A   matriz := make(%5B%5D%5B%5Dint, nl)%0A   for i := 0; i %3C nl; i++%7B%0A        matriz%5Bi%5D = make(%5B%5Dint, nc)%0A        for j := 0; j %3C nc; j++%7B%0A            fmt.Scan(&matriz%5Bi%5D%5Bi%5D)%0A        %7D%0A   %7D%0A%0A   totalOcorrencias := 0%0A%0A   for i := 0; i %3C nl-1; i++%7B%0A        for j := 0; j %3C nc-1; j++%7B%0A            if matriz%5Bi%5D%5Bj+1%5D %3C matriz%5Bi%5D%5Bj%5D%7B%0A                totalOcorrencias++%0A            %7D%0A        %7D%0A   %7D%0A   fmt.Println(totalOcorrencias\n+ fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_22-16-58",
+            "content": "@@ -293,32 +293,34 @@\n r i := 0; i %3C nl\n+-1\n ; i++%7B%0A        f\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_22-17-06",
+            "content": "@@ -57,21 +57,8 @@\n t%0A  \n- if _, err :=\n  fmt\n@@ -76,39 +76,8 @@\n &nc)\n-; err != nil %7B%0A     return%0A   %7D\n %0A%0A  \n@@ -234,17 +234,17 @@\n triz%5Bi%5D%5B\n-j\n+i\n %5D)%0A     \n@@ -300,17 +300,17 @@\n 0; i %3C n\n-c\n+l\n ; i++%7B%0A \n@@ -333,17 +333,17 @@\n 0; j %3C n\n-l\n+c\n -1; j++%7B\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_22-18-40",
+            "content": "@@ -53,16 +53,29 @@\n c int%0A  \n+ if _, err :=\n  fmt.Sca\n@@ -85,16 +85,48 @@\n nl, &nc)\n+; err != nil %7B%0A     return%0A   %7D%0A\n %0A   matr\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-30_22-20-06",
+            "content": "@@ -77,12 +77,8 @@\n nc)%0A\n-   %0A\n    m\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_22-21-21",
+            "content": "@@ -73,16 +73,19 @@\n l, &nc)%0A\n+   \n %0A   matr\n@@ -358,16 +358,98 @@\n         \n+if matriz%5Bi%5D%5Bj+1%5D %3C matriz%5Bi%5D%5Bj%5D%7B%0A                totalOcorrencias++%0A            %7D\n %0A       \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_22-22-03",
+            "content": "@@ -359,90 +359,8 @@\n     \n-if matriz%5Bi%5D%5Bj+1%5D %3C matriz%5Bi%5D%5Bj%5D%7B%0A                totalOcorrencias++%0A            %7D\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-30_22-22-07",
+            "content": "@@ -287,33 +287,33 @@\n %0A   for \n-j\n+i\n  := 0; \n-j\n+i\n  %3C nc; \n-j\n+i\n ++%7B%0A    \n@@ -316,33 +316,33 @@\n         for \n-i\n+j\n  := 0; \n-i\n+j\n  %3C nl-1; i++\n@@ -338,17 +338,17 @@\n %3C nl-1; \n-i\n+j\n ++%7B%0A    \n@@ -370,13 +370,13 @@\n iz%5Bi\n-+1\n %5D%5Bj\n++1\n %5D %3C \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_22-24-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var nl, nc int\n   fmt.Scan(&nl, &nc)\n\n   matriz := make([][]int, nl)\n   for i := 0; i < nl; i++{\n        matriz[i] = make([]int, nc)\n        for j := 0; j < nc; j++{\n            fmt.Scan(&matriz[i][j])\n        }\n   }\n\n   totalOcorrencias := 0\n\n   for j := 0; j < nc; j++{\n        for i := 0; i < nl-1; i++{\n            if matriz[i+1][j] < matriz[i][j]{\n                totalOcorrencias++\n            }\n        }\n   }\n   fmt.Println(totalOcorrencias)\n}\n",
+            "lines": "25"
+        }
+    ]
+}

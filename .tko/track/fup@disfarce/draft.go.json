@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_00-04-09",
+            "content": "@@ -23,812 +23,53 @@\n mt%22%0A\n-%0Afunc toLower(c byte) byte%7B%0A    if c %3E= 'A' && c %3C= 'Z'%7B%0A        return c + 32%0A    %7D%0A    return c%0A%7D%0Afunc main() %7B%0A    var x int%0A    fmt.Scan(&x)%0A%0A    for i := 0; i %3C x; i++%7B%0A        var ultron, pessoa string%0A        fmt.Scan(&ultron, &pessoa)%0A%0A        correspondencias := 0%0A%0A        for j := 0; j %3C len(pessoas); j++%7B%0A            pc := toLower(pessoa%5Bj%5D)%0A            for k := 0; k %3C len(ultron); k++%7B%0A                uc  := toLower(ultron%5Bk%5D)%0A                if pc == uc%7B%0A                    correspondencias++%0A                    break%0A            %7D%0A        %7D%0A    %7D%0A%0A    porcentagem := float64(correspondencias) / float64(len(pessoa)) * 100%0A%0A    if porcentagem == 100%7B%0A        fmt.Println(%22Chefe%22)%0A    %7Delse if porcentagem %3E 50%7B%0A        fmt.Println(%22ultron%22)%0A    %7Delse%7B%0A    fmt.Println(%22pessoa%22)%0A    %7D%0A %7D\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-01_00-11-12",
+            "content": "@@ -328,16 +328,17 @@\n n(pessoa\n+s\n ); j++%7B%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-01_00-11-30",
+            "content": "@@ -709,17 +709,17 @@\n rintln(%22\n-c\n+C\n hefe%22)%0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-01_00-11-39",
+            "content": "package main\nimport \"fmt\"\n\nfunc toLower(c byte) byte{\n    if c >= 'A' && c <= 'Z'{\n        return c + 32\n    }\n    return c\n}\nfunc main() {\n    var x int\n    fmt.Scan(&x)\n\n    for i := 0; i < x; i++{\n        var ultron, pessoa string\n        fmt.Scan(&ultron, &pessoa)\n\n        correspondencias := 0\n\n        for j := 0; j < len(pessoa); j++{\n            pc := toLower(pessoa[j])\n            for k := 0; k < len(ultron); k++{\n                uc  := toLower(ultron[k])\n                if pc == uc{\n                    correspondencias++\n                    break\n            }\n        }\n    }\n\n    porcentagem := float64(correspondencias) / float64(len(pessoa)) * 100\n\n    if porcentagem == 100{\n        fmt.Println(\"chefe\")\n    }else if porcentagem > 50{\n        fmt.Println(\"ultron\")\n    }else{\n    fmt.Println(\"pessoa\")\n    }\n }\n}\n",
+            "lines": "41"
+        }
+    ]
+}

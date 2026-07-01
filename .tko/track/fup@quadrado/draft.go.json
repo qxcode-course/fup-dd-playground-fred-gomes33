@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_21-54-39",
+            "content": "@@ -105,17 +105,16 @@\n = 0; j %3C\n-=\n  3; j++%7B\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-30_21-55-04",
+            "content": "@@ -97,32 +97,33 @@\n  for j := 0; j %3C\n+=\n  3; j++%7B%0A       \n@@ -204,17 +204,17 @@\n  mat%5B0%5D%5B\n-1\n+2\n %5D%0Amagico\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-30_21-55-19",
+            "content": "@@ -203,17 +203,17 @@\n  mat%5B0%5D%5B\n-2\n+1\n %5D%0Amagico\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-30_21-55-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var mat [3][3]int\n\n   for i := 0; i < 3; i++{\n        for j := 0; j < 3; j++{\n            fmt.Scan(&mat[i][j])\n        }\n    }\n\nbase := mat[0][0] + mat[0][1] + mat[0][2]\nmagico := true\n\nfor i := 0; i < 3; i++{\n    if mat[i][0] + mat[i][1] + mat[i][2] != base{\n        magico = false\n    }\n}\n\nfor j := 0; j < 3; j++{\n    if mat[0][j] + mat[1][j] + mat[2][j] != base{\n        magico = false\n    }\n}\n\n    if mat[0][0] + mat[1][1] + mat[2][2] != base{\n        magico = false\n}\n    if mat[0][2]+mat[1][1]+mat[2][0] != base {\n\t\tmagico = false\n}\n    if magico {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "38"
+        }
+    ]
+}

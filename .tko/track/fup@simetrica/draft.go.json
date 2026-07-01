@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_22-42-00",
+            "content": "@@ -37,48 +37,8 @@\n ) %7B%0A\n-    var mat %5B3%5D%5B3%5Dint%0A%0A    for i :%0A    %0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_22-57-37",
+            "content": "@@ -59,378 +59,57 @@\n int%0A\n-    if _, err := fmt.Scan(&mat); err != nil %7B%0A    return%0A   %7D%0A%0A   simetrica := true%0A%0A   for i := 0; i %3C 3; i++%7B%0A    for j := 0; j %3C 3; j++%7B%0A        if mat%5Bi%5D%5Bj%5D != mat%5Bj%5D%5Bi%5D%7B%0A            simetrica = false%0A            break%0A        %7D%0A    %7D%0A    if !simetrica%7B%0A        break%0A    %7D%0A%7D%0A    if simetrica %7B%0A        fmt.Println(%22sim%22)%0A    %7D else %7B%0A        fmt.Println(%22nao%22)%0A    %7D\n+%0A    for i :%0A    %0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-30_23-00-00",
+            "content": "@@ -63,108 +63,61 @@\n     \n-for i := 0; i %3C 3; i++%7B%0A        for j := 0; j %3C 3; j++%7B%0A            fmt.Scan(&mat%5Bi%5D%5Bj%5D)%0A        %7D%0A \n+if _, err := fmt.Scan(&mat); err != nil %7B%0A    return%0A\n    %7D\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-30_23-01-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var mat [3][3]int\n    for i := 0; i < 3; i++{\n        for j := 0; j < 3; j++{\n            fmt.Scan(&mat[i][j])\n        }\n    }\n\n   simetrica := true\n\n   for i := 0; i < 3; i++{\n    for j := 0; j < 3; j++{\n        if mat[i][j] != mat[j][i]{\n            simetrica = false\n            break\n        }\n    }\n    if !simetrica{\n        break\n    }\n}\n    if simetrica {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "29"
+        }
+    ]
+}

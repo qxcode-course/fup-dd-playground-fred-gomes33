@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_23-14-51",
+            "content": "@@ -64,32 +64,8 @@\n %0A   \n- for %7B%0A        n, err :=\n  fmt\n@@ -92,43 +92,16 @@\n ere)\n-%0A        if err != nil %7C%7C n !\n+ =\n = 1 \n-%7C%7C\n+&&\n  car\n@@ -103,25 +103,25 @@\n & caractere \n-=\n+!\n = '%5Cn' %7B%0A   \n@@ -121,36 +121,8 @@\n ' %7B%0A\n-            break%0A        %7D%0A\n     \n@@ -145,17 +145,16 @@\n  == '%5Cr'\n- \n %7B%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-30_23-15-40",
+            "content": "@@ -519,24 +519,6 @@\n   %7D%0A\n-    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-30_23-16-00",
+            "content": "@@ -515,10 +515,28 @@\n %7D%0A    %7D%0A\n+    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_23-16-10",
+            "content": "@@ -332,151 +332,8 @@\n else\n-%7B%0A            letra := caractere%0A            if letra %3E= 'A' && letra %3C= 'Z'%7B%0A                letra = letra +32%0A            %7D%0A        %7D%0A       \n  if \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-30_23-18-02",
+            "content": "@@ -327,16 +327,15 @@\n     \n- \n %7Delse%7B%0A\n+\n     \n@@ -468,27 +468,8 @@\n   %7D%0A\n-        letra := 0%0A\n     \n@@ -599,16 +599,16 @@\n nt(%22v%22)%0A\n+\n         \n@@ -616,40 +616,8 @@\n else\n- if letra %3E= 'a' && letra %3C= 'z'\n  %7B%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-30_23-19-10",
+            "content": "@@ -200,21 +200,8 @@\n   %7D%0A\n-        %7D   %0A\n     \n@@ -457,32 +457,51 @@\n     %7D%0A        %7D%0A\n+        letra := 0%0A\n         if carac\n@@ -706,21 +706,16 @@\n     \n-     \n %7D%0A    %7D%0A\n     \n@@ -714,25 +714,6 @@\n   %7D%0A\n-    fmt.Println()%0A\n %7D%0A\n-%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_23-24-32",
+            "content": "@@ -188,32 +188,44 @@\n break%0A        %7D%0A\n+        %7D   \n %0A        if cara\n@@ -336,23 +336,22 @@\n         \n-%7D\n  \n+%7D\n else\n- \n %7B%0A      \n@@ -418,17 +418,16 @@\n a %3C= 'Z'\n- \n %7B%0A      \n@@ -451,17 +451,16 @@\n  letra +\n- \n 32%0A     \n@@ -464,29 +464,34 @@\n           %7D%0A\n-%0A\n+    \n     \n+%7D%0A\n         if l\n@@ -489,21 +489,25 @@\n      if \n-letra\n+caractere\n  == 'a' \n@@ -505,29 +505,33 @@\n e == 'a' %7C%7C \n-letra\n+caractere\n  == 'e' %7C%7C l\n@@ -525,29 +525,33 @@\n e == 'e' %7C%7C \n-letra\n+caractere\n  == 'i' %7C%7C l\n@@ -553,37 +553,43 @@\n  %7C%7C \n-letra\n+caractere\n  ==\n- \n 'o' %7C%7C \n-letra\n+caractere\n  == 'u'\n- \n %7B%0A  \n@@ -590,36 +590,32 @@\n u'%7B%0A            \n-  \n-  \n fmt.Print(%22v%22)%0A \n@@ -621,22 +621,17 @@\n         \n-    %7D \n+%7D\n else if \n@@ -657,28 +657,24 @@\n ra %3C= 'z' %7B%0A\n-    \n             \n@@ -689,33 +689,24 @@\n t(%22c%22)%0A     \n-       %7D%0A\n         %7D%0A  \n@@ -705,25 +705,24 @@\n     %7D%0A    %7D%0A\n-%0A\n     fmt.Prin\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-30_23-25-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var caractere byte\n\n    for {\n        n, err := fmt.Scanf(\"%c\", &caractere)\n        if err != nil || n != 1 || caractere == '\\n' {\n            break\n        }\n\n        if caractere == '\\r' {\n            continue\n        }\n\n        if caractere == ' '{\n            fmt.Print(\" \")\n        } else {\n            letra := caractere\n            if letra >= 'A' && letra <= 'Z' {\n                letra = letra + 32\n            }\n\n            if letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' {\n                fmt.Print(\"v\")\n            } else if letra >= 'a' && letra <= 'z' {\n                fmt.Print(\"c\")\n            }\n        }\n    }\n\n    fmt.Println()\n}\n\n",
+            "lines": "34"
+        }
+    ]
+}
